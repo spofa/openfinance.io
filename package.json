@@ -1,0 +1,26 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "the landing site for the Open Finance Network",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfxmarkets/OFN_site.git"
+  },
+  "keywords": [
+    "ethereum",
+    "openFinance",
+    "network",
+    "erc20",
+    "solidity"
+  ],
+  "author": "T. McInerney",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cfxmarkets/OFN_site/issues"
+  },
+  "homepage": "https://github.com/cfxmarkets/OFN_site#readme"
+}
