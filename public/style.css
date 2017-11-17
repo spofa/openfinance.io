@@ -1,3 +1,10 @@
+#main {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  pointer-events: none
+}
+
 #headertext {
   font-family: 'Barlow', sans-serif;
   font-size: 2rem;
@@ -28,6 +35,22 @@
   z-index: 1;
   width: 100%;
   pointer-events: none
+}
+#menu {
+  font-family: 'Barlow', sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+#rightmenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#leftmenu {
+  font-size: 1.25rem;
 }
 
 #social {
@@ -71,4 +94,12 @@ canvas{
   width: 100%;
   height:100%;
   vertical-align:top;
+}
+
+#triangleGradient {
+  padding-top: 25vh;
+  width:100%;
+  display: flex;
+  z-index: 1;
+  pointer-events: none
 }
