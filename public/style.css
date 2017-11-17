@@ -1,0 +1,74 @@
+#headertext {
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 0.59px;
+}
+
+#maintext {
+  font-family: 'Barlow', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 0.33px;
+  width: 40vh;
+  height: 15vh;
+  font-size: 1rem;
+}
+#ofntext {
+  font-size: 3rem;
+}
+#theoretical {
+  font-family: 'Barlow-Bold', sans-serif;
+}
+#landing {
+  position: absolute;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+  z-index: 1;
+  width: 100%;
+  pointer-events: none
+}
+
+#social {
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: 0 2px 10px 5px rgba(0,0,0,0.26);
+  border-radius: 8px;
+  width: 30vh;
+  height: 20vh;
+}
+
+#logotext {
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0.37px;
+}
+
+#slackbutton {
+  background: #FFFFFF;
+  box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
+  border-radius: 100px;
+}
+
+.document {
+  background: #030560;
+  box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	background: #030560;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+canvas{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  vertical-align:top;
+}
