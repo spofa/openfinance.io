@@ -2,7 +2,7 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  pointer-events: none
+  pointer-events: none;
 }
 
 #headertext {
@@ -58,8 +58,12 @@
   border: 1px solid #979797;
   box-shadow: 0 2px 10px 5px rgba(0,0,0,0.26);
   border-radius: 8px;
-  width: 30vh;
-  height: 20vh;
+  width: 35vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
 }
 
 #logotext {
@@ -90,7 +94,7 @@ html{
 }
 
 canvas{
-  position: absolute;
+  position: fixed;
   width: 100%;
   height:100%;
   vertical-align:top;
@@ -99,7 +103,82 @@ canvas{
 #triangleGradient {
   padding-top: 25vh;
   width:100%;
-  display: flex;
-  z-index: 1;
+  position: absolute
   pointer-events: none
+}
+
+#stayconnected {
+  font-family: 'Barlow';
+  color: #010346;
+
+}
+
+#emailform {
+  font-family: 'Barlow';
+  width: 90%;
+  background: #FFFFFF;
+  border: 1px solid #010346;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#emailtext {
+  font-family: 'Barlow';
+  font-size: 1rem;
+  color: #7E7E7E;
+}
+
+#subscribebutton {
+  background: #010346;
+  border-radius: 100px;
+  height: 100%;
+  width:40%;
+  font-family: 'Barlow';
+  font-size: 1rem;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socialbuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.socialicon {
+  padding: .5rem;
+  height: 100%;
+}
+
+#documentation {
+  position: absolute;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+  z-index: 1;
+  width: 100%;
+  pointer-events: none
+}
+
+.docIconContainer {
+  background: #030560;
+  box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
+  height: 20vh;
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
