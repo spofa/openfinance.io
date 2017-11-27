@@ -309,6 +309,7 @@ canvas{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 80%;
 }
 
 .teamImg {
@@ -327,4 +328,39 @@ canvas{
 .teamCard {
   padding-left: 3.5vw;
   padding-right: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.teamName {
+  font-family: "Barlow";
+  font-size: 2rem;
+  color: #010346;
+  letter-spacing: 0.39px;
+  margin:0;
+}
+
+#ourTeam {
+  text-align: center;
+
+}
+
+.sliding-middle-out {
+
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: white;
 }
