@@ -71,10 +71,23 @@
   letter-spacing: 0.37px;
 }
 
-#slackbutton {
+.slackButton {
   background: #FFFFFF;
   box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
   border-radius: 100px;
+  text-align: center;
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #010346;
+  display: flex;
+  align-items: center;
+  margin-top:3vh;
+}
+
+.slackButtonText {
+  font-family: "Barlow";
+  font-size: 2rem;
+  color: #010346;
 }
 
 .document {
@@ -100,10 +113,12 @@ canvas{
 }
 
 #triangleGradient {
+  display: block;
   padding-top: 25vh;
   width:100%;
-  position: fixed;
-  pointer-events: none
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
 }
 
 #stayconnected {
@@ -261,10 +276,24 @@ canvas{
 #futureOfFinance {
   width:100%;
   height: 50vh;
-  background: linear-gradient(-180deg, #010346 45%, #00035E 100%);
 }
 
 #gradientEnd{
   width: 100%;
+  overflow: hidden;
+  max-height: 60vh;
   transform: rotate(180deg);
+  position: relative;
+}
+
+#fof{
+  width: 22%;
+  font-family: 'Barlow';
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 0.39px;
+  z-index: 2;
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
 }
