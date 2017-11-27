@@ -32,7 +32,8 @@
   align-items: center;
   height: 75vh;
   width: 100%;
-  pointer-events: none
+  pointer-events: none;
+
 }
 #menu {
   font-family: 'Barlow', sans-serif;
@@ -101,7 +102,7 @@ canvas{
 #triangleGradient {
   padding-top: 25vh;
   width:100%;
-  position: absolute;
+  position: fixed;
   pointer-events: none
 }
 
@@ -165,7 +166,7 @@ canvas{
   align-items: flex-end;
   width: 100%;
   pointer-events: none;
-  height: 30vh;
+  height: 45vh;
 }
 
 .docIconContainer {
@@ -184,7 +185,7 @@ canvas{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 200vh
+  height: 400vh
 }
 
 .sectionLabel {
@@ -195,9 +196,11 @@ canvas{
 }
 
 #industry {
+  padding-top: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 60vh;
 }
 
 #industryText {
@@ -234,4 +237,21 @@ canvas{
   color: #010346 100%;
   font-family: 'Barlow';
   padding: .5rem;
+}
+
+#timeline{
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(#010346 100%, #00035E 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#teampage {
+  height: 120vh;
+  background-color: #FFFFFF 100%;
+  width: 100%;
+
 }
