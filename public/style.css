@@ -23,16 +23,14 @@
 #ofntext {
   font-size: 3rem;
 }
-#theoretical {
+.boldedText {
   font-family: 'Barlow-Bold', sans-serif;
 }
 #landing {
-  position: absolute;
   display:flex;
   justify-content: space-around;
   align-items: center;
   height: 75vh;
-  z-index: 1;
   width: 100%;
   pointer-events: none
 }
@@ -154,15 +152,20 @@ canvas{
   height: 100%;
 }
 
+#docs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 #documentation {
-  position: absolute;
   display:flex;
   justify-content: space-around;
   align-items: flex-end;
-  height: 75vh;
-  z-index: 1;
   width: 100%;
-  pointer-events: none
+  pointer-events: none;
+  height: 30vh;
 }
 
 .docIconContainer {
@@ -171,19 +174,64 @@ canvas{
   height: 20vh;
   width: 18vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 #wrapper {
+  flex: auto;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-around;
+  align-items: center;
+  height: 200vh
 }
 
 .sectionLabel {
   text-align: center;
   font-family: 'Barlow';
-  font-size: 1reml
+  font-size: 1rem;
+  color: white;
+}
 
+#industry {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#industryText {
+  width: 25%;
+  color: white;
+  font-family: 'Barlow';
+}
+
+#useCases{
+  height: 48vh;
+  width: 100%;
+  background-color: #F0F0F0;
+}
+
+#useCaseButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+#useCases {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.useButton {
+  background: #FFFFFF;
+  box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
+  border-radius: 100px;
+  color: #010346 100%;
+  font-family: 'Barlow';
+  padding: .5rem;
 }
