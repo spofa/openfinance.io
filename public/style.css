@@ -166,7 +166,7 @@ canvas{
   align-items: flex-end;
   width: 100%;
   pointer-events: none;
-  height: 45vh;
+  height: 30vh;
 }
 
 .docIconContainer {
@@ -180,7 +180,6 @@ canvas{
 }
 
 #wrapper {
-  flex: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -213,6 +212,9 @@ canvas{
   height: 48vh;
   width: 100%;
   background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #useCaseButtons {
@@ -224,11 +226,7 @@ canvas{
   padding: 1rem;
 }
 
-#useCases {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 
 .useButton {
   background: #FFFFFF;
@@ -251,7 +249,22 @@ canvas{
 
 #teampage {
   height: 120vh;
-  background-color: #FFFFFF 100%;
   width: 100%;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
+}
+
+#futureOfFinance {
+  width:100%;
+  height: 50vh;
+  background: linear-gradient(-180deg, #010346 45%, #00035E 100%);
+}
+
+#gradientEnd{
+  width: 100%;
+  transform: rotate(180deg);
 }
