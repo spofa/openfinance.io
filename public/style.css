@@ -209,6 +209,13 @@ canvas{
   color: white;
 }
 
+.sectionLabelDark {
+  text-align: center;
+  font-family: 'Barlow';
+  font-size: 1rem;
+  color: #030560;
+}
+
 #industry {
   padding-top: 10vh;
   display: flex;
@@ -296,4 +303,28 @@ canvas{
   position: absolute;
   bottom: 200px;
   left: 100px;
+}
+
+#team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.teamImg {
+  height: 16vh;
+  width: 12vw;
+  border-radius: 50%;
+}
+
+.teamText {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #010346;
+  letter-spacing: 0.39px;
+}
+
+.teamCard {
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
 }
