@@ -309,6 +309,7 @@ canvas{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
   width: 80%;
 }
 
@@ -342,10 +343,6 @@ canvas{
   margin:0;
 }
 
-#ourTeam {
-  text-align: center;
-
-}
 
 .sliding-middle-out {
 
@@ -363,4 +360,15 @@ canvas{
 .sliding-middle-out:hover:after {
 	width: 100%;
 	background: white;
+}
+
+#support {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%
+}
+.investorLogo {
+  max-height: 10vh;
+  max-width: 12vw;
 }
