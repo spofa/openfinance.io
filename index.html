@@ -4,6 +4,7 @@
     <title>Open Finance Network</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="public/style.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id='particles-js'>
@@ -34,14 +35,23 @@
           </div>
           <div id='social'>
               <p id='stayconnected'>Stay connected with latest updates.</p>
-                <div id='emailContainer'><input id='emailform' type='email' name='emailform' required placeholder='Your Email Address.' ></input><button type='submit' id='subscribebutton'>Subscribe</button></div>
+                    <div id="emailContainer">
+                        <form action="https://openfinance.us17.list-manage.com/subscribe/post?u=ffcad2eadac9243090ab1afa7&amp;id=9c87e51b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+
+                          <input type="email" value="" name="EMAIL" class="email" id="emailform" placeholder="  Your email address." required>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ffcad2eadac9243090ab1afa7_9c87e51b40" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="subscribebutton" class="button"></div>
+                            </div>
+                        </form>
+                        </div>
                   <p id='stayconnected'>Other ways to connect.</p>
                     <div id='socialbuttons'>
                       <img src='public/facebook-logo-button.png' class='socialicon'>
-                      <img src='public/medium.png' class='socialicon'>
-                      <img src='public/reddit-social-logo-character.png' class='socialicon'>
-                      <img src='public/twitter-logo-button.png' class='socialicon'>
-                      <img src='public/email.png' class='socialicon'>
+                      <a href='https://medium.com/@openfinance' target='_blank'><img src='public/medium.png' class='socialicon'>
+                      <a href='' target='_blank'><img src='public/reddit-social-logo-character.png' class='socialicon'>
+                      <a href='https://twitter.com/openfinanceio' target="_blank"><img src='public/twitter-logo-button.png' class='socialicon'></a>
+                      <a href="mailto:thomas.mcinerney@openfinance.io" target="_blank"><img src='public/email.png' class='socialicon'></a>
                     </div>
           </div>
         </div>
@@ -68,7 +78,6 @@
             <p class="sectionLabelDark">Our Use Cases</p>
             <button class='useButton'>Investor Passport</button>
             <button class='useButton'>Digital Signature Guarantee</button>
-            <button class='useButton'>Robust API</button>
             <button class='useButton'>Decentralized Securities Depository</button>
             <button class='useButton'>Instant Clearing and Settlement</button>
             <button class='useButton'>Open Source</button>

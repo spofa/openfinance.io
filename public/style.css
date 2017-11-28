@@ -125,6 +125,7 @@ canvas{
 #triangleGradient {
   display: block;
   padding-top: 25vh;
+  height: 200vh;
   width:100%;
   position: absolute;
   pointer-events: none;
@@ -143,7 +144,7 @@ canvas{
 
 #emailform {
   width: 60%;
-  height: 90%;
+  height: 3vh;
   font-family: 'Barlow';
   background: #FFFFFF;
   border: 1px solid #010346;
@@ -154,12 +155,18 @@ canvas{
   font-size: 1rem;
   color: #7E7E7E;
 }
+#mc_embed_signup_scroll{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 #subscribebutton {
   background: #010346;
   border-radius: 100px;
   height: 100%;
-  width:30%;
+  width:100%;
   font-family: 'Barlow';
   font-size: 1rem;
   color: #FFFFFF;
@@ -184,9 +191,10 @@ canvas{
 #docs {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin-bottom: 10vh;
 }
 #documentation {
   display:flex;
@@ -194,7 +202,7 @@ canvas{
   align-items: flex-end;
   width: 100%;
   pointer-events: none;
-  height: 30vh;
+  height: 35vh;
 }
 
 .docIconContainer {
@@ -212,7 +220,7 @@ canvas{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 400vh
+  height: 450vh
 }
 
 .sectionLabel {
@@ -244,7 +252,7 @@ canvas{
 }
 
 #useCases{
-  height: 48vh;
+  height: 50vh;
   width: 100%;
   background-color: #F0F0F0;
   display: flex;
@@ -255,9 +263,9 @@ canvas{
 #useCaseButtons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: 70%;
   padding: 1rem;
 }
 
@@ -270,6 +278,7 @@ canvas{
   color: #010346 100%;
   font-family: 'Barlow';
   padding: .5rem;
+  min-width: 100%;
 }
 
 #timeline{
@@ -301,7 +310,7 @@ canvas{
 #gradientEnd{
   width: 100%;
   overflow: hidden;
-  max-height: 60vh;
+  max-height: 50vh;
   transform: rotate(180deg);
   position: relative;
 }
@@ -329,6 +338,7 @@ canvas{
 .teamImg {
   height: 16vh;
   width: 12vw;
+  max-width: 150px;
   border-radius: 50%;
 }
 
@@ -384,4 +394,13 @@ canvas{
 .investorLogo {
   max-height: 10vh;
   max-width: 12vw;
+}
+
+#zeroKnowledge{
+  height: 50vh;
+  width: 100%;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
