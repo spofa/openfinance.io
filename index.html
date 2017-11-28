@@ -11,11 +11,11 @@
       <div id='menu'>
         <div id='leftmenu'>Open Finance</div>
         <div id='rightmenu'>
-          <p class='sliding-middle-out'>Documentation</p>
-          <p class='sliding-middle-out'>Differentiator</p>
-          <p class='sliding-middle-out'>Use Cases</p>
-          <p class='sliding-middle-out'>Roadmap</p>
-          <p class='sliding-middle-out'>Team</p>
+          <p class='sliding-middle-out' href='#Documentation' onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('industry').scrollIntoView();" >Differentiator</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('useCases').scrollIntoView();" >Use Cases</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('timeline').scrollIntoView();" >Roadmap</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('teampage').scrollIntoView();" >Team</p>
         </div>
       </div>
       <div id='main'>
@@ -33,9 +33,9 @@
               </div>
           </div>
           <div id='social'>
-              <p id='stayconnected'>Stay connected with latest updates.<p>
-                <div id='emailform'><p id='emailtext'>Your Email Address.</p><button id='subscribebutton'>Subscribe</button></div>
-                  <p id='stayconnected'>Other ways to connect.<p>
+              <p id='stayconnected'>Stay connected with latest updates.</p>
+                <div id='emailContainer'><input id='emailform' type='email' name='emailform' required placeholder='Your Email Address.' ></input><button type='submit' id='subscribebutton'>Subscribe</button></div>
+                  <p id='stayconnected'>Other ways to connect.</p>
                     <div id='socialbuttons'>
                       <img src='public/facebook-logo-button.png' class='socialicon'>
                       <img src='public/medium.png' class='socialicon'>
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div id='docs'>
-        <span ><p class='sectionLabel'>Our Documentation.</p></span>
+        <span ><p id='Documentation'class='sectionLabel'>Our Documentation.</p></span>
           <div id='documentation'>
           <div class='docIconContainer'><img src='public/file.png'> </div>
           <div class='docIconContainer'><img src='public/file.png'> </div>
