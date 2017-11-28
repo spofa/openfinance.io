@@ -238,11 +238,15 @@ canvas{
 }
 
 #industry {
-  padding-top: 10vh;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+}
+#differentiator {
   height: 60vh;
+  padding-top: 10vh;
 }
 
 #industryText {
@@ -258,7 +262,15 @@ canvas{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  pointer-events: auto;
 }
+
+#useCaseText{
+  width: 25%;
+  color: #010346;
+  font-family: 'Barlow';
+}
+
 
 #useCaseButtons {
   display: flex;
@@ -401,6 +413,23 @@ canvas{
   width: 100%;
   background-color: #F0F0F0;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
+#zeroKText {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #010346;
+  letter-spacing: 0.39px;
+  margin: 3rem;
+  width: 40%;
+}
+
+#zeroKwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
