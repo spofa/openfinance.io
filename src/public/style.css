@@ -189,6 +189,16 @@ canvas{
   height: 100%;
 }
 
+#useCaseLogo{
+  max-width: 30%;
+  max-height: 80%;
+}
+
+#useCasePic{
+  max-height: 100%;
+  max-width: 100%;
+}
+
 #docs {
   display: flex;
   flex-direction: column;
@@ -369,11 +379,16 @@ canvas{
   z-index: 1;
 }
 
+a{
+  text-decoration:  none;
+}
+
 .docText {
   font-family: "Barlow";
   font-size: 1rem;
   color: #FFFFFF;
   letter-spacing: 0.39px;
+  text-decoration: none;
   z-index: 1;
   margin-top: 0;
   margin-bottom: 2rem;
