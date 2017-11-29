@@ -125,7 +125,7 @@ canvas{
 #triangleGradient {
   display: block;
   padding-top: 25vh;
-  height: 200vh;
+  height: 210vh;
   width:100%;
   position: absolute;
   pointer-events: none;
@@ -196,6 +196,7 @@ canvas{
   align-items: center;
   width: 100%;
   margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 #documentation {
   display:flex;
@@ -212,6 +213,7 @@ canvas{
   height: 20vh;
   width: 18vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -221,7 +223,7 @@ canvas{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 450vh
+  height: 420vh
 }
 
 .sectionLabel {
@@ -257,7 +259,7 @@ canvas{
 }
 
 #useCases{
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   background-color: #F0F0F0;
   display: flex;
@@ -305,7 +307,7 @@ canvas{
 }
 
 #teampage {
-  height: 120vh;
+  height: 110vh;
   width: 100%;
   background-color: #F0F0F0;
   display: flex;
@@ -360,6 +362,7 @@ canvas{
   font-size: 1rem;
   color: #010346;
   letter-spacing: 0.39px;
+  z-index: 1;
 }
 
 .teamCard {

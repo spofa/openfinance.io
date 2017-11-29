@@ -30,7 +30,7 @@
               </div>
               <div>
                   <div class='boldedText'>We’re not just theoretical.</div> We allow for cheaper costs, faster transactions, and increase investor protection. Our goal is to make every alt tradable.
-                  <button  href='https://slack.openfinance.io' target='_blank' class='slackButton'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
+                  <button  href='https://slack.openfinance.io' onclick='openSlack()' class='slackButton'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
               </div>
           </div>
           <div id='social'>
@@ -57,9 +57,9 @@
         <div id='docs'>
         <span ><p id='Documentation'class='sectionLabel'>Our Documentation.</p></span>
           <div id='documentation'>
-          <div class='docIconContainer'><img src='public/file.png'> </div>
-          <div class='docIconContainer'><img src='public/file.png'> </div>
-          <div class='docIconContainer'><img src='public/file.png'> </div>
+          <div class='docIconContainer'><img src='public/file.png'><p class="teamText">White Paper</p> </div>
+          <div class='docIconContainer'><img src='public/file.png'><p class="teamText">Industrial Proving Method</p> </div>
+          <div class='docIconContainer'><img src='public/file.png'><p class="teamText">Tokenomics Model</p> </div>
         </div>
         </div>
         <div id='zeroKnowledge'>
@@ -109,10 +109,9 @@
             <div class='teamCard'><img class='teamImg' src='public/ks.png'><p class='teamName'>Kael Shipman</p><p class="teamText"><span>Lead Developer</span><br />12+ years experience</p></div>
             <div class='teamCard'><img class='teamImg' src='public/tam.png'><p class='teamName'>Thomas McInerney</p><p class="teamText"><span>Head of Blockchain Development</span><br /> Northwestern University</p></div>
             <div class='teamCard'><img class='teamImg' src='public/is.png'><p class='teamName'>Ian Shipman</p><p class="teamText"><span>PhD Mathematician</span><br /> University of Chicago</p></div>
-            <div class='teamCard'><img class='teamImg' src='public/as.png'><p class='teamName'> Andrew Steinwold</p><p class="teamText"><span>Head of Partnerships</span></p></div>
+            <div class='teamCard'><img class='teamImg' src='public/as.png'><p class='teamName'> Andrew Steinwold</p><p class="teamText"><span>Head of Partnerships</span><br/>Crypto Investor Since 2013</p></div>
             <div class='teamCard'><img class='teamImg' src='public/rc.png'><p class='teamName'> Ray Coti</p><p class="teamText"><span>Full Stack Developer</span><br/>Connecticut College </p></div>
           </div>
-        </div>
           <div id='investors'>
 
 
@@ -126,21 +125,26 @@
             <div><img class='investorLogo' src='public/m25.png'></div>
           </div>
         </div>
+        </div>
         <div id='futureOfFinance'>
           <img id='gradientEnd' src="public/gradienttop.png">
+          <p id='fof'>Ready for the future of finance?
+            Join our slack for updates.
+            <button class='slackButton' onclick='openSlack()' target='_blank'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
+          </p>
         </div>
 
         </div>
 
-        <p id='fof'>Ready for the future of finance?
-          Join our slack for updates.
-          <button class='slackButton' href='https://slack.openfinance.io' target='_blank'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
-        </p>
       </div>
     </div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script>
+      function openSlack() {
+        var win = window.open('https://ofn-slack.herokuapp.com/', '_blank');
+        win.focus();
+      };
       function changeUseCase(useCase){
         var newCase = '';
         switch(useCase){
