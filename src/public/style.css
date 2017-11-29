@@ -203,8 +203,12 @@ canvas{
   justify-content: space-around;
   align-items: flex-end;
   width: 100%;
-  pointer-events: none;
+  pointer-events: auto;
   height: 35vh;
+}
+.docformsubmit {
+  height: 100%;
+  width: 100%;
 }
 
 .docIconContainer {
@@ -365,6 +369,15 @@ canvas{
   z-index: 1;
 }
 
+.docText {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #FFFFFF;
+  letter-spacing: 0.39px;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
 .teamCard {
   padding-left: 3.5vw;
   padding-right: 3.5vw;

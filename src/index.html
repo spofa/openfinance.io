@@ -4,6 +4,16 @@
     <title>Open Finance Network</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="public/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110466584-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110466584-1');
+</script>
+
   </head>
   <body>
     <div id='particles-js'>
@@ -57,9 +67,9 @@
         <div id='docs'>
         <span ><p id='Documentation'class='sectionLabel'>Our Documentation.</p></span>
           <div id='documentation'>
-          <div class='docIconContainer'><img src='public/file.png'><p class="teamText">White Paper</p> </div>
-          <div class='docIconContainer'><img src='public/file.png'><p class="teamText">Industrial Proving Method</p> </div>
-          <div class='docIconContainer'><img src='public/file.png'><p class="teamText">Tokenomics Model</p> </div>
+          <a href="public/tam.png" target='_blank'><div class='docIconContainer'><img src='public/file.png'><p class="docText">White Paper</p> </div></a>
+          <a href="public/tam.png" target='_blank'><div class='docIconContainer'><img src='public/file.png'><p class="docText">Industrial Proving Method</p> </div></a>
+          <a href='public/tam.png' target='_blank'><div class='docIconContainer'><img src='public/file.png'><p class="docText">Tokenomics Model</p> </div></a>
         </div>
         </div>
         <div id='zeroKnowledge'>
@@ -141,11 +151,11 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script>
-      function openSlack() {
+       openSlack = () => {
         var win = window.open('https://ofn-slack.herokuapp.com/', '_blank');
         win.focus();
       };
-      function changeUseCase(useCase){
+       changeUseCase = (useCase)=>{
         var newCase = '';
         switch(useCase){
           case 'passport':
@@ -170,6 +180,17 @@
           newCase = 'The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.';
         }
         document.getElementById("useCaseText").innerHTML = newCase;
+      }
+      openFile = (type)=>{
+        if(type= 'wp'){
+
+        }
+        if(type= 'znp'){
+
+        }
+        if(type= 'tkn'){
+
+        }
       }
     </script>
   </body>
