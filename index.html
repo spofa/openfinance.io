@@ -4,6 +4,7 @@
     <title>Open Finance Network</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="public/style.css">
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id='particles-js'>
@@ -11,14 +12,16 @@
       <div id='menu'>
         <div id='leftmenu'>Open Finance</div>
         <div id='rightmenu'>
-          <p>Documentation</p>
-          <p>Differentiator</p>
-          <p>Use Cases</p>
-          <p>Roadmap</p>
-          <p>Team</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Proving System</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('differentiator').scrollIntoView();" >Differentiator</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('useCases').scrollIntoView();" >Use Cases</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('timeline').scrollIntoView();" >Roadmap</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('teampage').scrollIntoView();" >Team</p>
         </div>
       </div>
       <div id='main'>
+        <img src="public/gradienttop.png" id='triangleGradient'>
         <div id=wrapper>
         <div id='landing'>
           <div id='maintext'>
@@ -27,56 +30,144 @@
                 for Financial Markets
               </div>
               <div>
-                  <div id='theoretical'>We’re not just theoretical.</div> We allow for cheaper costs, faster transactions, and increase investor protection. Our goal is to make every alt tradable.
+                  <div class='boldedText'>We’re not just theoretical.</div> We allow for cheaper costs, faster transactions, and increase investor protection. Our goal is to make every alt tradable.
+                  <button  href='https://slack.openfinance.io' target='_blank' class='slackButton'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
               </div>
           </div>
           <div id='social'>
-              <p id='stayconnected'>Stay connected with latest updates.<p>
-                <div id='emailform'><p id='emailtext'>Your Email Address.</p><div id='subscribebutton'>Subscribe</div></div>
-                  <p id='stayconnected'>Other ways to connect.<p>
+              <p id='stayconnected'>Stay connected with latest updates.</p>
+                    <div id="emailContainer">
+                        <form action="https://openfinance.us17.list-manage.com/subscribe/post?u=ffcad2eadac9243090ab1afa7&amp;id=9c87e51b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+
+                          <input type="email" value="" name="EMAIL" class="email" id="emailform" placeholder="  Your email address." required>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ffcad2eadac9243090ab1afa7_9c87e51b40" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="subscribebutton" class="button"></div>
+                            </div>
+                        </form>
+                        </div>
+                  <p id='stayconnected'>Other ways to connect.</p>
                     <div id='socialbuttons'>
-                      <img src='public/facebook-logo-button.png' class='socialicon'>
-                      <img src='public/medium.png' class='socialicon'>
-                      <img src='public/reddit-social-logo-character.png' class='socialicon'>
-                      <img src='public/twitter-logo-button.png' class='socialicon'>
-                      <img src='public/email.png' class='socialicon'>
+                      <a href='https://medium.com/@openfinance' target='_blank'><img src='public/medium.png' class='socialicon'>
+                      <a href='' target='_blank'><img src='public/reddit-social-logo-character.png' class='socialicon'>
+                      <a href='https://twitter.com/openfinanceio' target="_blank"><img src='public/twitter-logo-button.png' class='socialicon'></a>
+                      <a href="mailto:thomas.mcinerney@openfinance.io" target="_blank"><img src='public/email.png' class='socialicon'></a>
                     </div>
           </div>
         </div>
         <div id='docs'>
-        <span ><p class='sectionLabel'>Our Documentation.</p></span>
+        <span ><p id='Documentation'class='sectionLabel'>Our Documentation.</p></span>
           <div id='documentation'>
           <div class='docIconContainer'><img src='public/file.png'> </div>
           <div class='docIconContainer'><img src='public/file.png'> </div>
           <div class='docIconContainer'><img src='public/file.png'> </div>
         </div>
         </div>
-        <div id='industry'>
+        <div id='zeroKnowledge'>
+            <span ><p class='sectionLabelDark'>Our Proving System.</p></span>
+            <div id='zeroKwrapper'>
+            <p id='zeroKText'>
+                In order to ensure compliance with regulatory guidelines and investor privacy laws, all sensitive private data is stored on a secure federated sidechain (SFS), which is then hashed back to the public chain to provide immutability to the SFS.  All data transmitted via the OFN is encrypted and stored in a hierarchical format, and then organized into a Merkle tree, where each node in the tree contains a hash of its content and a hash of the hashes of its child nodes. The end hash of the root of this tree (commonly referred to as the Merkle Root, or the “root hash”) can then later be used as a validation signature to ensure the private data being referenced has not been tampered or altered in any fashion. The root hash is the value that is ultimately stored on the public blockchain, to remove the risk of private data being leaked.
+            </p>
+            <p>placeholder.</p>
+          </div>
 
+          </div>
+
+        <div id='differentiator'>
+        <div><p class='sectionLabel'>Our Differentiator.</p></div>
+        <div id='industry'>
+          <img id='industryLogo' src='public/Networkgin.png'>
+          <div id='industryText'>
+            <p class='boldedText'>We’re founded by industry veterans.
+            </p>
+            <p>Our team of exchange technologists, securities lawyers, and trading veterans brings liquidity to investors currently locked into these historically illiquid assets.</p>
+          </div>
+        </div>
         </div>
         <div id='useCases'>
-
+          <div id='useCaseLogo'></div>
+          <div id='useCaseText'>The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.</div>
+          <div id='useCaseButtons'>
+            <p class="sectionLabelDark">Our Use Cases</p>
+            <button onclick='changeUseCase("passport")' class='useButton'>Investor Passport</button>
+            <button onclick='changeUseCase("signature")' class='useButton'>Digital Signature Guarantee</button>
+            <button onclick='changeUseCase("dsp")' class='useButton'>Decentralized Securities Depository</button>
+            <button onclick='changeUseCase("settlement")' class='useButton'>Instant Clearing and Settlement</button>
+            <button onclick='changeUseCase("opensource")' class='useButton'>Open Source</button>
+          </div>
         </div>
         <div id='timeline'>
-
+          <p class="sectionLabel">Our Roadmap.</p>
+          <img src='public/Timeline.png'>
         </div>
         <div id='teampage'>
+          <p id='ourTeam'class="sectionLabelDark">Our Team.</p>
           <div id='team'>
-
+            <div class='teamCard'><img class='teamImg' src='public/jmh.png'><p class='teamName'>Juan M. Hernadez</p><p class="teamText"><span>Founder, Lead Architect</span><br /><span> Kellogg School of Business</span></p></div>
+            <div class='teamCard'><img class='teamImg' src='public/jf.png'><p class='teamName'>Jordan Fishfeld</p><p class="teamText"><span>Founder, Head of Sales</span><br /> U Miami JD/MBA</p></div>
+            <div class='teamCard'><img class='teamImg' src='public/db.png'><p class='teamName'>Dan Breen</p><p class="teamText"><span>Head of Operations</span><br /> 25+ Years Trading</p></div>
+            <div class='teamCard'><img class='teamImg' src='public/ks.png'><p class='teamName'>Kael Shipman</p><p class="teamText"><span>Lead Developer</span><br />12+ years experience</p></div>
+            <div class='teamCard'><img class='teamImg' src='public/tam.png'><p class='teamName'>Thomas McInerney</p><p class="teamText"><span>Head of Blockchain Development</span><br /> Northwestern University</p></div>
+            <div class='teamCard'><img class='teamImg' src='public/is.png'><p class='teamName'>Ian Shipman</p><p class="teamText"><span>PhD Mathematician</span><br /> University of Chicago</p></div>
+            <div class='teamCard'><img class='teamImg' src='public/as.png'><p class='teamName'> Andrew Steinwold</p><p class="teamText"><span>Head of Partnerships</span></p></div>
+            <div class='teamCard'><img class='teamImg' src='public/rc.png'><p class='teamName'> Ray Coti</p><p class="teamText"><span>Full Stack Developer</span><br/>Connecticut College </p></div>
           </div>
+        </div>
           <div id='investors'>
 
+
           </div>
+          <p id='ourTeam'class="sectionLabelDark">Our Investors.</p>
           <div id='support'>
-
+            <div><img class='investorLogo' src='public/westloop.png'></div>
+            <div><img class='investorLogo' src='public/sixthirty.png'></div>
+            <div><img class='investorLogo' src='public/inovia.png'></div>
+            <div><img class='investorLogo' src='public/hbsangels.png'></div>
+            <div><img class='investorLogo' src='public/m25.png'></div>
           </div>
         </div>
+        <div id='futureOfFinance'>
+          <img id='gradientEnd' src="public/gradienttop.png">
+        </div>
 
         </div>
-        <img src="public/gradienttop.png" id='triangleGradient'>
+
+        <p id='fof'>Ready for the future of finance?
+          Join our slack for updates.
+          <button class='slackButton' href='https://slack.openfinance.io' target='_blank'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
+        </p>
       </div>
     </div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+    <script>
+      function changeUseCase(useCase){
+        var newCase = '';
+        switch(useCase){
+          case 'passport':
+          newCase = 'The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.'
+          break;
+
+          case 'signature':
+          newCase = ''
+          break;
+
+          case 'dsp':
+          newCase = 'The global registry of qualified entities and securities creates a mechanism for a decentralized securities depository that provides a public governance model to ensure maximum transparency and protection for investors. The distributed ledger acts as the “golden source” to synchronize (and protect) data across multiple stakeholders in standard securities transactions. This provides a “trustless” clearing & settlement process that is instantly available to all market participants and removes the single points of failure/fraud.'
+          break;
+
+          case 'settlement':
+          newCase = 'The Open Finance Network is a protocol and framework for the processing of securities transactions, initially focused on the clearing & settlement process but intended for the entire securities lifecycle. This provides a common framework and communication protocol by which to standardize alternative assets and provide interoperability between the data silos of market participants. The system has several integration routes that can be leveraged across the various intermediaries in the industry in a transparent, secure and efficient method. Above all, the system allow for investors to gain access to a wider universe of alternative assets, have full transparency to the entirety of their portfolio and the investment process, and benefit from the efficiencies, cost reduction and flexibility in the securities transaction management process.'
+          break;
+          case 'opensource':
+          newCase = 'CFX Markets, already a trusted player in the alternative asset industry since 2014, is leveraging the advancements in distributed ledger technology to build on its success to date to introduce an "open source" version of its own internal clearing & settlement process. The key innovation enabled by this blockchain-based approach is the creation of a decentralized securities depository mechanism by which data interoperability can be leveraged across the various intermediaries in the industry in a transparent, secure and efficient method.'
+          break;
+          default:
+          newCase = 'The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.';
+        }
+        document.getElementById("useCaseText").innerHTML = newCase;
+      }
+    </script>
   </body>
 </html>
