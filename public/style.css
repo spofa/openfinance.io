@@ -149,6 +149,7 @@ canvas{
   background: #FFFFFF;
   border: 1px solid #010346;
   border-radius: 100px;
+  font-size: 1rem;
 }
 #emailtext {
   font-family: 'Barlow';
@@ -344,7 +345,7 @@ canvas{
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 .teamImg {
