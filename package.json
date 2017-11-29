@@ -1,10 +1,18 @@
 {
-  "name": "site",
+  "name": "ofn_site",
   "version": "1.0.0",
   "description": "the landing site for the Open Finance Network",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node ./srv/main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "fs-misc": "^2.0.0",
+    "http": "^0.0.0",
+    "volleyball": "^1.4.1"
   },
   "repository": {
     "type": "git",
@@ -18,7 +26,7 @@
     "solidity"
   ],
   "author": "T. McInerney",
-  "license": "UNLICENSED",
+  "license": "none",
   "bugs": {
     "url": "https://github.com/cfxmarkets/OFN_site/issues"
   },

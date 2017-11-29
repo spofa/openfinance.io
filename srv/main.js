@@ -12,10 +12,10 @@ var createApp = () => {
 }
 
 var start = () => {
-    var PORT = process.env.PORT || 5185;
+    var PORT = process.env.PORT || 1741;
 
     server.listen(PORT, ()=>{
-        console.log('ethOne Ethereum Kovan Server started on port:', PORT)
+        console.log('server started on:', PORT)
     })
 }
 //insert DB first and return promise (do we want db to record eth processes for now? testing )
