@@ -12,6 +12,7 @@
     "express": "^4.16.1",
     "fs-misc": "^2.0.0",
     "http": "^0.0.0",
+    "newrelic": "^2.4.1",
     "volleyball": "^1.4.1"
   },
   "repository": {
