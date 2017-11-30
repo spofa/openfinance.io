@@ -4,6 +4,11 @@
     <title>Open Finance Network</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
     <link rel="stylesheet" media="screen" href="public/style.css">
+    <script src="scroll-entrance.js"></script>
+    <style>
+      /* Ensure elements are hidden while ScrollEntrance is loading */
+      [data-entrance] { visibility: hidden; }
+    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110466584-1"></script>
 <script>
@@ -33,7 +38,7 @@
         <img src="public/gradienttop.png" id='triangleGradient'>
         <div id=wrapper>
         <div id='landing'>
-          <div id='maintext'>
+          <div id='maintext' data-entrance="from-right">
             <div id='headertext'><div id='ofntext'>Open Finance</div>
                 is the Operating System
                 for Financial Markets
@@ -43,7 +48,7 @@
                   <button  href='https://slack.openfinance.io' onclick='openSlack()' class='slackButton'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
               </div>
           </div>
-          <div id='social'>
+          <div id='social' data-entrance="from-left">
               <p id='stayconnected'>Stay connected with latest updates.</p>
                     <div id="emailContainer">
                         <form action="https://openfinance.us17.list-manage.com/subscribe/post?u=ffcad2eadac9243090ab1afa7&amp;id=9c87e51b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -74,7 +79,7 @@
         </div>
         <div id='zeroKnowledge'>
             <span ><p class='sectionLabelDark'>Our Proving System.</p></span>
-            <div id='zeroKwrapper'>
+            <div id='zeroKwrapper' data-entrance="from-left">
             <p id='zeroKText'>
                 In order to ensure compliance with regulatory guidelines and investor privacy laws, all sensitive private data is stored on a secure federated sidechain (SFS), which is then hashed back to the public chain to provide immutability to the SFS.  All data transmitted via the OFN is encrypted and stored in a hierarchical format, and then organized into a Merkle tree, where each node in the tree contains a hash of its content and a hash of the hashes of its child nodes. The end hash of the root of this tree (commonly referred to as the Merkle Root, or the “root hash”) can then later be used as a validation signature to ensure the private data being referenced has not been tampered or altered in any fashion. The root hash is the value that is ultimately stored on the public blockchain, to remove the risk of private data being leaked.
             </p>
@@ -85,8 +90,8 @@
         <div id='differentiator'>
         <div><p class='sectionLabel'>Our Differentiator.</p></div>
         <div id='industry'>
-          <img id='industryLogo' src='public/Networkgin.png'>
-          <div id='industryText'>
+          <img id='industryLogo' data-entrance="from-left" src='public/Networkgin.png'>
+          <div id='industryText' data-entrance="from-right">
             <p class='boldedText'>We’re founded by industry veterans.
             </p>
             <p>Our team of exchange technologists, securities lawyers, and trading veterans brings liquidity to investors currently locked into these historically illiquid assets.</p>
@@ -94,8 +99,8 @@
         </div>
         </div>
         <div id='useCases'>
-          <div id='useCaseLogo'><img id='useCasePic' src='public/passport.png'></div>
-          <div id='useCaseText'>The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.</div>
+          <div id='useCaseLogo' data-entrance="from-left"><img id='useCasePic' src='public/passport.png'></div>
+          <div id='useCaseText' data-entrance="from-left">The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.</div>
           <div id='useCaseButtons'>
             <p class="sectionLabelDark">Our Use Cases</p>
             <button onclick='changeUseCase("passport")' class='useButton'>Investor Passport</button>
@@ -105,13 +110,13 @@
             <button onclick='changeUseCase("opensource")' class='useButton'>Open Source</button>
           </div>
         </div>
-        <div id='timeline'>
+        <div id='timeline' >
           <p class="sectionLabel">Our Roadmap.</p>
-          <img src='public/Timeline.png'>
+          <img src='public/Timeline.png' data-entrance="from-bottom">
         </div>
-        <div id='teampage'>
+        <div id='teampage' >
           <p id='ourTeam'class="sectionLabelDark">Our Team.</p>
-          <div id='team'>
+          <div id='team' data-entrance="from-top">
             <div class='teamCard'><img class='teamImg' src='public/jmh.png'><p class='teamName'>Juan M. Hernadez</p><p class="teamText"><span>Founder, Lead Architect</span><br /><span> Kellogg School of Business</span></p></div>
             <div class='teamCard'><img class='teamImg' src='public/jf.png'><p class='teamName'>Jordan Fishfeld</p><p class="teamText"><span>Founder, Head of Sales</span><br /> U Miami JD/MBA</p></div>
             <div class='teamCard'><img class='teamImg' src='public/db.png'><p class='teamName'>Dan Breen</p><p class="teamText"><span>Head of Operations</span><br /> 25+ Years Trading</p></div>

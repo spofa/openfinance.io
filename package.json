@@ -13,6 +13,7 @@
     "fs-misc": "^2.0.0",
     "http": "^0.0.0",
     "newrelic": "^2.4.1",
+    "scroll-entrance": "^1.0.0",
     "volleyball": "^1.4.1"
   },
   "repository": {
