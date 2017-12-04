@@ -461,7 +461,11 @@ a{
 
 #zeroKwrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
+#proofPic {
+  max-height: 45vh;
+  max-width: 33vw;
+}
