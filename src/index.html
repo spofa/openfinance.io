@@ -3,6 +3,7 @@
   <head>
     <title>Open Finance Network</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
     <link rel="stylesheet" media="screen" href="public/style.css">
     <script src="scroll-entrance.js"></script>
     <style>
@@ -24,7 +25,7 @@
     <div id='particles-js'>
 
       <div id='menu'>
-        <div id='leftmenu'>Open Finance</div>
+        <div id='leftmenu'><img id='ofnLogo' src='public/ofnLogo.png'>Open Finance</div>
         <div id='rightmenu'>
           <p class='sliding-middle-out' onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</p>
           <p class='sliding-middle-out' onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Proving System</p>
@@ -172,7 +173,7 @@
           case 'signature':
           newPic = 'public/dsg.png';
           newCase = 'The current industry standard involves physically stamping documents and mailing them to the involved parties. This is incredibly inefficient, and draws out transaction times to unnecessary lengths.  OFN eliminates the need for the physical stamp by signing each transaction, and providing an instant, and secure signature guarantee. ';
-          
+
           break;
 
           case 'dsp':

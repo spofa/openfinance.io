@@ -36,7 +36,10 @@
 
 }
 #menu {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Barlow',sans-serif;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
   color: #FFFFFF;
   display: flex;
   justify-content: space-between;
@@ -50,6 +53,8 @@
 
 #leftmenu {
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
 
 #social {
@@ -468,4 +473,9 @@ a{
 #proofPic {
   max-height: 45vh;
   max-width: 33vw;
+}
+
+#ofnLogo {
+  max-height: 65px;
+  max-width: 65px;
 }
