@@ -279,14 +279,14 @@ canvas{
 .sectionLabel {
   text-align: center;
   font-family: 'Barlow';
-  font-size: 1rem;
+  font-size: .85rem;
   color: white;
 }
 
 .sectionLabelDark {
   text-align: center;
   font-family: 'Barlow';
-  font-size: 1rem;
+  font-size: .85rem;
   color: #030560;
 }
 
