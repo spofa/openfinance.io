@@ -231,14 +231,18 @@ canvas{
 #docs {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  /* justify-content: space-around; */
+  /* vertical-align: middle; */
+  /* align-items: center; */
   width: 100%;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
+  height: 600px;
+  /* margin: 10vh 0; */
+  /* margin-bottom: 10vh; */
+  margin-top: 15vh;
 }
+
 #documentation {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: flex-end;
   width: 100%;
@@ -472,17 +476,20 @@ a{
 #zeroKnowledge{
   height: 50vh;
   width: 100%;
-  background-color: #F0F0F0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
+#zeroKnowledge > *, #zeroKnowledge > * > * {
+  color: #fff !important; 
+}
+
 #zeroKText {
   font-family: "Barlow";
   font-size: 1rem;
-  color: #010346;
+  color: #fff;
   letter-spacing: 0.39px;
   margin: 3rem;
   width: 40%;
