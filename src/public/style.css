@@ -245,9 +245,10 @@ canvas{
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width: 100%;
+  width: 85%;
   pointer-events: auto;
-  height: 35vh;
+ /*height: 35vh; */
+  margin: 5% auto 0 auto;
 }
 .docformsubmit {
   height: 100%;
@@ -257,11 +258,13 @@ canvas{
 .docIconContainer {
   background: #030560;
   box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
-  height: 20vh;
-  width: 18vw;
+  height: 40vh;
+  /* padding: 10% 15%; */
+  width: 19vw;
   display: flex;
+  vertical-align: middle;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
