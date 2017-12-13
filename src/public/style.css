@@ -3,6 +3,7 @@
   z-index: 1;
   width: 100%;
   pointer-events: none;
+  left: -1px;
 }
 
 #headertext {
