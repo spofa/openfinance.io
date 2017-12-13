@@ -52,7 +52,7 @@
 #menu {
   font-family: 'Barlow',sans-serif;
   position: absolute;
-  width: 100%;
+  width: 98%;
   z-index: 1;
   color: #FFFFFF;
   display: flex;
