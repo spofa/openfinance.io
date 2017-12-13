@@ -266,7 +266,7 @@ canvas{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 420vh
+  height: 100%;
 }
 
 .sectionLabel {
