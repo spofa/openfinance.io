@@ -7,25 +7,39 @@
 
 #headertext {
   font-family: 'Barlow', sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: #FFFFFF;
   letter-spacing: 0.59px;
+  margin: 10px 0;
 }
 
 #maintext {
   font-family: 'Barlow', sans-serif;
   color: #FFFFFF;
   letter-spacing: 0.33px;
-  width: 50vh;
-  height: 15vh;
+  width: 33vw;
+  height: 30vh;
   font-size: 1rem;
+  font-weight: 200;
 }
+
+#maintext div:nth-of-type(2) {
+  font-size: 25px;
+}
+
 #ofntext {
   font-size: 3rem;
 }
 .boldedText {
   font-family: 'Barlow-Bold', sans-serif;
+  float: left;
 }
+
+.boldedText::after {
+  content: " ";
+  white-space: pre;
+}
+
 #landing {
   display:flex;
   justify-content: space-around;
@@ -89,6 +103,7 @@
   align-items: center;
   margin-top:3vh;
   pointer-events: auto;
+  padding: 5px 10px;
 }
 
 .slackButtonText {
