@@ -3,6 +3,7 @@
   <head>
     <title>Open Finance Network</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
     <link rel="stylesheet" media="screen" href="public/style.css">
     <script src="scroll-entrance.js"></script>
     <style>
@@ -24,7 +25,7 @@
     <div id='particles-js'>
 
       <div id='menu'>
-        <div id='leftmenu'>Open Finance</div>
+        <div id='leftmenu'><img id='ofnLogo' src='public/ofnLogo.png'>Open Finance</div>
         <div id='rightmenu'>
           <p class='sliding-middle-out' onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</p>
           <p class='sliding-middle-out' onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Proving System</p>
@@ -127,6 +128,7 @@
             <div class='teamCard' data-entrance="from-left"><img class='teamImg' src='public/is.png'><p class='teamName'>Ian Shipman</p><p class="teamText"><span>Mathematician</span><br />PhD, University of Chicago</p></div>
             <div class='teamCard' data-entrance="from-right"><img class='teamImg' src='public/as.png'><p class='teamName'> Andrew Steinwold</p><p class="teamText"><span>Head of Partnerships</span><br/>Crypto Investor Since 2013</p></div>
             <div class='teamCard' data-entrance="from-right"><img class='teamImg' src='public/rc.png'><p class='teamName'> Ray Coti</p><p class="teamText"><span>Full Stack Developer</span><br/>Connecticut College </p></div>
+            <div class='teamCard' data-entrance="from-right"><img class='teamImg' src='public/qf.png'><p class='teamName'> Qusai Farraj</p><p class="teamText"><span>Full Stack Developer</span><br/>CS Masters Northeastern Illinois </p></div>
           </div>
           <div id='investors'>
 
@@ -173,7 +175,7 @@
           case 'signature':
           newPic = 'public/dsg.png';
           newCase = 'The current industry standard involves physically stamping documents and mailing them to the involved parties. This is incredibly inefficient, and draws out transaction times to unnecessary lengths.  OFN eliminates the need for the physical stamp by signing each transaction, and providing an instant, and secure signature guarantee. ';
-          
+
           break;
 
           case 'dsp':
