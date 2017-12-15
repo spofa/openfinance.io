@@ -3,42 +3,57 @@
   z-index: 1;
   width: 100%;
   pointer-events: none;
+  left: -1px;
 }
 
 #headertext {
   font-family: 'Barlow', sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   color: #FFFFFF;
   letter-spacing: 0.59px;
+  margin: 10px 0;
 }
 
 #maintext {
   font-family: 'Barlow', sans-serif;
   color: #FFFFFF;
   letter-spacing: 0.33px;
-  width: 40vh;
-  height: 15vh;
+  width: 33vw;
+  height: 30vh;
   font-size: 1rem;
+  font-weight: 200;
 }
+
+#maintext div:nth-of-type(2) {
+  font-size: 25px;
+}
+
 #ofntext {
   font-size: 3rem;
 }
 .boldedText {
   font-family: 'Barlow-Bold', sans-serif;
+  float: left;
 }
+
+.boldedText::after {
+  content: " ";
+  white-space: pre;
+}
+
 #landing {
   display:flex;
   justify-content: space-around;
   align-items: center;
   height: 75vh;
-  width: 100%;
+  width: 90%;
   pointer-events: none;
 
 }
 #menu {
   font-family: 'Barlow',sans-serif;
   position: absolute;
-  width: 100%;
+  width: 98%;
   z-index: 1;
   color: #FFFFFF;
   display: flex;
@@ -62,13 +77,19 @@
   border: 1px solid #979797;
   box-shadow: 0 2px 10px 5px rgba(0,0,0,0.26);
   border-radius: 8px;
-  width: 35vh;
-  height: 25vh;
+  width: 22vw;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   pointer-events: auto;
+  padding: 1%;
+}
+
+#social > * {
+  width: 80%;
+  text-align: center;
 }
 
 #logotext {
@@ -89,6 +110,7 @@
   align-items: center;
   margin-top:3vh;
   pointer-events: auto;
+  padding: 5px 15px;
 }
 
 .slackButtonText {
@@ -125,6 +147,7 @@ canvas{
   width: 100%;
   height:100%;
   vertical-align:top;
+  left: -1px;
 }
 
 #triangleGradient {
@@ -144,12 +167,15 @@ canvas{
 }
 #emailContainer{
   width: 90%;
-  height:15%;
+  height: 15%;
+  margin-bottom: 7.5%;
 }
 
 #emailform {
-  width: 60%;
-  height: 3vh;
+  width: 100%;
+  margin-right: 10px;
+  padding-left: 5px;
+  height: 5vh;
   font-family: 'Barlow';
   background: #FFFFFF;
   border: 1px solid #010346;
@@ -171,7 +197,7 @@ canvas{
 #subscribebutton {
   background: #010346;
   border-radius: 100px;
-  height: 100%;
+  height: 5vh;
   width:100%;
   font-family: 'Barlow';
   font-size: 1rem;
@@ -207,19 +233,24 @@ canvas{
 #docs {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  /* justify-content: space-around; */
+  /* vertical-align: middle; */
+  /* align-items: center; */
   width: 100%;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
+  height: 600px;
+  /* margin: 10vh 0; */
+  /* margin-bottom: 10vh; */
+  margin-top: 15vh;
 }
+
 #documentation {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width: 100%;
+  width: 85%;
   pointer-events: auto;
-  height: 35vh;
+ /*height: 35vh; */
+  margin: 5% auto 0 auto;
 }
 .docformsubmit {
   height: 100%;
@@ -229,11 +260,13 @@ canvas{
 .docIconContainer {
   background: #030560;
   box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
-  height: 20vh;
-  width: 18vw;
+  height: 40vh;
+  /* padding: 10% 15%; */
+  width: 19vw;
   display: flex;
+  vertical-align: middle;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -242,20 +275,20 @@ canvas{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 420vh
+  height: 100%;
 }
 
 .sectionLabel {
   text-align: center;
   font-family: 'Barlow';
-  font-size: 1rem;
+  font-size: .85rem;
   color: white;
 }
 
 .sectionLabelDark {
   text-align: center;
   font-family: 'Barlow';
-  font-size: 1rem;
+  font-size: .85rem;
   color: #030560;
 }
 
@@ -267,14 +300,35 @@ canvas{
 
 }
 #differentiator {
-  height: 60vh;
+  height: 600px;
   padding-top: 10vh;
+  background: #00035a; /* Old browsers */
+  background: -moz-linear-gradient(top, #00035a 0%, #00052b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00035a 0%,#00052b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00035a 0%,#00052b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00035a', endColorstr='#00052b',GradientType=0 ); /*
+  IE6-9 */
+  width: 100vw;
+}
+
+#differentiator > * {
+  width: 85%;
+  margin: 0 auto;
 }
 
 #industryText {
-  width: 25%;
+  width: 27%;
   color: white;
   font-family: 'Barlow';
+}
+
+#industryText .boldedText,
+#industryText p {
+  float: none;
+  margin: 0 !important;
+  font-weight: 100;
+  font-size: 1rem;
+/*   line-height: 1.5rem; */
 }
 
 #useCases{
@@ -446,19 +500,23 @@ a{
 }
 
 #zeroKnowledge{
-  height: 50vh;
-  width: 100%;
-  background-color: #F0F0F0;
+  height: 55vh;
+  width: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+/*   justify-content: space-around; */
   align-items: center;
+}
+
+#zeroKnowledge > *, #zeroKnowledge > * > * {
+  color: #fff !important;
 }
 
 #zeroKText {
   font-family: "Barlow";
   font-size: 1rem;
-  color: #010346;
+  font-weight: 100;
+  color: #fff;
   letter-spacing: 0.39px;
   margin: 3rem;
   width: 40%;
