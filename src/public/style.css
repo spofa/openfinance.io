@@ -394,7 +394,8 @@ canvas{
 }
 
 #teampage {
-  height: 110vh;
+  height: 1200px;
+  padding: 2.5% 0 7.5% 0;
   width: 100%;
   background-color: #fefefe;
   display: flex;
@@ -434,7 +435,7 @@ canvas{
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  width: 90%;
+  width: 80%;
 }
 
 .teamImg {
@@ -453,7 +454,7 @@ canvas{
 }
 
 a{
-  text-decoration:  none;
+  text-decoration:  none; 
 }
 
 .docText {
@@ -467,8 +468,12 @@ a{
   margin-bottom: 2rem;
 }
 .teamCard {
+/*
   padding-left: 3.5vw;
   padding-right: 3.5vw;
+*/
+  width: 33.33%;
+  padding: 2.5% 0;
   display: flex;
   align-items: center;
   justify-content: center;
