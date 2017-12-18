@@ -2,6 +2,8 @@
 var path = require('path');
 var express = require('express');
 var app = express();
+var httpsRedirect = require('express-https-redirect');
+app.use('/', httpsRedirect());
 module.exports = app;
 
 // Pass our express application pipeline into the configuration
@@ -28,7 +30,7 @@ app.use(function (req, res, next) {
     }
 
 });
-app.get('*', function(req, res) {  
+app.get('*', function(req, res) {
     res.redirect('https://' + req.headers.host + req.url);
 
     // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
