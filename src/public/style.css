@@ -326,8 +326,8 @@ canvas{
 #industryText p {
   float: none;
   margin: 0 !important;
-  font-weight: 100;
-  font-size: 1rem;
+  font-weight: 200;
+  font-size: 1.25rem;
 /*   line-height: 1.5rem; */
 }
 
@@ -537,7 +537,7 @@ a{
 
 #zeroKText {
   font-family: "Barlow";
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 100;
   color: #fff;
   letter-spacing: 0.39px;
