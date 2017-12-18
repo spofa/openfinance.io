@@ -394,7 +394,7 @@ canvas{
 }
 
 #teampage {
-  height: 1500px;
+  height: 1700px;
   padding: 2.5% 0 7.5% 0;
   width: 100%;
   background-color: #fefefe;
@@ -436,6 +436,7 @@ canvas{
   justify-content: space-around;
   text-align: center;
   width: 80%;
+  margin-bottom: 10vh;
 }
 
 .teamImg {
@@ -517,6 +518,11 @@ a{
   justify-content: space-around;
   width: 100%
 }
+#ourInvestors {
+  padding-top: 20vh;
+}
+
+
 .investorLogo {
   max-height: 10vh;
   max-width: 12vw;
