@@ -396,7 +396,7 @@ canvas{
 #teampage {
   height: 110vh;
   width: 100%;
-  background-color: #F0F0F0;
+  background-color: #fefefe;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
