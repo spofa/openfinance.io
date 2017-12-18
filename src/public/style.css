@@ -221,8 +221,8 @@ canvas{
 }
 
 #useCaseLogo{
-  max-width: 30%;
-  max-height: 80%;
+  max-width: 35%;
+  max-height: 45%;
 }
 
 #useCasePic{
@@ -326,14 +326,15 @@ canvas{
 #industryText p {
   float: none;
   margin: 0 !important;
-  font-weight: 100;
-  font-size: 1rem;
+  font-weight: 200;
+  font-size: 1.25rem;
 /*   line-height: 1.5rem; */
 }
 
 #useCases{
-  height: 60vh;
-  width: 100%;
+  height: 600px;
+  width: 85%;
+  padding: 0 7.5%;
   background-color: #F0F0F0;
   display: flex;
   justify-content: space-around;
@@ -342,7 +343,7 @@ canvas{
 }
 
 #useCaseText{
-  width: 25%;
+  width: 30%;
   color: #010346;
   font-family: 'Barlow';
 }
@@ -351,12 +352,17 @@ canvas{
 #useCaseButtons {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 70%;
+  justify-content: top;
+  align-items: left;
+  height: 50%;
   padding: 1rem;
 }
 
+#useCaseButtons .sectionLabelDark {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10%;
+}
 
 
 .useButton {
@@ -365,24 +371,33 @@ canvas{
   border-radius: 100px;
   color: #010346 100%;
   font-family: 'Barlow';
-  padding: .5rem;
-  min-width: 100%;
+  padding: .5rem 1.3rem;
+  text-align: left;
+  /* min-width: 100%; */
+  font-size: 1rem;
+  justify-content: left;
+  margin: 3.5% 0;
 }
 
 #timeline{
-  height: 40vh;
+  height: 500px;
   width: 100%;
-  background: linear-gradient(#010346 100%, #00035E 100%);
+  /* background: linear-gradient(#010346 100%, #00035E 100%); */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+#timeline .sectionLabel {
+  margin-bottom: 5%;
+}
+
 #teampage {
-  height: 110vh;
+  height: 1500px;
+  padding: 2.5% 0 7.5% 0;
   width: 100%;
-  background-color: #F0F0F0;
+  background-color: #fefefe;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -391,8 +406,8 @@ canvas{
 }
 
 #futureOfFinance {
-  width:100%;
-  height: 50vh;
+  width: 100%;
+  height: 500px;
 }
 
 #gradientEnd{
@@ -404,15 +419,15 @@ canvas{
 }
 
 #fof{
-  width: 22%;
+  width: 30%;
   font-family: 'Barlow';
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #FFFFFF;
   letter-spacing: 0.39px;
   z-index: 2;
   position: absolute;
-  bottom: 200px;
-  left: 100px;
+  bottom: 225px;
+  left: 150px;
 }
 
 #team{
@@ -420,20 +435,24 @@ canvas{
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  width: 90%;
+  width: 80%;
 }
 
 .teamImg {
-  height: 14vh;
-  width: 12vw;
-  max-width: 135px;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
   border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
+  box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
 }
 
 .teamText {
   font-family: "Barlow";
   font-size: 1rem;
   color: #010346;
+  margin: 1% 0;
   letter-spacing: 0.39px;
   z-index: 1;
 }
@@ -453,8 +472,12 @@ a{
   margin-bottom: 2rem;
 }
 .teamCard {
+/*
   padding-left: 3.5vw;
   padding-right: 3.5vw;
+*/
+  width: 33.33%;
+  padding: 2.5% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -463,7 +486,7 @@ a{
 
 .teamName {
   font-family: "Barlow";
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #010346;
   letter-spacing: 0.39px;
   margin:0;
@@ -514,11 +537,11 @@ a{
 
 #zeroKText {
   font-family: "Barlow";
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 100;
   color: #fff;
   letter-spacing: 0.39px;
-  margin: 3rem;
+/*   margin: 3rem; */
   width: 40%;
 }
 

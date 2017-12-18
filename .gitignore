@@ -63,3 +63,5 @@ typings/
 #todos
 todo.js
 newrelic.js
+
+.DS_Store
