@@ -419,15 +419,15 @@ canvas{
 }
 
 #fof{
-  width: 22%;
+  width: 30%;
   font-family: 'Barlow';
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #FFFFFF;
   letter-spacing: 0.39px;
   z-index: 2;
   position: absolute;
-  bottom: 200px;
-  left: 100px;
+  bottom: 225px;
+  left: 150px;
 }
 
 #team{
