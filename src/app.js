@@ -16,14 +16,14 @@ particlesJS('particles-js',
 {
   "particles": {
     "number": {
-      "value": 200,
+      "value": 400,
       "density": {
         "enable": true,
-        "value_area": 1420.4657549380909
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#fff"
     },
     "shape": {
       "type": "circle",
@@ -32,7 +32,7 @@ particlesJS('particles-js',
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -42,7 +42,7 @@ particlesJS('particles-js',
     },
     "opacity": {
       "value": 0.5,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -51,7 +51,7 @@ particlesJS('particles-js',
       }
     },
     "size": {
-      "value": 2,
+      "value": 10,
       "random": true,
       "anim": {
         "enable": false,
@@ -61,17 +61,17 @@ particlesJS('particles-js',
       }
     },
     "line_linked": {
-      "enable": true,
-      "distance": 100,
+      "enable": false,
+      "distance": 500,
       "color": "#ffffff",
       "opacity": 0.4,
-      "width": 1
+      "width": 2
     },
     "move": {
       "enable": true,
-      "speed": 3,
-      "direction": "none",
-      "random": true,
+      "speed": 6,
+      "direction": "bottom",
+      "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -86,12 +86,12 @@ particlesJS('particles-js',
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "grab"
+        "enable": true,
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -99,14 +99,14 @@ particlesJS('particles-js',
       "grab": {
         "distance": 400,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.5
         }
       },
       "bubble": {
         "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
+        "size": 4,
+        "duration": 0.3,
+        "opacity": 1,
         "speed": 3
       },
       "repulse": {
