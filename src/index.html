@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Open Finance Network</title>
-    <meta name="description=" content="Trading real assets on blockchain.The operating system for financial transactions.We streamline the trading, clearing & settlement process for alternative assets worldwide.">
+    <meta name="description=" content="Trading real assets on blockchain. Alternative assets redefined. We're transforming the trading, clearing & settlement process for alternative assets worldwide.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
@@ -30,7 +30,7 @@
         <div id='leftmenu'><img id='ofnLogo' src='public/ofnLogo.png'>Open Finance Network</div>
         <div id='rightmenu'>
           <p class='sliding-middle-out' onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</p>
-          <p class='sliding-middle-out' onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Proving System</p>
+          <p class='sliding-middle-out' onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Tokenized Trading</p>
           <p class='sliding-middle-out' onClick="document.getElementById('differentiator').scrollIntoView();" >Differentiator</p>
           <p class='sliding-middle-out' onClick="document.getElementById('useCases').scrollIntoView();" >Use Cases</p>
           <p class='sliding-middle-out' onClick="document.getElementById('timeline').scrollIntoView();" >Roadmap</p>
@@ -46,7 +46,7 @@
               Trading real assets on blockchain
               </div>
               <div>
-                  <div class='boldedText'>The operating system for financial transactions.</div> We streamline the trading, clearing & settlement process for alternative assets worldwide.
+                  <div class='boldedText'>Alternative assets redefined.</div> We're transforming the trading, clearing & settlement process for alts worldwide
                   <button  href='https://slack.openfinance.io' onclick='openSlack()' class='slackButton'>Join us on Slack <img src='public/Slack-App-app-logo-png.png'></button>
               </div>
           </div>
@@ -70,6 +70,7 @@
                       <a href='https://twitter.com/openfinanceio' target="_blank"><img src='public/twitter-logo-button.png' class='socialicon'></a>
                       <a href="mailto:info@openfinance.io" target="_blank"><img src='public/email.png' class='socialicon'></a>
                     </div>
+                  <p id='stayconnected'>Built by CFX Labs</p>				
           </div>
         </div>
         <div id='docs'>
@@ -81,10 +82,15 @@
         </div>
         </div>
         <div id='zeroKnowledge'>
-            <span ><p class='sectionLabelDark'>Our Proving System.</p></span>
+            <span ><p class='sectionLabelDark'>Tokenized Trading.</p></span>
             <div id='zeroKwrapper'>
             <p id='zeroKText'  data-entrance="from-left">
-              In order to comply with regulatory guidelines and maintain investor privacy, all sensitive data must be stored on our secure federated sidechain.  Yet without an additional mechanism, users have no guarantee that we are preserving the integrity of this data.  One of our first product in a series of innovations to resolve the tension between privacy and transparency is a system to establish data checkpoints.  Periodically, we will make a fingerprint of our data and publish it for anyone to see and save.  It is not possible to recover any of the sensitive data from this fingerprint, but it is possible in the event of an audit to recompute the fingerprint for comparison with a published one.            </p>
+              <strong>Common protocol. Data Standardization. Asset Interoperability.</strong> With the emergence of "crypto" alt assets and the industry shift towards a ledger based book-entry process, the need for standardization and interoperability with alternative assets is greater than ever.
+
+Our system is designed for traditional alternative assets and token-based securities, and allows for a streamlined compliant process from issuance to secondary market trading.
+
+Direct integrations with financial institutions such as broker-dealers, custodians and transfer agents provide a bridge to the on-chain crypto capital markets.
+</p>
             <img src='public/proofpic.png' id='proofPic' data-entrance="from-right">
           </div>
 
@@ -97,19 +103,19 @@
           <div id='industryText' data-entrance="from-right">
             <p class='boldedText'>U.S. based. Venture backed. Founded by industry veterans.
             </p>
-            <p>We work with the leading brokerage houses, custodians, transfer agents and banks. Since 2014, our team of exchange technologists, securities lawyers, and trading veterans has been innovating in alternative assets and pioneering new technology in the industry.</p>
+            <p>We work with the leading brokerage houses, custodians, transfer agents and banks. Since 2014, our team of exchange technologists, securities lawyers, and trading veterans has been innovating in alternative assets and pioneering new technology in the industry. Our goal is to bring efficiency, transparency, and interoperability to a fragmented marketplace.</p>
           </div>
         </div>
         </div>
         <div id='useCases'>
-          <div id='useCaseLogo' data-entrance="from-left"><img id='useCasePic' src='public/passport2.png'></div>
-          <div id='useCaseText' data-entrance="from-left">The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.</div>
+          <div id='useCaseLogo' data-entrance="from-left"><img id='useCasePic' src='public/blocks.png'></div>
+          <div id='useCaseText' data-entrance="from-left">The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.</div>
           <div id='useCaseButtons'>
             <p class="sectionLabelDark">Our Use Cases</p>
             <button onclick='changeUseCase("passport")' class='useButton'>Investor Passport</button>
-            <button onclick='changeUseCase("settlement")' class='useButton'>Instant Clearing and Settlement</button>
-            <button onclick='changeUseCase("dsp")' class='useButton'>Decentralized Securities Depository</button>
-            <button onclick='changeUseCase("signature")' class='useButton'>Digital Signature Guarantee</button>
+            <button onclick='changeUseCase("registry")' class='useButton'>Global Asset Registry</button>
+            <button onclick='changeUseCase("dsd")' class='useButton'>Decentralized Securities Depository</button>
+            <button onclick='changeUseCase("tokenization")' class='useButton'>Asset Tokenization</button>
           </div>
         </div>
         <div id='timeline' >
@@ -168,24 +174,24 @@
         let newPic = '';
         switch(useCase){
           case 'passport':
-          newPic = 'public/passport2.png'
-          newCase = 'The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.'
-          break;
-
-          case 'signature':
-          newPic = 'public/dsg.png';
-          newCase = 'The current industry standard involves physically stamping documents and mailing them to the involved parties. This is incredibly inefficient, and draws out transaction times to unnecessary lengths.  OFN eliminates the need for the physical stamp by signing each transaction, and providing an instant, and secure signature guarantee. ';
-
-          break;
-
-          case 'dsp':
           newPic = 'public/blocks.png'
-          newCase = 'The global registry of qualified entities and securities creates a mechanism for a decentralized securities depository that provides a public governance model to ensure maximum transparency and protection for investors. The distributed ledger acts as the “golden source” to synchronize (and protect) data across multiple stakeholders in standard securities transactions. This provides a “trustless” clearing & settlement process that is instantly available to all market participants and removes the single points of failure/fraud.'
+          newCase = 'The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.'
           break;
 
-          case 'settlement':
-          newPic='public/data-flow_quickv1.png'
-          newCase = 'The Open Finance Network is a protocol and framework for the processing of securities transactions, initially focused on the clearing & settlement process but intended for the entire securities lifecycle. This provides a common framework and communication protocol by which to standardize alternative assets and provide interoperability between the data silos of market participants. The system has several integration routes that can be leveraged across the various intermediaries in the industry in a transparent, secure and efficient method. Above all, the system allow for investors to gain access to a wider universe of alternative assets, have full transparency to the entirety of their portfolio and the investment process, and benefit from the efficiencies, cost reduction and flexibility in the securities transaction management process.'
+          case 'tokenization':
+          newPic = 'public/passport2.png';
+          newCase = 'The OFN system is designed for traditional alternative assets and token-based securities, and allows for a streamlined compliant process from issuance to secondary market trading. As the industry shifts towards ledger based book-entry process, issuers can leverage OFN to bridge the gap to on-chain crypto capital markets.';
+
+          break;
+
+          case 'dsd':
+          newPic = 'public/data-flow_quickv1.png'
+          newCase = 'The global registry of qualified entities and securities creates a mechanism for a decentralized securities depository that provides a public governance model to ensure maximum transparency and protection for investors. The distributed ledger acts as the â€œgolden sourceâ€ to synchronize (and protect) data across multiple stakeholders in standard securities transactions. This provides a â€œtrustlessâ€ clearing & settlement process that is instantly available to all market participants and removes the single points of failure/fraud.'
+          break;
+
+          case 'registry':
+          newPic='public/dsg.png'
+          newCase = 'The OFN system contains a public registry of qualified entities and assets on the distributed ledger. Qualified entities include broker-dealers, transfer agents, custodians, escrow agents, fund administrators and registered funding portals. Asset may also be registered with the SEC/EDGAR and that data can be referenced from the OFN as a subset of the Asset data object.'
           break;
 
           case 'opensource':
@@ -194,7 +200,7 @@
           break;
 
           default:
-          newCase = 'The global registry and decentralized securities depository allow for the creation of an Investor Passport to verify an investor’s AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.';
+          newCase = 'The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.';
         }
           document.getElementById("useCasePic").src = newPic;
          document.getElementById("useCaseText").innerHTML = newCase;
