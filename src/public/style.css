@@ -284,6 +284,9 @@ canvas{
   font-size: .85rem;
   color: white;
 }
+#ourRoadmap {
+  margin-bottom: 0px;
+}
 
 .sectionLabelDark {
   text-align: center;
@@ -565,4 +568,9 @@ a{
 #ofnLogo {
   max-height: 65px;
   max-width: 65px;
+}
+
+.ofnTimeline{
+  height: 100%;
+  max-width: 100%;
 }
