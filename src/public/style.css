@@ -387,13 +387,13 @@ canvas{
   width: 100%;
   /* background: linear-gradient(#010346 100%, #00035E 100%); */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
 #timeline .sectionLabel {
-  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 #teampage {
@@ -573,4 +573,5 @@ a{
 .ofnTimeline{
   height: 100%;
   max-width: 100%;
+  margin-bottom: 20px;
 }
