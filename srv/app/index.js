@@ -4,6 +4,17 @@ var express = require('express');
 var app = express();
 var httpsRedirect = require('express-https-redirect');
 app.use('/', httpsRedirect());
+
+app.all(/.*/, function(req, res, next) {
+    var host = req.header("host");
+    if (host.match(/^www\..*/i)) {
+      next();
+    } else {
+      res.redirect(301, "http://www." + host);
+    }
+  });
+  app.use(express.static(__dirname + "/public"));
+
 module.exports = app;
 
 // Pass our express application pipeline into the configuration
