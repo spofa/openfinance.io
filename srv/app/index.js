@@ -5,7 +5,7 @@ var app = express();
 var httpsRedirect = require('express-https-redirect');
 app.use('/', httpsRedirect());
 
-  res.redirect(301, 'https://www.openfinance.io' + req.path)
+
 // app.all(/.*/, function(req, res, next) {
 //     var host = req.header("host");
 //     if (host.match(/^www\..*/i)) {
@@ -48,9 +48,6 @@ app.use(function (req, res, next) {
 //     // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
 //     // res.redirect('https://example.com' + req.url);
 // })
-
-
-
 
 app.get('/*', function (req, res) {
     res.sendFile(app.get('indexHTMLPath'));
