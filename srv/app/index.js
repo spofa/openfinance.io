@@ -4,16 +4,21 @@ var express = require('express');
 var app = express();
 var httpsRedirect = require('express-https-redirect');
 app.use('/', httpsRedirect());
+var forceDomain = require('forcedomain');
+app.use(forceDomain({
+    hostname: 'www.openfinance.io',
+    protocol: 'https'
+  }));
 
-app.all(/.*/, function(req, res, next) {
-    var host = req.header("host");
-    if (host.match(/^www\..*/i)) {
-      next();
-    } else {
-      res.redirect(301, "https://www." + host);
-    }
-  });
-  app.use(express.static(__dirname + "/public"));
+// app.all(/.*/, function(req, res, next) {
+//     var host = req.header("host");
+//     if (host.match(/^www\..*/i)) {
+//       next();
+//     } else {
+//       res.redirect(301, "https://www." + host);
+//     }
+//   });
+//   app.use(express.static(__dirname + "/public"));
 
 module.exports = app;
 
@@ -41,12 +46,12 @@ app.use(function (req, res, next) {
     }
 
 });
-app.get('*', function(req, res) {
-    res.redirect('https://www.' + req.headers.host + req.url);
+// app.get('*', function(req, res) {
+//     res.redirect('https://www.' + req.headers.host + req.url);
 
-    // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
-    // res.redirect('https://example.com' + req.url);
-})
+//     // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
+//     // res.redirect('https://example.com' + req.url);
+// })
 
 app.get('/*', function (req, res) {
     res.sendFile(app.get('indexHTMLPath'));
