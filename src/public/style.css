@@ -10,10 +10,12 @@
   
   #headertext {
     font-family: 'Barlow', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #FFFFFF;
     letter-spacing: 0.59px;
     margin: 10px 0;
+    margin-top: -3vh;
+    margin-bottom: 4vh;
   }
   
   #maintext {
@@ -21,7 +23,8 @@
     color: #FFFFFF;
     letter-spacing: 0.33px;
     width: 100vw;
-    height: 30vh;
+    /* height: 30vh; */
+    margin-bottom: 2rem;
     font-size: 0.5rem;
     font-weight: 200;
   }
@@ -31,7 +34,7 @@
   }
   
   #ofntext {
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
   .boldedText {
     font-family: 'Barlow-Bold', sans-serif;
@@ -45,6 +48,7 @@
   
   #landing {
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     /* height: 75vh; */
@@ -90,11 +94,10 @@
     align-items:center;
     pointer-events: auto;
     margin: auto;
-    position: absolute;
     z-index: 100;
     padding: 1%;
     right: 10;
-    top: 20vh;
+    /* top: 20vh; */
   }
   
   #social > * {
@@ -115,6 +118,7 @@
     text-align: center;
     font-family: "Barlow";
     font-size: 1rem;
+    margin: auto;
     color: #010346;
     display: flex;
     align-items: center;
@@ -255,17 +259,17 @@
     /* vertical-align: middle; */
     /* align-items: center; */
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     /* margin: 10vh 0; */
-    /* margin-bottom: 10vh; */
-    margin-top: 15vh;
+    margin-bottom: 10vh;
+    /* margin-top: 15vh; */
   }
   
   #documentation {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    width: 85%;
+    width: 100vw;
     pointer-events: auto;
    /*height: 35vh; */
     margin: 5% auto 0 auto;
@@ -280,7 +284,7 @@
     box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
     height: 40vh;
     /* padding: 10% 15%; */
-    width: 19vw;
+    width: 30vw;
     display: flex;
     vertical-align: middle;
     flex-direction: column;
@@ -316,6 +320,7 @@
   #industry {
   
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
   
@@ -338,7 +343,7 @@
   }
   
   #industryText {
-    width: 27%;
+    width: 90%;
     color: white;
     font-family: 'Barlow';
   }
@@ -560,8 +565,8 @@
   }
   
   #zeroKnowledge{
-    height: 55vh;
-    width: 85%;
+    /* height: 55vh; */
+    /* width: 85%; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -579,18 +584,19 @@
     color: #fff;
     letter-spacing: 0.39px;
   /*   margin: 3rem; */
-    width: 40%;
+    width: 97%;
   }
   
   #zeroKwrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
   
   #proofPic {
     max-height: 45vh;
-    max-width: 33vw;
+    max-width: 100;
   }
   
   #ofnLogo {
@@ -620,7 +626,7 @@
   
   #industryLogo {
     max-height: 100%;
-    max-width: 50%;
+    max-width: 90%;
   }
 }
 
@@ -936,7 +942,8 @@ canvas{
 
 }
 #differentiator {
-  height: 600px;
+  /* height: 600px; */
+  flex-direction: column;
   padding-top: 10vh;
   background: #00035a; /* Old browsers */
   background: -moz-linear-gradient(top, #00035a 0%, #00052b 100%); /* FF3.6-15 */
