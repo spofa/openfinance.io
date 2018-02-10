@@ -7,32 +7,32 @@
     left: -1px;
     align-content: center;
   }
-  
+
   #headertext {
     font-family: 'Barlow', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FFFFFF;
     letter-spacing: 0.59px;
     margin: 10px 0;
-    margin-top: -3vh;
-    margin-bottom: 4vh;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
   }
-  
+
   #maintext {
     font-family: 'Barlow', sans-serif;
     color: #FFFFFF;
     letter-spacing: 0.33px;
     width: 100vw;
     /* height: 30vh; */
-    margin-bottom: 2rem;
-    font-size: 0.5rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
     font-weight: 200;
   }
-  
+
   #maintext div:nth-of-type(2) {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
-  
+
   #ofntext {
     font-size: 1.4rem;
   }
@@ -40,12 +40,12 @@
     font-family: 'Barlow-Bold', sans-serif;
     float: left;
   }
-  
+
   .boldedText::after {
     content: " ";
     white-space: pre;
   }
-  
+
   #landing {
     display:flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
     /* height: 75vh; */
     width: 100vw;
     pointer-events: none;
-  
+
   }
   #menu {
     font-family: 'Barlow',sans-serif;
@@ -72,15 +72,15 @@
     display: none;
     justify-content: space-around;
     flex-wrap: wrap;
-  
+
   }
-  
+
   #leftmenu {
     font-size: 1.25rem;
     display: flex;
     align-items: center;
   }
-  
+
   #social {
     background: #FFFFFF;
     border: 1px solid #979797;
@@ -99,18 +99,18 @@
     right: 10;
     /* top: 20vh; */
   }
-  
+
   #social > * {
     width: 80%;
     text-align: center;
   }
-  
+
   #logotext {
     font-size: 20px;
     color: #FFFFFF;
     letter-spacing: 0.37px;
   }
-  
+
   .slackButton {
     background: #FFFFFF;
     box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
@@ -122,21 +122,21 @@
     color: #010346;
     display: flex;
     align-items: center;
-    margin-top:3vh;
+    margin-top: 8vh;
     pointer-events: auto;
     padding: 5px 15px;
   }
-  
+
   .slackButtonText {
     font-family: "Barlow";
     font-size: 2rem;
     color: #010346;
   }
-  
+
   .document {
     background: #030560;
     box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
-  
+
   }
   input {
     outline: none;
@@ -144,8 +144,8 @@
   button {
     outline: none;
   }
-  
-  
+
+
   html,body{
     width:100vw;
     position: absolute;
@@ -155,15 +155,15 @@
     height:100%;
     background: #030560;
   }
-  
+
   html{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .particles-js-canvas-el{
     width: 100vw !important;
-  
+
   }
-  
+
   canvas{
     position: fixed;
     width: 100%;
@@ -171,7 +171,7 @@
     vertical-align:top;
     left: -1px;
   }
-  
+
   #triangleGradient {
     display: block;
     padding-top: 25vh;
@@ -181,18 +181,18 @@
     pointer-events: none;
     z-index: -1;
   }
-  
+
   #stayconnected {
     font-family: 'Barlow';
     color: #010346;
-  
+
   }
   #emailContainer{
     width: 90%;
     height: 15%;
     margin-bottom: 7.5%;
   }
-  
+
   #emailform {
     width: 100%;
     margin-right: 10px;
@@ -215,7 +215,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  
+
   #subscribebutton {
     background: #010346;
     border-radius: 100px;
@@ -229,29 +229,29 @@
     padding-bottom: .25rem;
     text-align: center;
   }
-  
+
   #socialbuttons {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-  
+
   }
-  
+
   .socialicon {
     padding: .5rem;
     height: 100%;
   }
-  
+
   #useCaseLogo{
     max-width: 35%;
     max-height: 45%;
   }
-  
+
   #useCasePic{
     max-height: 550px;
     max-width: 100%;
   }
-  
+
   #docs {
     display: flex;
     flex-direction: column;
@@ -264,7 +264,7 @@
     margin-bottom: 10vh;
     /* margin-top: 15vh; */
   }
-  
+
   #documentation {
     display: flex;
     justify-content: space-around;
@@ -278,7 +278,7 @@
     height: 100%;
     width: 100%;
   }
-  
+
   .docIconContainer {
     background: #030560;
     box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
@@ -291,7 +291,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   #wrapper {
     display: flex;
     flex-direction: column;
@@ -299,7 +299,7 @@
     align-items: center;
     height: 100%;
   }
-  
+
   .sectionLabel {
     text-align: center;
     font-family: 'Barlow';
@@ -309,21 +309,21 @@
   #ourRoadmap {
     margin-bottom: 0px;
   }
-  
+
   .sectionLabelDark {
     text-align: center;
     font-family: 'Barlow';
     font-size: .85rem;
     color: #030560;
   }
-  
+
   #industry {
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  
+
   }
   #differentiator {
     height: 600px;
@@ -336,18 +336,18 @@
     IE6-9 */
     width: 100vw;
   }
-  
+
   #differentiator > * {
     width: 85%;
     margin: 0 auto;
   }
-  
+
   #industryText {
     width: 90%;
     color: white;
     font-family: 'Barlow';
   }
-  
+
   #industryText .boldedText,
   #industryText p {
     float: none;
@@ -356,7 +356,7 @@
     font-size: 1.25rem;
   /*   line-height: 1.5rem; */
   }
-  
+
   #useCases{
     height: 600px;
     max-height: 600px;
@@ -368,21 +368,21 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   #useCaseList {
     display: flex;
     justify-content: space-around;
     align-items: center;
     pointer-events: auto;
   }
-  
+
   #useCaseText{
     width: 30%;
     color: #010346;
     font-family: 'Barlow';
   }
-  
-  
+
+
   #useCaseButtons {
     display: flex;
     flex-direction: column;
@@ -391,14 +391,14 @@
     height: 50%;
     padding: 1rem;
   }
-  
+
   #useCaseButtons .sectionLabelDark {
     text-align: left;
     width: 100%;
     margin-bottom: 10%;
   }
-  
-  
+
+
   .useButton {
     background: #FFFFFF;
     box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
@@ -412,7 +412,7 @@
     justify-content: left;
     margin: 3.5% 0;
   }
-  
+
   #timeline{
     height: 500px;
     width: 100%;
@@ -422,11 +422,11 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   #timeline .sectionLabel {
     margin-top: 5%;
   }
-  
+
   #teampage {
     height: 1700px;
     padding: 2.5% 0 7.5% 0;
@@ -436,14 +436,14 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  
+
   }
-  
+
   #futureOfFinance {
     width: 100%;
     height: 500px;
   }
-  
+
   #gradientEnd{
     width: 100%;
     overflow: hidden;
@@ -451,7 +451,7 @@
     transform: rotate(180deg);
     position: relative;
   }
-  
+
   #fof{
     width: 30%;
     font-family: 'Barlow';
@@ -463,7 +463,7 @@
     bottom: 225px;
     left: 150px;
   }
-  
+
   #team{
     display: flex;
     flex-wrap: wrap;
@@ -473,7 +473,7 @@
     margin-bottom: 10vh;
     height: 80%;
   }
-  
+
   .teamImg {
     height: 200px;
     width: 200px;
@@ -483,7 +483,7 @@
     -moz-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
     box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
   }
-  
+
   .teamText {
     font-family: "Barlow";
     font-size: 1rem;
@@ -492,11 +492,11 @@
     letter-spacing: 0.39px;
     z-index: 1;
   }
-  
+
   a{
     text-decoration:  none;
   }
-  
+
   .docText {
     font-family: "Barlow";
     font-size: 1rem;
@@ -520,7 +520,7 @@
     flex-direction: column;
     max-height: 33.333%;
   }
-  
+
   .teamName {
     font-family: "Barlow";
     font-size: 1.5rem;
@@ -528,10 +528,10 @@
     letter-spacing: 0.39px;
     margin:0;
   }
-  
-  
+
+
   .sliding-middle-out {
-  
+
     padding-bottom: 3px;
   }
   .sliding-middle-out:after {
@@ -547,7 +547,7 @@
     width: 100%;
     background: white;
   }
-  
+
   #support {
     display: flex;
     align-items: center;
@@ -557,13 +557,13 @@
   #ourInvestors {
     padding-top: 20vh;
   }
-  
-  
+
+
   .investorLogo {
     max-height: 10vh;
     max-width: 12vw;
   }
-  
+
   #zeroKnowledge{
     /* height: 55vh; */
     /* width: 85%; */
@@ -572,11 +572,11 @@
     justify-content: space-around;
     align-items: center;
   }
-  
+
   #zeroKnowledge > *, #zeroKnowledge > * > * {
     color: #fff !important;
   }
-  
+
   #zeroKText {
     font-family: "Barlow";
     font-size: 1.15rem;
@@ -586,36 +586,36 @@
   /*   margin: 3rem; */
     width: 97%;
   }
-  
+
   #zeroKwrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
-  
+
   #proofPic {
     max-height: 45vh;
     max-width: 100;
   }
-  
+
   #ofnLogo {
     max-height: 65px;
     max-width: 65px;
   }
-  
+
   .ofnTimeline{
     height: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }
-  
+
   #devTeam {
     display: flex;
     width: 50%;
     height: 100%;
     flex-wrap: wrap;
-  
+
   }
   #businessTeam {
     display: flex;
@@ -623,7 +623,7 @@
     width: 50%;
     height:100%
   }
-  
+
   #industryLogo {
     max-height: 100%;
     max-width: 90%;
