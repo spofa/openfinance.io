@@ -248,8 +248,8 @@
   }
 
   #useCasePic{
-    max-height: 550px;
-    max-width: 100%;
+    height: 250%;
+    width: 250%;
   }
 
   #docs {
@@ -356,9 +356,8 @@
   }
 
   #useCases{
-    height: 600px;
-    max-height: 600px;
-    width: 85%;
+    height: 900px;
+    width: 100%;
     padding: 0 7.5%;
     background-color: #F0F0F0;
     display: flex;
@@ -368,23 +367,22 @@
   }
 
   #useCaseList {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: inline;
     pointer-events: auto;
+    width: 100%;
   }
 
   #useCaseText{
-    width: 30%;
+    width: 90%;
     color: #010346;
     font-family: 'Barlow';
+    margin-top: 3vh;
   }
 
 
   #useCaseButtons {
     display: flex;
     flex-direction: column;
-    justify-content: top;
     align-items: left;
     height: 50%;
     padding: 1rem;
@@ -426,8 +424,8 @@
   }
 
   #teampage {
-    height: 1700px;
-    padding: 2.5% 0 7.5% 0;
+    height: 1450px;
+    padding: 0 7.5%;
     width: 100%;
     background-color: #fefefe;
     display: flex;
@@ -439,7 +437,7 @@
 
   #futureOfFinance {
     width: 100%;
-    height: 500px;
+    height: 300px;
   }
 
   #gradientEnd{
@@ -451,15 +449,15 @@
   }
 
   #fof{
-    width: 30%;
+    width: 80%;
     font-family: 'Barlow';
     font-size: 1.75rem;
     color: #FFFFFF;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    bottom: 225px;
-    left: 150px;
+    left: 10px;
+    bottom: 25px;
   }
 
   #team{
@@ -473,18 +471,19 @@
   }
 
   .teamImg {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
     border-radius: 50%;
     -webkit-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
     -moz-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
     box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
+    margin: 10px;
   }
 
   .teamText {
     font-family: "Barlow";
-    font-size: 1rem;
+    font-size: .80rem;
     color: #010346;
     margin: 1% 0;
     letter-spacing: 0.39px;
@@ -521,7 +520,7 @@
 
   .teamName {
     font-family: "Barlow";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #010346;
     letter-spacing: 0.39px;
     margin:0;
