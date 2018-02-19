@@ -356,7 +356,7 @@
   }
 
   #useCases{
-    height: 900px;
+    height: 1000px;
     width: 100%;
     padding: 0 7.5%;
     background-color: #F0F0F0;
@@ -424,7 +424,7 @@
   }
 
   #teampage {
-    height: 1700px;
+    height: 1000px;
     padding: 0 7.5%;
     width: 100%;
     background-color: #fefefe;
@@ -433,6 +433,10 @@
     justify-content: space-around;
     align-items: center;
 
+  }
+
+  #ourTeam {
+    margin-bottom: 10vh;
   }
 
   #futureOfFinance {
@@ -460,19 +464,17 @@
     bottom: 25px;
   }
 
-  #team{
+  .team{
+    width: 100%;
     display: flex;
-
-
-    width: 90vw;
-    margin-bottom: 10vh;
-    height: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .teamImg {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 10px;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 6px;
     border-radius: 50%;
     -webkit-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
     -moz-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
@@ -482,11 +484,16 @@
 
   .teamText {
     font-family: "Barlow";
-    font-size: .80rem;
+    font-size: .5rem;
     color: #010346;
     margin: 1% 0;
     letter-spacing: 0.39px;
     z-index: 1;
+    text-align: center;
+  }
+
+  #ourAdvisors {
+    margin-bottom: 8vh;
   }
 
   a{
@@ -508,7 +515,7 @@
     padding-left: 3.5vw;
     padding-right: 3.5vw;
   */
-    width: 100%;
+    width: 20%;
     padding: 2.5% 0;
     display: flex;
     align-items: center;
@@ -519,10 +526,11 @@
 
   .teamName {
     font-family: "Barlow";
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #010346;
     letter-spacing: 0.39px;
     margin:0;
+    text-align: center;
   }
 
 
@@ -551,7 +559,7 @@
     width: 100%
   }
   #ourInvestors {
-    padding-top: 20vh;
+    margin-bottom: 5vh;
   }
 
 
@@ -609,12 +617,9 @@
   .teamWrapper {
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 47.5%;
-    height: 100%;
-
-
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
   .teamColumn {
     display: flex;
@@ -783,8 +788,8 @@ html,body{
   position: absolute;
   /* display: flex;
   flex-wrap: wrap; */
-	height:100%;
-	background: #030560;
+  height:100%;
+  background: #030560;
 }
 
 /* html{
@@ -1056,7 +1061,7 @@ canvas{
 }
 
 #teampage {
-  height: 1700px;
+  height: 2000px;
   padding: 2.5% 0 7.5% 0;
   width: 100%;
   background-color: #fefefe;
@@ -1092,14 +1097,9 @@ canvas{
   left: 150px;
 }
 
-#team{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
+.team{
   width: 90%;
   margin-bottom: 10vh;
-  height: 80%;
 }
 
 .teamImg {
@@ -1119,7 +1119,15 @@ canvas{
   margin: 1% 0;
   letter-spacing: 0.39px;
   z-index: 1;
-}
+  text-align: center;@media screen and (max-width: 899px) {
+  #main {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    pointer-events: none;
+    left: -1px;
+    align-content: center;
+  }
 
 a{
   text-decoration:  none;
@@ -1160,20 +1168,20 @@ a{
 
 .sliding-middle-out {
 
-	padding-bottom: 3px;
+  padding-bottom: 3px;
 }
 .sliding-middle-out:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 .sliding-middle-out:hover:after {
-	width: 100%;
-	background: white;
+  width: 100%;
+  background: white;
 }
 
 #support {
@@ -1286,6 +1294,164 @@ a{
 
 }
 
-#advisors {
+#ourAdvisors {
+  padding-top: 20vh;
+}
+
+}
+
+a{
+  text-decoration:  none;
+}
+
+.docText {
+  font-family: "Barlow";
+  font-size: 1rem;
+  color: #FFFFFF;
+  letter-spacing: 0.39px;
+  text-decoration: none;
+  z-index: 1;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.teamCard {
+/*
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+*/
+  width: 20%;
+  padding: 2.5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 33.333%;
+}
+
+.teamName {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  color: #010346;
+  letter-spacing: 0.39px;
+  margin:0;
+}
+
+
+.sliding-middle-out {
+
+  padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: white;
+}
+
+#support {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%
+}
+
+.investorLogo {
+  max-height: 10vh;
+  max-width: 12vw;
+}
+
+#zeroKnowledge{
+  height: 55vh;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#zeroKnowledge > *, #zeroKnowledge > * > * {
+  color: #fff !important;
+}
+
+#zeroKText {
+  font-family: "Barlow";
+  font-size: 1.15rem;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 0.39px;
+/*   margin: 3rem; */
+  width: 40%;
+}
+
+#zeroKwrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#proofPic {
+  max-height: 45vh;
+  max-width: 33vw;
+}
+
+#ofnLogo {
+  max-height: 65px;
+  max-width: 65px;
+}
+
+.ofnTimeline{
+  height: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+#devTeam {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-wrap: wrap;
+
+}
+#businessTeam {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height:100%
+}
+
+#industryLogo {
+  max-height: 100%;
+  max-width: 50%;
+}
+
+.teamWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.teamColumn {
+  display: flex;
+  flex-wrap: wrap;
+  height:100%;
+  width: 100%
+}
+.textCenter{
+  text-align: center;
+}
+.filler {
+  height: 320px;
+  width: 320px;
+
+}
+.spacer {
+  width:5%;
+}
 
 }
