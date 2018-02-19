@@ -409,6 +409,20 @@
     margin: 3.5% 0;
   }
 
+  .useButton-active {
+    background: #050991;
+    box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-family: 'Barlow';
+    padding: .5rem 1.3rem;
+    text-align: left;
+    /* min-width: 100%; */
+    font-size: 1rem;
+    justify-content: left;
+    margin: 3.5% 0;
+  }
+
   #timeline{
     height: 500px;
     width: 100%;
@@ -1046,6 +1060,20 @@ canvas{
   margin: 3.5% 0;
 }
 
+.useButton-active {
+  background: #050991;
+  box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
+  border-radius: 100px;
+  color: #FFFFFF;
+  font-family: 'Barlow';
+  padding: .5rem 1.3rem;
+  text-align: left;
+  /* min-width: 100%; */
+  font-size: 1rem;
+  justify-content: left;
+  margin: 3.5% 0;
+}
+
 #timeline{
   height: 500px;
   width: 100%;
@@ -1186,14 +1214,22 @@ a{
 
 #support {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: row;
+  width: 100%
+}
+
+#supportTwo {
+  display: flex;
+  flex-direction: row;
   width: 100%
 }
 #ourInvestors {
   padding-top: 20vh;
 }
 
+.investorRow {
+  flex-direction: row;
+}
 
 .investorLogo {
   max-height: 10vh;

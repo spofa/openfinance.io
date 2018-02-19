@@ -173,10 +173,10 @@
               an enhanced, secure, and global compliance process that improves investor protections and security, along with
               increased privacy of sensitive investor data.</div>
             <div id='useCaseButtons'>
-              <button onclick='changeUseCase("passport")' class='useButton'>Investor Passport</button>
-              <button onclick='changeUseCase("registry")' class='useButton'>Global Asset Registry</button>
-              <button onclick='changeUseCase("dsd")' class='useButton'>Decentralized Securities Depository</button>
-              <button onclick='changeUseCase("tokenization")' class='useButton'>Asset Tokenization</button>
+              <button id='passportButton' onclick='changeUseCase("passport")' class='useButton-active'>Investor Passport</button>
+              <button id='registryButton' onclick='changeUseCase("registry")' class='useButton'>Global Asset Registry</button>
+              <button id='depositoryButton' onclick='changeUseCase("dsd")' class='useButton'>Decentralized Securities Depository</button>
+              <button id='tokenizationButton' onclick='changeUseCase("tokenization")' class='useButton'>Asset Tokenization</button>
             </div>
           </div>
         </div>
@@ -343,17 +343,26 @@
           <p id='ourInvestors' class="sectionLabelDark">Our Investors.</p>
           <div id='support'>
             <div>
-              <img class='investorLogo' src='public/sixthirty.png'>
-            </div>
-            <div>
-              <img class='investorLogo' src='public/westloop.png'>
-            </div>
-            <div>
-              <img class='investorLogo' src='public/hbsangels.png'>
-            </div>
-            <div>
-              <img class='investorLogo' src='public/m25.png'>
-            </div>
+                <img class='investorLogo' src='public/bkcm.png'>
+              </div>
+              <div>
+                <img class='investorLogo' src='public/polynexus.png'>
+              </div>
+              <div>
+                <img class='investorLogo' src='public/westloop.png'>
+              </div>
+              <div>
+                <img class='investorLogo' src='public/inovia.png'>
+              </div>
+              <div>
+                <img class='investorLogo' src='public/sixthirty.png'>
+              </div>
+              <div>
+                <img class='investorLogo' src='public/hbsangels.png'>
+              </div>
+              <div>
+                <img class='investorLogo' src='public/m25.png'>
+              </div>
           </div>
         </div>
       </div>
@@ -409,6 +418,23 @@
         default:
           newCase = 'The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.';
       }
+      document.getElementById("passportButton").className = "useButton";
+      document.getElementById("registryButton").className = "useButton";
+      document.getElementById("depositoryButton").className = "useButton";
+      document.getElementById("tokenizationButton").className = "useButton";
+      if (useCase === 'passport'){
+        document.getElementById("passportButton").className = "useButton-active";
+      } else if (useCase === 'registry'){
+        document.getElementById("registryButton").className = "useButton-active";
+      } else if (useCase === 'dsd'){
+        document.getElementById("depositoryButton").className = "useButton-active";
+      } else if (useCase === 'tokenization'){
+        document.getElementById("tokenizationButton").className = "useButton-active";
+      } else {
+
+      }
+
+
       document.getElementById("useCasePic").src = newPic;
       document.getElementById("useCaseText").innerHTML = newCase;
     }
