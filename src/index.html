@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
-  <link rel="stylesheet" media="screen" href="public/style.css">
+  <link rel="stylesheet" media="screen" href="public/newStyle.css">
   <script src="scroll-entrance.js"></script>
   <style>
     /* Ensure elements are hidden while ScrollEntrance is loading */
@@ -186,17 +186,13 @@
         </div>
         <div id='teampage'>
           <p id='ourTeam' class="sectionLabelDark">Our Team.</p>
-          <div id='team'>
+          <div class='team'>
             <div class='teamWrapper'>
-              <div class='textCenter'>
-                  <p class="sectionLabelDark">Technology</p>
-              </div>
-              <div class='teamColumn'>
               <div class='teamCard' data-entrance="from-left">
                 <img class='teamImg' src='public/jmh.png'>
                 <p class='teamName'>Juan M. Hernandez</p>
                 <p class="teamText">
-                  <span>Founder, Lead Architect</span>
+                  <span>CEO</span>
                   <br />
                   <span> Kellogg MBA, Northwestern CS</span>
                 </p>
@@ -205,7 +201,7 @@
                 <img class='teamImg' src='public/ks.png'>
                 <p class='teamName'>Kael Shipman</p>
                 <p class="teamText">
-                  <span>Senior Application Architect</span>
+                  <span>CTO</span>
                   <br />Berklee, 13+ years Experience</p>
               </div>
               <div class='teamCard' data-entrance="from-left">
@@ -215,62 +211,35 @@
                   <span>Head of Blockchain Development</span>
                   <br /> Northwestern CS, U of I Finance</p>
               </div>
-              <div class='teamCard' data-entrance="from-left">
+              <div class='teamCard' data-entrance="from-right">
                 <img class='teamImg' src='public/is.png'>
                 <p class='teamName'>Ian Shipman</p>
                 <p class="teamText">
-                  <span>Senior Engineer </span>
+                  <span>Head of R&D </span>
                   <br />PhD Mathematics, University of Chicago</p>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/rc.png'>
-                <p class='teamName'> Ray Coti</p>
-                <p class="teamText">
-                  <span>Lead Frontend Engineer</span>
-                  <br/>CS, Connecticut College </p>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/qf.png'>
-                <p class='teamName'> Qusai Farraj</p>
-                <p class="teamText">
-                  <span>Software Engineer</span>
-                  <br/>CS Masters, Northeastern Illinois </p>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                  <img class='teamImg' src='public/tz.png'>
-                  <p class='teamName'>Tomasz Zacharczuk</p>
-                  <p class="teamText">
-                    <span>Blockchain Advisor</span>
-                    <br/>VP Engineering, Surf Live</p>
-                </div>
-                </div>
-            </div>
-            <div class='spacer'></div>
-            <div class='teamWrapper'>
-            <div class='teamName'>
-                <p class="sectionLabelDark">Business</p>
-            </div>
-            <div class='teamColumn'>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/jf.png'>
-                <p class='teamName'>Jordan Fishfeld</p>
-                <p class="teamText">
-                  <span>Founder, General Counsel</span>
-                  <br /> U Miami JD/MBA</p>
-              </div>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/db.png'>
-                <p class='teamName'>Dan Breen</p>
-                <p class="teamText">
-                  <span>Head of Operations</span>
-                  <br /> 25+ Years Trading</p>
               </div>
               <div class='teamCard' data-entrance="from-right">
                 <img class='teamImg' src='public/toby.png'>
                 <p class='teamName'>Toby McComas</p>
                 <p class="teamText">
-                  <span>Head of Partnerships</span>
+                  <span>Head of Sales</span>
                   <br /> Kellogg MBA</p>
+              </div>
+            </div>
+            <div class="teamWrapper">
+              <div class='teamCard' data-entrance="from-left">
+                <img class='teamImg' src='public/jf.png'>
+                <p class='teamName'>Jordan Fishfeld</p>
+                <p class="teamText">
+                  <span>General Counsel</span>
+                  <br /> U Miami JD/MBA</p>
+              </div>
+              <div class='teamCard' data-entrance="from-left">
+                <img class='teamImg' src='public/db.png'>
+                <p class='teamName'>Dan Breen</p>
+                <p class="teamText">
+                  <span>Head of Operations</span>
+                  <br /> 25+ Years Trading</p>
               </div>
               <div class='teamCard' data-entrance="from-right">
                 <img class='teamImg' src='public/le.png'>
@@ -279,6 +248,43 @@
                   <span>Head of Marketing</span>
                   <br /> 9+ years Experience</p>
               </div>
+              <div class='teamCard' data-entrance="from-right">
+                <img class='teamImg' src='public/rc.png'>
+                <p class='teamName'> Ray Coti</p>
+                <p class="teamText">
+                  <span>Lead Frontend Engineer</span>
+                  <br/>Connecticut College CS </p>
+              </div>
+              <div class='teamCard' data-entrance="from-right">
+                  <img class='teamImg' src='public/tz.png'>
+                  <p class='teamName'>Tomasz Zacharczuk</p>
+                  <p class="teamText">
+                    <span>Blockchain Advisor</span>
+                    <br/>VP Engineering, Surf Live</p>
+                </div>
+            </div>
+            <div class="teamWrapper">
+              <div class='teamCard' data-entrance="from-left">
+                <img class='teamImg' src='public/qf.png'>
+                <p class='teamName'> Qusai Farraj</p>
+                <p class="teamText">
+                  <span>Software Engineer</span>
+                  <br/>Northeastern Illinois CS Masters</p>
+              </div>
+              <div class='teamCard' data-entrance="from-left">
+                <img class='teamImg' src='public/kp.png'>
+                <p class='teamName'> Kunal Patel</p>
+                <p class="teamText">
+                  <span>Software Engineer</span>
+                  <br/>DePaul University</p>
+              </div>
+              <div class='teamCard' data-entrance="from-left">
+                  <img class='teamImg' src='public/jr.png'>
+                  <p class='teamName'>Jake Regan</p>
+                  <p class="teamText">
+                    <span>Software Engineer</span>
+                    <br/>Judson University</p>
+                </div>
               <div class='teamCard' data-entrance="from-right">
                 <img class='teamImg' src='public/sc.png'>
                 <p class='teamName'>Shea Curran</p>
@@ -293,13 +299,46 @@
                     <span>Community Advisor</span>
                     <br/>Polynexus Capital</p>
                 </div>
-                <div class='filler'></div>
-                </div>
             </div>
           </div>
-          <div id='advisors'>
-
-
+            <p id='ourAdvisors' class="sectionLabelDark">Our Advisors.</p>
+          <div class='team'>
+            <div class="teamWrapper">
+              <div class='teamCard' data-entrance="from-left">
+                <img class='teamImg' src='public/wm_.png'>
+                <p class='teamName'> William Mougayar</p>
+                <p class="teamText">
+                  <span>Ethereum Foundation Board Member</span>
+                  <br/>& Author of the Business Blockchain </p>
+              </div>
+              <div class='teamCard' data-entrance="from-left">
+                <img class='teamImg' src='public/dk_.png'>
+                <p class='teamName'> David Krell</p>
+                <p class="teamText">
+                  <span>Founder, International</span>
+                  <br/>Securities Exchange </p>
+              </div>
+              <div class='teamCard' data-entrance="from-right">
+                  <img class='teamImg' src='public/jc_.png'>
+                  <p class='teamName'>Jeff Carter</p>
+                  <p class="teamText">
+                    <span>West Loop Ventures</p>
+                </div>
+              <div class='teamCard' data-entrance="from-right">
+                <img class='teamImg' src='public/jk_.png'>
+                <p class='teamName'> John Kelly</p>
+                <p class="teamText">
+                  <span>Former COO - Liquid Net</span>
+                  <br/> </p>
+              </div>
+              <div class='teamCard' data-entrance="from-right">
+                  <img class='teamImg' src='public/gj_.png'>
+                  <p class='teamName'>Geoff Judge</p>
+                  <p class="teamText">
+                    <span>Partner, iNovia</span>
+                    <br/></p>
+                </div>
+            </div>
           </div>
           <p id='ourInvestors' class="sectionLabelDark">Our Investors.</p>
           <div id='support'>
