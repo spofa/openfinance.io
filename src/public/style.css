@@ -438,7 +438,7 @@
   }
 
   #teampage {
-    height: 1000px;
+    height: 1250px;
     padding: 0 7.5%;
     width: 100%;
     background-color: #fefefe;
@@ -566,21 +566,23 @@
     background: white;
   }
 
-  #support {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%
-  }
-  #ourInvestors {
-    margin-bottom: 5vh;
-  }
+#support {
+  width: 90%;
+}
 
+.investorCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 5vh;
+}
 
-  .investorLogo {
-    max-height: 10vh;
-    max-width: 12vw;
-  }
+.investorLogo {
+  max-height: 10vh;
+  max-width: 12vw;
+}
 
   #zeroKnowledge{
     /* height: 55vh; */
@@ -657,6 +659,20 @@
   }
   .spacer {
     width:5%;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+      }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fade;
+    animation-duration: 2s;
   }
 }
 
@@ -1089,7 +1105,7 @@ canvas{
 }
 
 #teampage {
-  height: 2000px;
+  height: 2150px;
   padding: 2.5% 0 7.5% 0;
   width: 100%;
   background-color: #fefefe;
@@ -1212,23 +1228,17 @@ a{
   background: white;
 }
 
-#support {
-  display: flex;
-  flex-direction: row;
-  width: 100%
-}
-
-#supportTwo {
-  display: flex;
-  flex-direction: row;
-  width: 100%
-}
 #ourInvestors {
   padding-top: 20vh;
 }
 
-.investorRow {
+.investorWrapper {
+
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  width: 47.5%;
+  height: 100%;
 }
 
 .investorLogo {
@@ -1392,15 +1402,22 @@ a{
 }
 
 #support {
+  width: 90%;
+}
+
+.investorCard {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  width: 100%
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 .investorLogo {
-  max-height: 10vh;
-  max-width: 12vw;
+  max-height: 12vh;
+  max-width: 14vw;
 }
 
 #zeroKnowledge{
@@ -1488,6 +1505,20 @@ a{
 }
 .spacer {
   width:5%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
 }

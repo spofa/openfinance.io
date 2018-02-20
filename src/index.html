@@ -166,9 +166,9 @@
           <p class="sectionLabelDark">Our Use Cases</p>
           <div id='useCaseList'>
             <div id='useCaseLogo' data-entrance="from-left">
-              <img id='useCasePic' src='public/investorPassport.png'>
+              <img id='useCasePic' data-enterance="from-left" src='public/investorPassport.png'>
             </div>
-            <div id='useCaseText' data-entrance="from-left">The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with
+            <div id='useCaseText' data-entrance="from-bottom">The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with
               a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates
               an enhanced, secure, and global compliance process that improves investor protections and security, along with
               increased privacy of sensitive investor data.</div>
@@ -342,26 +342,30 @@
           </div>
           <p id='ourInvestors' class="sectionLabelDark">Our Investors.</p>
           <div id='support'>
-            <div>
-                <img class='investorLogo' src='public/bkcm.png'>
+              <div class="investorCard">
+                <div>
+                  <img class='investorLogo' src='public/BKCM.png'>
+                </div>
+                <div>
+                  <img class='investorLogo' src='public/polynexus.png'>
+                </div>
+                <div>
+                  <img class='investorLogo' src='public/westloop.png'>
+                </div>
+                <div>
+                  <img class='investorLogo' src='public/inovia.png'>
+                </div>
               </div>
-              <div>
-                <img class='investorLogo' src='public/polynexus.png'>
-              </div>
-              <div>
-                <img class='investorLogo' src='public/westloop.png'>
-              </div>
-              <div>
-                <img class='investorLogo' src='public/inovia.png'>
-              </div>
-              <div>
-                <img class='investorLogo' src='public/sixthirty.png'>
-              </div>
-              <div>
-                <img class='investorLogo' src='public/hbsangels.png'>
-              </div>
-              <div>
-                <img class='investorLogo' src='public/m25.png'>
+              <div class="investorCard">
+                <div>
+                  <img class='investorLogo' src='public/sixthirty.png'>
+                </div>
+                <div>
+                  <img class='investorLogo' src='public/hbsangels.png'>
+                </div>
+                <div>
+                  <img class='investorLogo' src='public/m25.png'>
+                </div>
               </div>
           </div>
         </div>
@@ -434,9 +438,15 @@
 
       }
 
-
+      document.getElementById("useCasePic").classList.remove("fadeIn");
+      void document.getElementById("useCasePic").offsetWidth;
       document.getElementById("useCasePic").src = newPic;
+      document.getElementById("useCasePic").classList.add("fadeIn");
+
+      document.getElementById("useCaseText").classList.remove("fadeIn");
+      void document.getElementById("useCaseText").offsetWidth;
       document.getElementById("useCaseText").innerHTML = newCase;
+      document.getElementById("useCaseText").classList.add("fadeIn");
     }
     openFile = (type) => {
       if (type = 'wp') {
