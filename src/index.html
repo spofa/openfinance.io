@@ -63,9 +63,9 @@
             <div>
               <div class='boldedText'>Alternative assets redefined.</div> We're transforming the trading, clearing & settlement process for alts
               worldwide
-              <button href='https://slack.openfinance.io' onclick='openSlack()' class='slackButton'>Join us on Slack
-                <img src='public/Slack-App-app-logo-png.png'>
-              </button>
+              <button class='slackButton' onclick='openSlack()' target='_blank'>Join us on Telegram &nbsp
+                  <img src='public/telegramLogo.png'>
+                </button>
             </div>
           </div>
           <div id='social' data-entrance="from-right">
@@ -372,21 +372,23 @@
       </div>
       <div id='futureOfFinance'>
         <img id='gradientEnd' src="public/gradienttop.png">
-        <p id='fof'>Ready for the future of finance? Join our slack for updates.
-          <button class='slackButton' onclick='openSlack()' target='_blank'>Join us on Slack
-            <img src='public/Slack-App-app-logo-png.png'>
+        <p id='fof'>Ready for the future of finance? Join our Telegram for updates.
+          <button class='slackButton' onclick='openSlack()' target='_blank'>Join us on Telegram &nbsp
+            <img src='public/telegramLogo.png'>
           </button>
         </p>
       </div>
 
     </div>
 
+
   </div>
+
   <script src="particles.js"></script>
   <script src="app.js"></script>
   <script>
     openSlack = () => {
-      let win = window.open('https://ofn-slack.herokuapp.com/', '_blank');
+      let win = window.open('https://t.me/joinchat/EuSBh0tKLOaUrZ0NgT7Jaw', '_blank');
       win.focus();
     };
     changeUseCase = (useCase) => {

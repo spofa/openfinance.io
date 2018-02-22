@@ -1522,3 +1522,35 @@ a{
 }
 
 }
+
+#footer.dark, .dark #footer {
+  background-color: #222;
+  color: #CCC;
+  border-top-color: rgba(0,0,0,0.2);
+}
+
+#footer {
+  position: relative;
+  background-color: #EEE;
+  border-top: 5px solid rgba(0,0,0,0.2);
+}
+
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #EEE;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.noborder {
+  border: none !important;
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
