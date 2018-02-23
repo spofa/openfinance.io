@@ -849,6 +849,7 @@ html,body{
   flex-wrap: wrap; */
   height:100%;
   background: #030560;
+  margin: 0;
 }
 
 /* html{
