@@ -125,7 +125,9 @@
     margin-top: 8vh;
     pointer-events: auto;
     padding: 5px 15px;
+
   }
+  .slackButton:focus {outline:0;}
 
   .slackButtonText {
     font-family: "Barlow";
@@ -446,6 +448,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10vh;
 
   }
 
@@ -604,7 +607,7 @@
 }
 
 .investorLogo {
-  max-height: 10vh;
+  max-height: 15vh;
   max-width: 12vw;
 }
 
@@ -817,6 +820,8 @@
   pointer-events: auto;
   padding: 5px 15px;
 }
+z
+.slackButton:focus {outline:0;}
 
 .slackButtonText {
   font-family: "Barlow";
@@ -1137,6 +1142,7 @@ canvas{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 10vh;
 
 }
 
@@ -1189,7 +1195,7 @@ canvas{
 
 .team{
   width: 90%;
-  margin-bottom: 10vh;
+
 }
 
 .teamImg {
@@ -1288,8 +1294,8 @@ a{
 }
 
 .investorLogo {
-  max-height: 10vh;
-  max-width: 12vw;
+  max-height: 15vh;
+  max-width: 17vw;
 }
 
 #zeroKnowledge{
