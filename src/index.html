@@ -103,6 +103,13 @@
             </div>
           </div>
         </div>
+        <p id='timer'></p>
+        <ul id='timer'>
+          <li id='days'></li>
+          <li id='hours'></li>
+          <li id='minutes'></li>
+          <li id='seconds'></li>
+        </ul>
         <div id='docs'>
           <span>
             <p id='Documentation' class='sectionLabel'>Our Documentation</p>
@@ -374,7 +381,7 @@
             </ul>
           </div>
           <div class="footerColumn">
-            <h4>Team</h4>
+            <h4>Company</h4>
             <ul>
               <li onClick="document.getElementById('ourTeam').scrollIntoView();">Team</li>
               <li onClick="document.getElementById('ourAdvisors').scrollIntoView();">Advisors</li>
@@ -477,6 +484,29 @@
       }
 
     }
+
+    var countDownDate = new Date("April 30, 2018 00:00:00").getTime();
+
+    var x = setInterval(function(){
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerHTML = days + 'd';
+      document.getElementById('hours').innerHTML = hours + 'h';
+      document.getElementById('minutes').innerHTML = minutes + 'm';
+      document.getElementById('seconds').innerHTML = seconds + 's';
+
+      if (distance < 0){
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "LAUNCHED";
+      }
+    }, 1000);
   </script>
 </body>
 </html>
