@@ -1162,6 +1162,7 @@ canvas{
 #footerContainer{
   position: absolute;
   width: 100%;
+  pointer-events: auto;
 }
 
 #footerContainer a{
@@ -1636,10 +1637,4 @@ a{
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
-}
-
-.footerColumns {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
