@@ -1717,3 +1717,26 @@ a{
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+
+.listButton {
+  display:inline-block;
+  text-decoration:none;
+  background-color:white;
+  color:#030560;
+  font-family: "Barlow";
+  font-size:20px;
+  line-height:50px;
+  text-align:center;
+  margin:0;
+  height:50px;
+  padding:0px 33px;
+  pointer-events: auto;
+  border-radius:25px;
+  max-width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-weight:bold;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
