@@ -479,6 +479,7 @@
     width: 100%;
     height: 55vh;
     position: relative;
+
   }
 
   #gradientEnd{
@@ -1237,10 +1238,12 @@ canvas{
   position: absolute;
 }
 
+
 #footerContainer{
   position: absolute;
   width: 100%;
   pointer-events: auto;
+
 }
 
 #footerContainer a{
@@ -1740,3 +1743,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight:bold;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+}
+
+.legaltext {
+  color: white;
+  font-family: 'Barlow';
+  margin: 5rem;
+}
