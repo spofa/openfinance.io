@@ -234,13 +234,18 @@
   #socialbuttons {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    max-width: 25vw;
+  pointer-events: auto;
+  z-index: 100;
 
   }
 
   .socialicon {
     padding: .5rem;
     height: 100%;
+    max-height: 64px;
+    max-width: 64px;
   }
 
   #useCaseLogo{
@@ -806,10 +811,11 @@
 }
 
 #landing {
+  margin-top: 20vh;
   display:flex;
   justify-content: space-around;
-  align-items: center;
-  height: 75vh;
+  align-items: flex-start;
+
   width: 90%;
   pointer-events: none;
 
@@ -983,13 +989,17 @@ canvas{
 #socialbuttons {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+  max-width: 25vw;
+  pointer-events: auto;
 
 }
 
 .socialicon {
   padding: .5rem;
   height: 100%;
+  max-height: 64px;
+    max-width: 64px;
 }
 
 #useCaseLogo{
