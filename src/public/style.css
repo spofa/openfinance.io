@@ -1750,3 +1750,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Barlow';
   margin: 5rem;
 }
+
+.framelink{
+  color: white;
+  pointer-events: auto;
+  text-decoration: underline;
+
+}
+.framelink:hover {
+  color: gray;
+}
+.framelink:visited{
+  color:white;
+}
