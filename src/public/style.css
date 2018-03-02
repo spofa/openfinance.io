@@ -240,6 +240,7 @@
   z-index: 100;
   width: 100%;
   max-width: 900px;
+  margin-right: 4vw;
 
   }
 
@@ -1001,6 +1002,7 @@ canvas{
   pointer-events: auto;
   width: 100%;
   max-width: 900px;
+  margin-right: 4vw;
 
 }
 
