@@ -233,11 +233,13 @@
 
   #socialbuttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 25vw;
   pointer-events: auto;
   z-index: 100;
+  width: 100%;
+  max-width: 900px;
 
   }
 
@@ -267,6 +269,8 @@
     align-items: center;
     margin-top: 2vh;
     margin-bottom: 4vh;
+    padding:0;
+    text-align: center;
   }
 
   #timer li{
@@ -275,7 +279,7 @@
     font-size: 40px;
     font-weight: 100;
     font-family: 'Barlow';
-    margin-left: 4vw;
+    margin-right: 4vw;
   }
 
   #docs {
@@ -991,10 +995,12 @@ canvas{
 
 #socialbuttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 25vw;
   pointer-events: auto;
+  width: 100%;
+  max-width: 900px;
 
 }
 
@@ -1024,6 +1030,7 @@ canvas{
   align-items: center;
   margin-top: 2vh;
   margin-bottom: 4vh;
+  padding:0;
 }
 
 #timer li{
@@ -1032,7 +1039,7 @@ canvas{
   font-size: 80px;
   font-weight: 100;
   font-family: 'Barlow';
-  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 #docs {
