@@ -799,6 +799,7 @@
   width: 33vw;
   font-size: 1rem;
   font-weight: 200;
+
 }
 
 #maintext div:nth-of-type(2) {
@@ -1234,7 +1235,7 @@ canvas{
 }
 
 #teampage {
-  height: 2150px;
+  height: 2650px;
   padding: 2.5% 0 7.5% 0;
   width: 100%;
   background-color: #fefefe;
@@ -1753,11 +1754,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color:#030560;
   font-family: "Barlow";
   font-size:20px;
-  line-height:50px;
+  /* line-height:50px; */
   text-align:center;
   margin:0;
-  height:50px;
-  padding:0px 33px;
+  /* height:50px; */
+  padding:8px 33px;
   pointer-events: auto;
   border-radius:25px;
   max-width:100%;
@@ -1767,7 +1768,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight:bold;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+
+
 }
+/* background: #FFFFFF;
+box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
+border-radius: 100px;
+text-align: center;
+font-family: "Barlow";
+font-size: 1rem;
+margin: auto;
+color: #010346;
+display: flex;
+align-items: center;
+margin-top: 8vh;
+pointer-events: auto;
+padding: 5px 15px;
+ */
+
+
 
 .legaltext {
   color: white;
