@@ -1758,7 +1758,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align:center;
   margin:0;
   /* height:50px; */
-  padding:8px 33px;
+  padding:9px 33px;
   pointer-events: auto;
   border-radius:25px;
   max-width:100%;
@@ -1768,7 +1768,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight:bold;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-
 
 }
 /* background: #FFFFFF;
