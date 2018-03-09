@@ -1805,3 +1805,9 @@ padding: 5px 15px;
 .framelink:visited{
   color:white;
 }
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+  pointer-events: auto;
+}
