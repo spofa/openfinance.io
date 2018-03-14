@@ -370,6 +370,22 @@
     margin: 0 auto;
   }
 
+  #buildingon {
+    height: 400px;
+    width: 100%;
+    padding: 0 7.5%;
+    background-color: #f6f9fc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #buildingon > * {
+    width: 85%;
+    margin: 0 auto;
+  }
+
   #industryText {
     width: 90%;
     color: white;
@@ -1135,6 +1151,23 @@ canvas{
   margin: 0 auto;
 }
 
+#buildingon {
+  /* height: 600px; */
+  height: 400px;
+  width: 100%;
+  padding: 0 7.5%;
+  background-color: #f6f9fc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+#buildingon > * {
+  width: 85%;
+  margin: 0 auto;
+}
 #industryText {
   width: 27%;
   color: white;
