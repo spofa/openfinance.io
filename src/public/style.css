@@ -684,11 +684,20 @@
 
 .investorCard {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   height: 100%;
   width: 100%;
   margin-bottom: 5vh;
+}
+
+.builtOnCard {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 .investorLogo {
@@ -724,6 +733,15 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+  #zeroKwrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0;
+    width: 90vw;
+    margin-right: 0;
   }
 
   #proofPic {
@@ -1491,9 +1509,20 @@ a{
 }
 
 #zeroKwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#zeroKwrapper2 {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90vw
 }
 
 #proofPic {
@@ -1637,6 +1666,15 @@ a{
   margin-bottom: 10vh;
   margin-top: 5vh;
 }
+.builtOnCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
 
 .investorLogo {
   max-height: 20vh;
@@ -1670,6 +1708,15 @@ a{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#zeroKwrapper2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  width: 90vw;
 }
 
 #proofPic {
