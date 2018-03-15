@@ -1,42 +1,38 @@
-@media screen and (max-width: 899px) {
+@media screen and (min-width: 900px) {
   #main {
     position: absolute;
     z-index: 1;
     width: 100%;
     pointer-events: none;
     left: -1px;
-    align-content: center;
   }
 
   #headertext {
-    font-family: 'Barlow', sans-serif;
-    font-size: 3rem;
-    color: #FFFFFF;
+    font-family: "Barlow", sans-serif;
+    font-size: 2.8rem;
+    color: #ffffff;
     letter-spacing: 0.59px;
     margin: 10px 0;
-    margin-top: 10vh;
-    margin-bottom: 3vh;
   }
 
   #maintext {
-    font-family: 'Barlow', sans-serif;
-    color: #FFFFFF;
+    font-family: "Barlow", sans-serif;
+    color: #ffffff;
     letter-spacing: 0.33px;
-    width: 100vw;
-    margin-bottom: 4rem;
+    width: 33vw;
     font-size: 1rem;
     font-weight: 200;
   }
 
   #maintext div:nth-of-type(2) {
-    font-size: 1.5rem;
+    font-size: 25px;
   }
 
   #ofntext {
-    font-size: 1.4rem;
+    font-size: 3rem;
   }
   .boldedText {
-    font-family: 'Barlow-Bold', sans-serif;
+    font-family: "Barlow-Bold", sans-serif;
     float: left;
   }
 
@@ -46,32 +42,27 @@
   }
 
   #landing {
-    display:flex;
-    flex-direction: column;
+    margin-top: 20vh;
+    display: flex;
     justify-content: space-around;
-    align-items: center;
-    /* height: 75vh; */
-    width: 100vw;
-    pointer-events: none;
+    align-items: flex-start;
 
+    width: 90%;
+    pointer-events: none;
   }
   #menu {
-    font-family: 'Barlow',sans-serif;
-    /* position: abs/olute; */
-    width: 100vw;
+    font-family: "Barlow", sans-serif;
+    position: absolute;
+    width: 98%;
     z-index: 1;
-    color: #FFFFFF;
+    color: #ffffff;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
-
   #rightmenu {
-    width: 100%;
-    display: none;
+    width: 50%;
+    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-
   }
 
   #leftmenu {
@@ -81,22 +72,19 @@
   }
 
   #social {
-    background: #FFFFFF;
+    background: #ffffff;
     border: 1px solid #979797;
-    box-shadow: 0 2px 10px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.26);
     border-radius: 8px;
-    width: 80vw;
-    /* height: 30vh; */
+    width: 25vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     pointer-events: auto;
-    margin: auto;
-    z-index: 100;
     padding: 1%;
-    right: 10;
-    /* top: 20vh; */
+    margin-top: 10%;
   }
 
   #social > * {
@@ -106,27 +94,28 @@
 
   #logotext {
     font-size: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.37px;
   }
 
   .slackButton {
-    background: #FFFFFF;
-    box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
+    background: #ffffff;
+    box-shadow: 0 2px 19px 3px rgba(0, 0, 0, 0.32);
     border-radius: 100px;
     text-align: center;
     font-family: "Barlow";
     font-size: 1rem;
-    margin: auto;
     color: #010346;
     display: flex;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 3vh;
     pointer-events: auto;
     padding: 5px 15px;
-
   }
-  .slackButton:focus {outline:0;}
+
+  .slackButton:focus {
+    outline: 0;
+  }
 
   .slackButtonText {
     font-family: "Barlow";
@@ -136,8 +125,7 @@
 
   .document {
     background: #030560;
-    box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
-
+    box-shadow: 0 2px 19px 5px rgba(0, 0, 0, 0.24);
   }
   input {
     outline: none;
@@ -146,30 +134,27 @@
     outline: none;
   }
 
-
-  html,body{
-    width:100vw;
+  html,
+  body {
+    width: 100vw;
     position: absolute;
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: column;
-    height:100%;
+    /* display: flex;
+  flex-wrap: wrap; */
+    height: 100%;
     background: #030560;
+    margin: 0;
   }
 
-  html{
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  .particles-js-canvas-el{
-    width: 100vw !important;
+  /* html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} */
 
-  }
-
-  canvas{
+  canvas {
     position: fixed;
-    width: 100%;
-    height:100%;
-    vertical-align:top;
+    width: 100vw !important;
+    height: 100%;
+    max-width: 100vw;
+    vertical-align: top;
     left: -1px;
   }
 
@@ -177,18 +162,17 @@
     display: block;
     padding-top: 25vh;
     height: 210vh;
-    width:100%;
+    width: 100%;
     position: absolute;
     pointer-events: none;
     z-index: -1;
   }
 
   #stayconnected {
-    font-family: 'Barlow';
+    font-family: "Barlow";
     color: #010346;
-
   }
-  #emailContainer{
+  #emailContainer {
     width: 90%;
     height: 15%;
     margin-bottom: 7.5%;
@@ -199,18 +183,18 @@
     margin-right: 10px;
     padding-left: 5px;
     height: 5vh;
-    font-family: 'Barlow';
-    background: #FFFFFF;
+    font-family: "Barlow";
+    background: #ffffff;
     border: 1px solid #010346;
     border-radius: 100px;
     font-size: 1rem;
   }
   #emailtext {
-    font-family: 'Barlow';
+    font-family: "Barlow";
     font-size: 1rem;
-    color: #7E7E7E;
+    color: #7e7e7e;
   }
-  #mc_embed_signup_scroll{
+  #mc_embed_signup_scroll {
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -221,13 +205,13 @@
     background: #010346;
     border-radius: 100px;
     height: 5vh;
-    width:100%;
-    font-family: 'Barlow';
+    width: 100%;
+    font-family: "Barlow";
     font-size: 1rem;
-    color: #FFFFFF;
-    box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+    color: #ffffff;
+    box-shadow: 0 2px 19px 3px rgba(0, 0, 0, 0.32);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     text-align: center;
   }
 
@@ -236,29 +220,27 @@
     justify-content: center;
     align-items: center;
     max-width: 25vw;
-  pointer-events: auto;
-  z-index: 100;
-  width: 100%;
-  max-width: 900px;
-  margin-right: 4vw;
-
+    pointer-events: auto;
+    width: 100%;
+    max-width: 900px;
+    margin-right: 4vw;
   }
 
   .socialicon {
-    padding: .5rem;
+    padding: 0.5rem;
     height: 100%;
-    max-height: 38px;
-    max-width: 38px;
+    max-height: 64px;
+    max-width: 64px;
   }
 
-  #useCaseLogo{
+  #useCaseLogo {
     max-width: 35%;
     max-height: 45%;
   }
 
-  #useCasePic{
-    height: 250%;
-    width: 250%;
+  #useCasePic {
+    max-height: 550px;
+    max-width: 100%;
   }
 
   #timer {
@@ -270,16 +252,15 @@
     align-items: center;
     margin-top: 2vh;
     margin-bottom: 4vh;
-    padding:0;
-    text-align: center;
+    padding: 0;
   }
 
-  #timer li{
+  #timer li {
     list-style-type: none;
-    color: #FFFFFF;
-    font-size: 40px;
+    color: #ffffff;
+    font-size: 80px;
     font-weight: 100;
-    font-family: 'Barlow';
+    font-family: "Barlow";
     margin-right: 4vw;
   }
 
@@ -290,17 +271,19 @@
     /* vertical-align: middle; */
     /* align-items: center; */
     width: 100%;
-    /* height: 600px; */
+    height: 600px;
     /* margin: 10vh 0; */
+    /* margin-bottom: 10vh; */
+    margin-top: 15vh;
   }
 
   #documentation {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    width: 100vw;
+    width: 85%;
     pointer-events: auto;
-   /*height: 35vh; */
+    /*height: 35vh; */
     margin: 5% auto 0 auto;
   }
   .docformsubmit {
@@ -310,9 +293,10 @@
 
   .docIconContainer {
     background: #030560;
-    box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
+    box-shadow: 0 2px 19px 5px rgba(0, 0, 0, 0.24);
     height: 40vh;
-    width: 30vw;
+    /* padding: 10% 15%; */
+    width: 19vw;
     display: flex;
     vertical-align: middle;
     flex-direction: column;
@@ -330,10 +314,9 @@
 
   .sectionLabel {
     text-align: center;
-    font-family: 'Barlow';
+    font-family: "Barlow";
     font-size: 1.5rem;
     color: white;
-    margin-top: 10vh;
   }
   #ourRoadmap {
     margin-bottom: 0px;
@@ -341,27 +324,38 @@
 
   .sectionLabelDark {
     text-align: center;
-    font-family: 'Barlow';
+    font-family: "Barlow";
     font-size: 1.5rem;
     color: #030560;
   }
 
   #industry {
-
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
   }
   #differentiator {
-    height: 800px;
+    /* height: 600px; */
+    flex-direction: column;
+    padding-top: 10vh;
     background: #00035a; /* Old browsers */
-    background: -moz-linear-gradient(top, #00035a 0%, #00052b 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #00035a 0%,#00052b 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #00035a 0%,#00052b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(
+      top,
+      #00035a 0%,
+      #00052b 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #00035a 0%,
+      #00052b 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #00035a 0%,
+      #00052b 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00035a', endColorstr='#00052b',GradientType=0 ); /*
-    IE6-9 */
+  IE6-9 */
     width: 100vw;
   }
 
@@ -371,6 +365,7 @@
   }
 
   #buildingon {
+    /* height: 600px; */
     height: 400px;
     width: 100%;
     padding: 0 7.5%;
@@ -379,18 +374,17 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
   }
 
   #buildingon > * {
     width: 85%;
     margin: 0 auto;
   }
-
   #industryText {
-    width: 90%;
+    width: 27%;
     color: white;
-    font-family: 'Barlow';
-    margin-top: 3vh;
+    font-family: "Barlow";
   }
 
   #industryText .boldedText,
@@ -399,14 +393,15 @@
     margin: 0 !important;
     font-weight: 200;
     font-size: 1.25rem;
-  /*   line-height: 1.5rem; */
+    /*   line-height: 1.5rem; */
   }
 
-  #useCases{
-    height: 1000px;
-    width: 100%;
+  #useCases {
+    height: 600px;
+    max-height: 600px;
+    width: 85%;
     padding: 0 7.5%;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -414,22 +409,22 @@
   }
 
   #useCaseList {
-    display: inline;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     pointer-events: auto;
-    width: 100%;
   }
 
-  #useCaseText{
-    width: 90%;
+  #useCaseText {
+    width: 30%;
     color: #010346;
-    font-family: 'Barlow';
-    margin-top: 3vh;
+    font-family: "Barlow";
   }
-
 
   #useCaseButtons {
     display: flex;
     flex-direction: column;
+    justify-content: top;
     align-items: left;
     height: 50%;
     padding: 1rem;
@@ -441,14 +436,13 @@
     margin-bottom: 10%;
   }
 
-
   .useButton {
-    background: #FFFFFF;
-    box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
+    background: #ffffff;
+    box-shadow: 0 2px 17px 3px rgba(0, 0, 0, 0.19);
     border-radius: 100px;
     color: #010346 100%;
-    font-family: 'Barlow';
-    padding: .5rem 1.3rem;
+    font-family: "Barlow";
+    padding: 0.5rem 1.3rem;
     text-align: left;
     /* min-width: 100%; */
     font-size: 1rem;
@@ -458,11 +452,11 @@
 
   .useButton-active {
     background: #050991;
-    box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
+    box-shadow: 0 2px 17px 3px rgba(0, 0, 0, 0.19);
     border-radius: 100px;
-    color: #FFFFFF;
-    font-family: 'Barlow';
-    padding: .5rem 1.3rem;
+    color: #ffffff;
+    font-family: "Barlow";
+    padding: 0.5rem 1.3rem;
     text-align: left;
     /* min-width: 100%; */
     font-size: 1rem;
@@ -470,7 +464,7 @@
     margin: 3.5% 0;
   }
 
-  #timeline{
+  #timeline {
     height: 500px;
     width: 100%;
     /* background: linear-gradient(#010346 100%, #00035E 100%); */
@@ -485,8 +479,8 @@
   }
 
   #teampage {
-    height: 1250px;
-    padding: 0 7.5%;
+    height: 2650px;
+    padding: 2.5% 0 7.5% 0;
     width: 100%;
     background-color: #fefefe;
     display: flex;
@@ -494,142 +488,128 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10vh;
-
   }
 
-  #ourTeam {
-    margin-bottom: 10vh;
-  }
-
-    #futureOfFinance {
+  #futureOfFinance {
     width: 100%;
     height: 55vh;
     position: relative;
-
   }
 
-  #gradientEnd{
+  #gradientEnd {
     width: 100%;
-    max-height: 40vh;
     overflow: hidden;
+    max-height: 55vh;
     transform: rotate(180deg);
     position: absolute;
   }
 
-  #footerContainer{
+  #footerContainer {
     position: absolute;
     width: 100%;
     pointer-events: auto;
   }
 
-  #footerContainer a{
+  #footerContainer a {
     color: white;
   }
 
-  .footerColumn{
+  .footerColumn {
     float: left;
     width: 33.33%;
     text-align: center;
   }
 
-  .footerColumn ul{
+  .footerColumn ul {
     padding: 0;
   }
 
-  .footerColumn li{
+  .footerColumn li {
     list-style-type: none;
     display: block;
     color: white;
-    font-family: 'Barlow';
+    font-family: "Barlow";
     padding: 2%;
-    font-size: .8em;
+    font-size: 1em;
   }
 
-  .footerColumn h4{
-    font-size: 1em;
+  .footerColumn h4 {
+    font-size: 1.2em;
     text-align: center;
     color: white;
-    font-family: 'Barlow';
+    font-family: "Barlow";
   }
 
-  #fof{
-    width: 80%;
-    font-family: 'Barlow';
+  #fof {
+    width: 30%;
+    font-family: "Barlow";
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    left: 10px;
-    bottom: 25px;
+    bottom: 225px;
+    left: 150px;
   }
-
-  #fof2{
-    width: 80%;
-    font-family: 'Barlow';
+  #fof2 {
+    width: 30%;
+    font-family: "Barlow";
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    left: 10px;
-    bottom: 25px;
+    bottom: 225px;
+    left: 150px;
   }
-
-  #fof3{
-    width: 80%;
-    font-family: 'Barlow';
+  #fof3 {
+    width: 30%;
+    font-family: "Barlow";
     font-size: 1.75rem;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    right: 10px;
-    bottom: 25px;
+    bottom: 350px;
+    right: 0px;
   }
 
-  .team{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  .team {
+    width: 90%;
   }
 
   .teamImg {
-    height: 60px;
-    width: 60px;
-    margin-bottom: 6px;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
     border-radius: 50%;
-    -webkit-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
-    -moz-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
-    box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
-    margin: 10px;
+    -webkit-box-shadow: 10px 10px 70px -15px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 10px 10px 70px -15px rgba(0, 0, 0, 0.58);
+    box-shadow: 10px 10px 70px -15px rgba(0, 0, 0, 0.58);
   }
 
   .teamText {
     font-family: "Barlow";
-    font-size: .5rem;
+    font-size: 1rem;
     color: #010346;
     margin: 1% 0;
     letter-spacing: 0.39px;
     z-index: 1;
     text-align: center;
-    display: flex;
-    align-items: flex-start;
   }
 
   #ourAdvisors {
-    margin-bottom: 8vh;
+    padding-top: 20vh;
   }
 
-  a{
-    text-decoration:  none;
+  a {
+    text-decoration: none;
   }
 
   .docText {
     font-family: "Barlow";
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0.39px;
     text-decoration: none;
     z-index: 1;
@@ -637,10 +617,10 @@
     margin-bottom: 2rem;
   }
   .teamCard {
-  /*
-    padding-left: 3.5vw;
-    padding-right: 3.5vw;
-  */
+    /*
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+*/
     width: 20%;
     padding: 2.5% 0;
     display: flex;
@@ -652,69 +632,82 @@
 
   .teamName {
     font-family: "Barlow";
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #010346;
     letter-spacing: 0.39px;
-    margin:0;
+    margin: 0;
     text-align: center;
   }
 
-
   .sliding-middle-out {
-
     padding-bottom: 3px;
   }
   .sliding-middle-out:after {
-    content: '';
+    content: "";
     display: block;
     margin: auto;
     height: 3px;
     width: 0px;
     background: transparent;
-    transition: width .5s ease, background-color .5s ease;
+    transition: width 0.5s ease, background-color 0.5s ease;
   }
   .sliding-middle-out:hover:after {
     width: 100%;
     background: white;
   }
 
-#support {
-  width: 90%;
-}
+  #ourInvestors {
+    padding-top: 20vh;
+  }
 
-.investorCard {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 5vh;
-}
+  .investorWrapper {
 
-.builtOnCard {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 10vh;
-  margin-top: 5vh;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 47.5%;
+    height: 100%;
+  }
 
-.investorLogo {
-  max-height: 15vh;
-  max-width: 12vw;
-}
+  #support {
+    width: 90%;
+  }
 
-  #zeroKnowledge{
-    /* height: 55vh; */
-    /* width: 85%; */
+  .investorCard {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+  }
+  .builtOnCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+  }
+
+  .investorLogo {
+    max-height: 20vh;
+    max-width: 24vw;
+  }
+
+  #zeroKnowledge {
+    height: 55vh;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
 
-  #zeroKnowledge > *, #zeroKnowledge > * > * {
+  #zeroKnowledge > *,
+  #zeroKnowledge > * > * {
     color: #fff !important;
   }
 
@@ -724,13 +717,12 @@
     font-weight: 100;
     color: #fff;
     letter-spacing: 0.39px;
-  /*   margin: 3rem; */
-    width: 97%;
+    /*   margin: 3rem; */
+    width: 40%;
   }
 
   #zeroKwrapper {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
@@ -740,13 +732,13 @@
     justify-content: space-around;
     align-items: center;
     margin-left: 0;
-    width: 90vw;
     margin-right: 0;
+    width: 90vw;
   }
 
   #proofPic {
-    max-height: 40vh;
-    max-width: 80vw;
+    max-height: 45vh;
+    max-width: 33vw;
   }
 
   #ofnLogo {
@@ -754,48 +746,57 @@
     max-width: 65px;
   }
 
-  .ofnTimeline{
+  .ofnTimeline {
     height: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }
 
-  .teamWrapper {
-
+  #devTeam {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
   }
-  .teamColumn {
+  #businessTeam {
     display: flex;
     flex-wrap: wrap;
-    height:100%;
-    width: 100%
+    width: 50%;
+    height: 100%;
   }
 
   #industryLogo {
     max-height: 100%;
-    max-width: 90%;
+    max-width: 50%;
   }
 
-  .textCenter{
+  .teamWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .teamColumn {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+  }
+  .textCenter {
     text-align: center;
   }
-
   .filler {
     height: 320px;
     width: 320px;
   }
   .spacer {
-    width:5%;
+    width: 5%;
   }
 
   @keyframes fade {
     from {
       opacity: 0;
-      }
+    }
     to {
       opacity: 1;
     }
@@ -805,1052 +806,81 @@
     animation-name: fade;
     animation-duration: 2s;
   }
-}
 
-
-/* ====================================================== */
-@media screen and (min-width: 900px) {
-  #main {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  pointer-events: none;
-  left: -1px;
-}
-
-#headertext {
-  font-family: 'Barlow', sans-serif;
-  font-size: 2.8rem;
-  color: #FFFFFF;
-  letter-spacing: 0.59px;
-  margin: 10px 0;
-}
-
-#maintext {
-  font-family: 'Barlow', sans-serif;
-  color: #FFFFFF;
-  letter-spacing: 0.33px;
-  width: 33vw;
-  font-size: 1rem;
-  font-weight: 200;
-
-}
-
-#maintext div:nth-of-type(2) {
-  font-size: 25px;
-}
-
-#ofntext {
-  font-size: 3rem;
-}
-.boldedText {
-  font-family: 'Barlow-Bold', sans-serif;
-  float: left;
-}
-
-.boldedText::after {
-  content: " ";
-  white-space: pre;
-}
-
-#landing {
-  margin-top: 20vh;
-  display:flex;
-  justify-content: space-around;
-  align-items: flex-start;
-
-  width: 90%;
-  pointer-events: none;
-
-}
-#menu {
-  font-family: 'Barlow',sans-serif;
-  position: absolute;
-  width: 98%;
-  z-index: 1;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-}
-#rightmenu {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-
-}
-
-#leftmenu {
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-}
-
-#social {
-  background: #FFFFFF;
-  border: 1px solid #979797;
-  box-shadow: 0 2px 10px 5px rgba(0,0,0,0.26);
-  border-radius: 8px;
-  width: 25vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  pointer-events: auto;
-  padding: 1%;
-  margin-top: 10%;
-}
-
-#social > * {
-  width: 80%;
-  text-align: center;
-}
-
-#logotext {
-  font-size: 20px;
-  color: #FFFFFF;
-  letter-spacing: 0.37px;
-}
-
-.slackButton {
-  background: #FFFFFF;
-  box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
-  border-radius: 100px;
-  text-align: center;
-  font-family: "Barlow";
-  font-size: 1rem;
-  color: #010346;
-  display: flex;
-  align-items: center;
-  margin-top:3vh;
-  pointer-events: auto;
-  padding: 5px 15px;
-}
-z
-.slackButton:focus {outline:0;}
-
-.slackButtonText {
-  font-family: "Barlow";
-  font-size: 2rem;
-  color: #010346;
-}
-
-.document {
-  background: #030560;
-  box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
-
-}
-input {
-  outline: none;
-}
-button {
-  outline: none;
-}
-
-
-html,body{
-  width:100vw;
-  position: absolute;
-  /* display: flex;
-  flex-wrap: wrap; */
-  height:100%;
-  background: #030560;
-  margin: 0;
-}
-
-/* html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-} */
-
-canvas{
-  position: fixed;
-  width: 100vw !important;
-  height:100%;
-  max-width: 100vw;
-  vertical-align:top;
-  left: -1px;
-}
-
-#triangleGradient {
-  display: block;
-  padding-top: 25vh;
-  height: 210vh;
-  width:100%;
-  position: absolute;
-  pointer-events: none;
-  z-index: -1;
-}
-
-#stayconnected {
-  font-family: 'Barlow';
-  color: #010346;
-
-}
-#emailContainer{
-  width: 90%;
-  height: 15%;
-  margin-bottom: 7.5%;
-}
-
-#emailform {
-  width: 100%;
-  margin-right: 10px;
-  padding-left: 5px;
-  height: 5vh;
-  font-family: 'Barlow';
-  background: #FFFFFF;
-  border: 1px solid #010346;
-  border-radius: 100px;
-  font-size: 1rem;
-}
-#emailtext {
-  font-family: 'Barlow';
-  font-size: 1rem;
-  color: #7E7E7E;
-}
-#mc_embed_signup_scroll{
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#subscribebutton {
-  background: #010346;
-  border-radius: 100px;
-  height: 5vh;
-  width:100%;
-  font-family: 'Barlow';
-  font-size: 1rem;
-  color: #FFFFFF;
-  box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  text-align: center;
-}
-
-#socialbuttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 25vw;
-  pointer-events: auto;
-  width: 100%;
-  max-width: 900px;
-  margin-right: 4vw;
-
-}
-
-.socialicon {
-  padding: .5rem;
-  height: 100%;
-  max-height: 64px;
-    max-width: 64px;
-}
-
-#useCaseLogo{
-  max-width: 35%;
-  max-height: 45%;
-}
-
-#useCasePic{
-  max-height: 550px;
-  max-width: 100%;
-}
-
-#timer {
-  width: 100%;
-  max-width: 900px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  padding:0;
-}
-
-#timer li{
-  list-style-type: none;
-  color: #FFFFFF;
-  font-size: 80px;
-  font-weight: 100;
-  font-family: 'Barlow';
-  margin-right: 4vw;
-}
-
-#docs {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-  /* vertical-align: middle; */
-  /* align-items: center; */
-  width: 100%;
-  height: 600px;
-  /* margin: 10vh 0; */
-  /* margin-bottom: 10vh; */
-  margin-top: 15vh;
-}
-
-#documentation {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 85%;
-  pointer-events: auto;
- /*height: 35vh; */
-  margin: 5% auto 0 auto;
-}
-.docformsubmit {
-  height: 100%;
-  width: 100%;
-}
-
-.docIconContainer {
-  background: #030560;
-  box-shadow: 0 2px 19px 5px rgba(0,0,0,0.24);
-  height: 40vh;
-  /* padding: 10% 15%; */
-  width: 19vw;
-  display: flex;
-  vertical-align: middle;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-
-.sectionLabel {
-  text-align: center;
-  font-family: 'Barlow';
-  font-size: 1.5rem;
-  color: white;
-}
-#ourRoadmap {
-  margin-bottom: 0px;
-}
-
-.sectionLabelDark {
-  text-align: center;
-  font-family: 'Barlow';
-  font-size: 1.5rem;
-  color: #030560;
-}
-
-#industry {
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-#differentiator {
-  /* height: 600px; */
-  flex-direction: column;
-  padding-top: 10vh;
-  background: #00035a; /* Old browsers */
-  background: -moz-linear-gradient(top, #00035a 0%, #00052b 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #00035a 0%,#00052b 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #00035a 0%,#00052b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00035a', endColorstr='#00052b',GradientType=0 ); /*
-  IE6-9 */
-  width: 100vw;
-}
-
-#differentiator > * {
-  width: 85%;
-  margin: 0 auto;
-}
-
-#buildingon {
-  /* height: 600px; */
-  height: 400px;
-  width: 100%;
-  padding: 0 7.5%;
-  background-color: #f6f9fc;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-}
-
-#buildingon > * {
-  width: 85%;
-  margin: 0 auto;
-}
-#industryText {
-  width: 27%;
-  color: white;
-  font-family: 'Barlow';
-}
-
-#industryText .boldedText,
-#industryText p {
-  float: none;
-  margin: 0 !important;
-  font-weight: 200;
-  font-size: 1.25rem;
-/*   line-height: 1.5rem; */
-}
-
-#useCases{
-  height: 600px;
-  max-height: 600px;
-  width: 85%;
-  padding: 0 7.5%;
-  background-color: #F0F0F0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-#useCaseList {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  pointer-events: auto;
-}
-
-#useCaseText{
-  width: 30%;
-  color: #010346;
-  font-family: 'Barlow';
-}
-
-
-#useCaseButtons {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: left;
-  height: 50%;
-  padding: 1rem;
-}
-
-#useCaseButtons .sectionLabelDark {
-  text-align: left;
-  width: 100%;
-  margin-bottom: 10%;
-}
-
-
-.useButton {
-  background: #FFFFFF;
-  box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
-  border-radius: 100px;
-  color: #010346 100%;
-  font-family: 'Barlow';
-  padding: .5rem 1.3rem;
-  text-align: left;
-  /* min-width: 100%; */
-  font-size: 1rem;
-  justify-content: left;
-  margin: 3.5% 0;
-}
-
-.useButton-active {
-  background: #050991;
-  box-shadow: 0 2px 17px 3px rgba(0,0,0,0.19);
-  border-radius: 100px;
-  color: #FFFFFF;
-  font-family: 'Barlow';
-  padding: .5rem 1.3rem;
-  text-align: left;
-  /* min-width: 100%; */
-  font-size: 1rem;
-  justify-content: left;
-  margin: 3.5% 0;
-}
-
-#timeline{
-  height: 500px;
-  width: 100%;
-  /* background: linear-gradient(#010346 100%, #00035E 100%); */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
-#timeline .sectionLabel {
-  margin-top: 5%;
-}
-
-#teampage {
-  height: 2650px;
-  padding: 2.5% 0 7.5% 0;
-  width: 100%;
-  background-color: #fefefe;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 10vh;
-
-}
-
-#futureOfFinance {
-  width: 100%;
-  height: 55vh;
-  position: relative;
-}
-
-#gradientEnd{
-  width: 100%;
-  overflow: hidden;
-  max-height: 55vh;
-  transform: rotate(180deg);
-  position: absolute;
-}
-
-
-#footerContainer{
-  position: absolute;
-  width: 100%;
-  pointer-events: auto;
-
-}
-
-#footerContainer a{
-  color: white;
-}
-
-.footerColumn{
-  float: left;
-  width: 33.33%;
-  text-align: center;
-}
-
-.footerColumn ul{
-  padding: 0;
-}
-
-.footerColumn li{
-  list-style-type: none;
-  display: block;
-  color: white;
-  font-family: 'Barlow';
-  padding: 2%;
-  font-size: 1em;
-}
-
-.footerColumn h4{
-  font-size: 1.2em;
-  text-align: center;
-  color: white;
-  font-family: 'Barlow';
-}
-
-#fof{
-  width: 30%;
-  font-family: 'Barlow';
-  font-size: 1.75rem;
-  color: #FFFFFF;
-  letter-spacing: 0.39px;
-  z-index: 2;
-  position: absolute;
-  bottom: 225px;
-  left: 150px;
-}
-#fof2{
-  width: 30%;
-  font-family: 'Barlow';
-  font-size: 1.75rem;
-  color: #FFFFFF;
-  letter-spacing: 0.39px;
-  z-index: 2;
-  position: absolute;
-  bottom: 225px;
-  left: 150px;
-}
-#fof3{
-  width: 30%;
-  font-family: 'Barlow';
-  font-size: 1.75rem;
-  color: #FFFFFF;
-  letter-spacing: 0.39px;
-  z-index: 2;
-  position: absolute;
-  bottom: 350px;
-  right: 0px;
-}
-
-.team{
-  width: 90%;
-
-}
-
-.teamImg {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
-  -moz-box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
-  box-shadow: 10px 10px 70px -15px rgba(0,0,0,0.58);
-}
-
-.teamText {
-  font-family: "Barlow";
-  font-size: 1rem;
-  color: #010346;
-  margin: 1% 0;
-  letter-spacing: 0.39px;
-  z-index: 1;
-  text-align: center;@media screen and (max-width: 899px) {
-  #main {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    pointer-events: none;
-    left: -1px;
-    align-content: flex-start;
+  #footer.dark,
+  .dark #footer {
+    background-color: #222;
+    color: #sccc;
+    border-top-color: rgba(0, 0, 0, 0.2);
   }
 
-a{
-  text-decoration:  none;
-}
-
-.docText {
-  font-family: "Barlow";
-  font-size: 1rem;
-  color: #FFFFFF;
-  letter-spacing: 0.39px;
-  text-decoration: none;
-  z-index: 1;
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-.teamCard {
-/*
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
-*/
-  width: 50%;
-  padding: 2.5% 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-height: 33.333%;
-}
-
-.teamName {
-  font-family: "Barlow";
-  font-size: 1.5rem;
-  color: #010346;
-  letter-spacing: 0.39px;
-  margin:0;
-  text-align: center;
-}
-
-
-.sliding-middle-out {
-
-  padding-bottom: 3px;
-}
-.sliding-middle-out:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-.sliding-middle-out:hover:after {
-  width: 100%;
-  background: white;
-}
-
-#ourInvestors {
-  padding-top: 20vh;
-}
-
-.investorWrapper {
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 47.5%;
-  height: 100%;
-}
-
-#zeroKnowledge{
-  height: 55vh;
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#zeroKnowledge > *, #zeroKnowledge > * > * {
-  color: #fff !important;
-}
-
-#zeroKText {
-  font-family: "Barlow";
-  font-size: 1.15rem;
-  font-weight: 100;
-  color: #fff;
-  letter-spacing: 0.39px;
-/*   margin: 3rem; */
-  width: 40%;
-}
-
-#zeroKwrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-}
-#zeroKwrapper2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  width: 90vw
-}
-
-#proofPic {
-  max-height: 45vh;
-  max-width: 33vw;
-}
-
-#ofnLogo {
-  max-height: 65px;
-  max-width: 65px;
-}
-
-.ofnTimeline{
-  height: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-#devTeam {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  flex-wrap: wrap;
-
-}
-#businessTeam {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  height:100%
-}
-
-#industryLogo {
-  max-height: 100%;
-  max-width: 50%;
-}
-
-.teamWrapper {
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 47.5%;
-  height: 100%;
-
-
-}
-.teamColumn {
-  display: flex;
-  flex-wrap: wrap;
-  height:100%;
-  width: 100%
-}
-.textCenter{
-  text-align: center;
-}
-.filler {
-  height: 320px;
-  width: 320px;
-
-}
-.spacer {
-  width:5%;
-}
-
-}
-
-#ourAdvisors {
-  padding-top: 20vh;
-}
-
-}
-
-a{
-  text-decoration:  none;
-}
-
-.docText {
-  font-family: "Barlow";
-  font-size: 1rem;
-  color: #FFFFFF;
-  letter-spacing: 0.39px;
-  text-decoration: none;
-  z-index: 1;
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-.teamCard {
-/*
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
-*/
-  width: 20%;
-  padding: 2.5% 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  max-height: 33.333%;
-}
-
-.teamName {
-  font-family: "Barlow";
-  font-size: 1.5rem;
-  color: #010346;
-  letter-spacing: 0.39px;
-  margin:0;
-  text-align:center;
-}
-
-
-.sliding-middle-out {
-
-  padding-bottom: 3px;
-}
-.sliding-middle-out:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-.sliding-middle-out:hover:after {
-  width: 100%;
-  background: white;
-}
-
-#support {
-  width: 90%;
-}
-
-.investorCard {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 10vh;
-  margin-top: 5vh;
-}
-.builtOnCard {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  margin-bottom: 10vh;
-  margin-top: 5vh;
-}
-
-.investorLogo {
-  max-height: 20vh;
-  max-width: 24vw;
-}
-
-#zeroKnowledge{
-  height: 55vh;
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#zeroKnowledge > *, #zeroKnowledge > * > * {
-  color: #fff !important;
-}
-
-#zeroKText {
-  font-family: "Barlow";
-  font-size: 1.15rem;
-  font-weight: 100;
-  color: #fff;
-  letter-spacing: 0.39px;
-/*   margin: 3rem; */
-  width: 40%;
-}
-
-#zeroKwrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#zeroKwrapper2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  width: 90vw;
-}
-
-#proofPic {
-  max-height: 45vh;
-  max-width: 33vw;
-}
-
-#ofnLogo {
-  max-height: 65px;
-  max-width: 65px;
-}
-
-.ofnTimeline{
-  height: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-#devTeam {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  flex-wrap: wrap;
-
-}
-#businessTeam {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  height:100%
-}
-
-#industryLogo {
-  max-height: 100%;
-  max-width: 50%;
-}
-
-.teamWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-.teamColumn {
-  display: flex;
-  flex-wrap: wrap;
-  height:100%;
-  width: 100%
-}
-.textCenter{
-  text-align: center;
-}
-.filler {
-  height: 320px;
-  width: 320px;
-
-}
-.spacer {
-  width:5%;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    }
-  to {
-    opacity: 1;
+  #footer {
+    position: relative;
+    background-color: #EEE;
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
   }
-}
 
-.fadeIn {
-  animation-name: fade;
-  animation-duration: 2s;
-}
+  .dark,
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    color: #eee;
+  }
 
-}
+  .nopadding {
+    padding: 0 !important;
+  }
 
-#footer.dark, .dark #footer {
-  background-color: #222;
-  color: #CCC;
-  border-top-color: rgba(0,0,0,0.2);
-}
+  .noborder {
+    border: none !important;
+  }
 
-#footer {
-  position: relative;
-  background-color: #EEE;
-  border-top: 5px solid rgba(0,0,0,0.2);
-}
+  .nomargin {
+    margin: 0 !important;
+  }
 
-.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #EEE;
-}
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
 
-.nopadding {
-  padding: 0 !important;
-}
-
-.noborder {
-  border: none !important;
-}
-
-.nomargin {
-  margin: 0 !important;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-
-.listButton {
-  display:inline-block;
-  text-decoration:none;
-  background-color:white;
-  color:#030560;
-  font-family: "Barlow";
-  font-size:20px;
-  /* line-height:50px; */
-  text-align:center;
-  margin:0;
-  /* height:50px; */
-  padding:9px 33px;
-  pointer-events: auto;
-  border-radius:25px;
-  max-width:100%;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  font-weight:bold;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-
-}
-/* background: #FFFFFF;
+  .listButton {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #030560;
+    font-family: "Barlow";
+    font-size: 20px;
+    /* line-height:50px; */
+    text-align: center;
+    margin: 0;
+    /* height:50px; */
+    padding: 9px 33px;
+    pointer-events: auto;
+    border-radius: 25px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* background: #FFFFFF;
 box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
 border-radius: 100px;
 text-align: center;
@@ -1865,29 +895,27 @@ pointer-events: auto;
 padding: 5px 15px;
  */
 
+  .legaltext {
+    color: white;
+    font-family: "Barlow";
+    margin: 5rem;
+  }
 
+  .framelink {
+    color: white;
+    pointer-events: auto;
+    text-decoration: underline;
+  }
+  .framelink:hover {
+    color: gray;
+  }
+  .framelink:visited {
+    color: white;
+  }
 
-.legaltext {
-  color: white;
-  font-family: 'Barlow';
-  margin: 5rem;
-}
-
-.framelink{
-  color: white;
-  pointer-events: auto;
-  text-decoration: underline;
-
-}
-.framelink:hover {
-  color: gray;
-}
-.framelink:visited{
-  color:white;
-}
-
-.linkedin {
-  width: 20px;
-  height: 20px;
-  pointer-events: auto;
+  .linkedin {
+    width: 20px;
+    height: 20px;
+    pointer-events: auto;
+  }
 }
