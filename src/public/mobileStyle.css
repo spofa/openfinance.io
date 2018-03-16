@@ -1,35 +1,39 @@
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 899px) {
   #main {
     position: absolute;
     z-index: 1;
     width: 100%;
     pointer-events: none;
     left: -1px;
+    align-content: center;
   }
 
   #headertext {
     font-family: "Barlow", sans-serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: #ffffff;
     letter-spacing: 0.59px;
     margin: 10px 0;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
   }
 
   #maintext {
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     letter-spacing: 0.33px;
-    width: 33vw;
+    width: 100vw;
+    margin-bottom: 4rem;
     font-size: 1rem;
     font-weight: 200;
   }
 
   #maintext div:nth-of-type(2) {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
 
   #ofntext {
-    font-size: 3rem;
+    font-size: 1.4rem;
   }
   .boldedText {
     font-family: "Barlow-Bold", sans-serif;
@@ -42,27 +46,27 @@
   }
 
   #landing {
-    margin-top: 20vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
-
-    width: 90%;
+    align-items: center;
+    width: 100vw;
     pointer-events: none;
   }
   #menu {
     font-family: "Barlow", sans-serif;
-    position: absolute;
-    width: 98%;
+    width: 100vw;
     z-index: 1;
     color: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   #rightmenu {
-    width: 50%;
-    display: flex;
+    width: 100%;
+    display: none;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   #leftmenu {
@@ -76,15 +80,15 @@
     border: 1px solid #979797;
     box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.26);
     border-radius: 8px;
-    width: 25vw;
-    height: 40vh;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     pointer-events: auto;
+    z-index: 100;
     padding: 1%;
-    margin-top: 10%;
+    right: 10%;
   }
 
   #social > * {
@@ -105,10 +109,11 @@
     text-align: center;
     font-family: "Barlow";
     font-size: 1rem;
+    margin: auto;
     color: #010346;
     display: flex;
     align-items: center;
-    margin-top: 3vh;
+    margin-top: 8vh;
     pointer-events: auto;
     padding: 5px 15px;
   }
@@ -138,14 +143,24 @@
   body {
     width: 100vw;
     position: absolute;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background: #030560;
     margin: 0;
   }
 
+  html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .particles-js-canvas-el{
+    width: 100vw !important;
+  }
+
   canvas {
     position: fixed;
-    width: 100vw !important;
+    width: 100vw;
     height: 100%;
     max-width: 100vw;
     vertical-align: top;
@@ -215,6 +230,7 @@
     align-items: center;
     max-width: 25vw;
     pointer-events: auto;
+    z-index: 100;
     width: 100%;
     max-width: 900px;
     margin-right: 4vw;
@@ -223,8 +239,8 @@
   .socialicon {
     padding: 0.5rem;
     height: 100%;
-    max-height: 64px;
-    max-width: 64px;
+    max-height: 38px;
+    max-width: 38px;
   }
 
   #useCaseLogo {
@@ -233,8 +249,8 @@
   }
 
   #useCasePic {
-    max-height: 550px;
-    max-width: 100%;
+    max-height: 250%;
+    max-width: 250%;
   }
 
   #timer {
@@ -247,12 +263,13 @@
     margin-top: 2vh;
     margin-bottom: 4vh;
     padding: 0;
+    text-align: center;
   }
 
   #timer li {
     list-style-type: none;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 100;
     font-family: "Barlow";
     margin-right: 4vw;
@@ -262,15 +279,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 600px;
-    margin-top: 15vh;
   }
 
   #documentation {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    width: 85%;
+    width: 100vw;
     pointer-events: auto;
     margin: 5% auto 0 auto;
   }
@@ -283,7 +298,7 @@
     background: #030560;
     box-shadow: 0 2px 19px 5px rgba(0, 0, 0, 0.24);
     height: 40vh;
-    width: 19vw;
+    width: 30vw;
     display: flex;
     vertical-align: middle;
     flex-direction: column;
@@ -304,6 +319,7 @@
     font-family: "Barlow";
     font-size: 1.5rem;
     color: white;
+    margin-top: 10vh;
   }
   #ourRoadmap {
     margin-bottom: 0px;
@@ -318,12 +334,12 @@
 
   #industry {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
   #differentiator {
-    flex-direction: column;
-    padding-top: 10vh;
+    height: 800px;
     background: #00035a; /* Old browsers */
     background: -moz-linear-gradient(
       top,
@@ -359,7 +375,6 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
   }
 
   #buildingon > * {
@@ -367,9 +382,10 @@
     margin: 0 auto;
   }
   #industryText {
-    width: 27%;
+    width: 90%;
     color: white;
     font-family: "Barlow";
+    margin-top: 3vh;
   }
 
   #industryText .boldedText,
@@ -381,9 +397,8 @@
   }
 
   #useCases {
-    height: 600px;
-    max-height: 600px;
-    width: 85%;
+    height: 1000px;
+    width: 100%;
     padding: 0 7.5%;
     background-color: #f0f0f0;
     display: flex;
@@ -393,22 +408,21 @@
   }
 
   #useCaseList {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: inline;
     pointer-events: auto;
+    width: 100%;
   }
 
   #useCaseText {
-    width: 30%;
+    width: 90%;
     color: #010346;
     font-family: "Barlow";
+    margin-top: 3vh;
   }
 
   #useCaseButtons {
     display: flex;
     flex-direction: column;
-    justify-content: top;
     align-items: left;
     height: 50%;
     padding: 1rem;
@@ -460,8 +474,8 @@
   }
 
   #teampage {
-    height: 2650px;
-    padding: 2.5% 0 7.5% 0;
+    height: 1250px;
+    padding: 0 7.5%;
     width: 100%;
     background-color: #fefefe;
     display: flex;
@@ -471,16 +485,20 @@
     margin-top: 10vh;
   }
 
+  #ourTeam {
+    margin-bottom: 10vh;
+  }
+
   #futureOfFinance {
     width: 100%;
-    height: 55vh;
+    height: 35vh;
     position: relative;
   }
 
   #gradientEnd {
     width: 100%;
     overflow: hidden;
-    max-height: 55vh;
+    max-height: 40vh;
     transform: rotate(180deg);
     position: absolute;
   }
@@ -511,67 +529,71 @@
     color: white;
     font-family: "Barlow";
     padding: 2%;
-    font-size: 1em;
+    font-size: .8em;
   }
 
   .footerColumn h4 {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     color: white;
     font-family: "Barlow";
   }
 
   #fof {
-    width: 30%;
+    width: 80%;
     font-family: "Barlow";
     font-size: 1.75rem;
     color: #ffffff;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    bottom: 225px;
-    left: 150px;
+    left: 10px;
+    bottom: 25px;
   }
   #fof2 {
-    width: 30%;
+    width: 80%;
     font-family: "Barlow";
     font-size: 1.75rem;
     color: #ffffff;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    bottom: 225px;
-    left: 150px;
+    left: 10px;
+    bottom: 25px;
   }
   #fof3 {
-    width: 30%;
+    width: 80%;
     font-family: "Barlow";
     font-size: 1.75rem;
     color: #ffffff;
     letter-spacing: 0.39px;
     z-index: 2;
     position: absolute;
-    bottom: 350px;
-    right: 0px;
+    right: 10px;
+    bottom: 25px;
   }
 
   .team {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .teamImg {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 6px;
     border-radius: 50%;
     -webkit-box-shadow: 10px 10px 70px -15px rgba(0, 0, 0, 0.58);
     -moz-box-shadow: 10px 10px 70px -15px rgba(0, 0, 0, 0.58);
     box-shadow: 10px 10px 70px -15px rgba(0, 0, 0, 0.58);
+    margin: 10px;
   }
 
   .teamText {
     font-family: "Barlow";
-    font-size: 1rem;
+    font-size: .5rem;
     color: #010346;
     margin: 1% 0;
     letter-spacing: 0.39px;
@@ -580,7 +602,7 @@
   }
 
   #ourAdvisors {
-    padding-top: 20vh;
+    margin-bottom: 8vh;
   }
 
   a {
@@ -609,7 +631,7 @@
 
   .teamName {
     font-family: "Barlow";
-    font-size: 1.5rem;
+    font-size: .8rem;
     color: #010346;
     letter-spacing: 0.39px;
     margin: 0;
@@ -634,7 +656,6 @@
   }
 
   #ourInvestors {
-    padding-top: 20vh;
   }
 
   .investorWrapper {
@@ -656,13 +677,11 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    margin-bottom: 10vh;
     margin-top: 5vh;
   }
   .builtOnCard {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     height: 100%;
     width: 100%;
     margin-bottom: 10vh;
@@ -670,13 +689,12 @@
   }
 
   .investorLogo {
+    display: flex;
     max-height: 20vh;
-    max-width: 24vw;
+    max-width: 15vw;
   }
 
   #zeroKnowledge {
-    height: 55vh;
-    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -694,12 +712,12 @@
     font-weight: 100;
     color: #fff;
     letter-spacing: 0.39px;
-    /*   margin: 3rem; */
-    width: 40%;
+    width: 97%;
   }
 
   #zeroKwrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
@@ -707,15 +725,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     margin-left: 0;
     margin-right: 0;
     width: 90vw;
   }
 
   #proofPic {
-    max-height: 45vh;
-    max-width: 33vw;
+    max-height: 40vh;
+    max-width: 80vw;
   }
 
   #ofnLogo {
@@ -744,14 +762,15 @@
 
   #industryLogo {
     max-height: 100%;
-    max-width: 50%;
+    max-width: 90%;
   }
 
   .teamWrapper {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
   }
   .teamColumn {
     display: flex;
@@ -877,8 +896,8 @@
   }
 
   .linkedin {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     pointer-events: auto;
   }
 }
