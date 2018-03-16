@@ -22,7 +22,7 @@
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     letter-spacing: 0.33px;
-    width: 100vw;
+    width: 90vw;
     margin-bottom: 4rem;
     font-size: 1rem;
     font-weight: 200;
@@ -143,8 +143,6 @@
   body {
     width: 100vw;
     position: absolute;
-    display: flex;
-    flex-direction: column;
     height: 100%;
     background: #030560;
     margin: 0;
@@ -297,13 +295,18 @@
   .docIconContainer {
     background: #030560;
     box-shadow: 0 2px 19px 5px rgba(0, 0, 0, 0.24);
-    height: 40vh;
+    height: 30vh;
     width: 30vw;
     display: flex;
     vertical-align: middle;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
+  }
+
+  .docIconContainer img{
+    height: 20vh; 
+    width: 15vh;
   }
 
   #wrapper {
@@ -369,7 +372,6 @@
   #buildingon {
     height: 400px;
     width: 100%;
-    padding: 0 7.5%;
     background-color: #f6f9fc;
     display: flex;
     justify-content: space-around;
@@ -399,7 +401,6 @@
   #useCases {
     height: 1000px;
     width: 100%;
-    padding: 0 7.5%;
     background-color: #f0f0f0;
     display: flex;
     justify-content: space-around;
@@ -475,7 +476,6 @@
 
   #teampage {
     height: 1250px;
-    padding: 0 7.5%;
     width: 100%;
     background-color: #fefefe;
     display: flex;
