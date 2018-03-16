@@ -138,8 +138,6 @@
   body {
     width: 100vw;
     position: absolute;
-    /* display: flex;
-  flex-wrap: wrap; */
     height: 100%;
     background: #030560;
     margin: 0;
@@ -267,13 +265,8 @@
   #docs {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    /* vertical-align: middle; */
-    /* align-items: center; */
     width: 100%;
     height: 600px;
-    /* margin: 10vh 0; */
-    /* margin-bottom: 10vh; */
     margin-top: 15vh;
   }
 
@@ -283,7 +276,6 @@
     align-items: flex-end;
     width: 85%;
     pointer-events: auto;
-    /*height: 35vh; */
     margin: 5% auto 0 auto;
   }
   .docformsubmit {
@@ -295,7 +287,6 @@
     background: #030560;
     box-shadow: 0 2px 19px 5px rgba(0, 0, 0, 0.24);
     height: 40vh;
-    /* padding: 10% 15%; */
     width: 19vw;
     display: flex;
     vertical-align: middle;
@@ -335,7 +326,6 @@
     align-items: center;
   }
   #differentiator {
-    /* height: 600px; */
     flex-direction: column;
     padding-top: 10vh;
     background: #00035a; /* Old browsers */
@@ -365,7 +355,6 @@
   }
 
   #buildingon {
-    /* height: 600px; */
     height: 400px;
     width: 100%;
     padding: 0 7.5%;
@@ -393,7 +382,6 @@
     margin: 0 !important;
     font-weight: 200;
     font-size: 1.25rem;
-    /*   line-height: 1.5rem; */
   }
 
   #useCases {
@@ -444,7 +432,6 @@
     font-family: "Barlow";
     padding: 0.5rem 1.3rem;
     text-align: left;
-    /* min-width: 100%; */
     font-size: 1rem;
     justify-content: left;
     margin: 3.5% 0;
@@ -458,7 +445,6 @@
     font-family: "Barlow";
     padding: 0.5rem 1.3rem;
     text-align: left;
-    /* min-width: 100%; */
     font-size: 1rem;
     justify-content: left;
     margin: 3.5% 0;
@@ -467,7 +453,6 @@
   #timeline {
     height: 500px;
     width: 100%;
-    /* background: linear-gradient(#010346 100%, #00035E 100%); */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -617,10 +602,6 @@
     margin-bottom: 2rem;
   }
   .teamCard {
-    /*
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
-*/
     width: 20%;
     padding: 2.5% 0;
     display: flex;
@@ -865,10 +846,8 @@
     color: #030560;
     font-family: "Barlow";
     font-size: 20px;
-    /* line-height:50px; */
     text-align: center;
     margin: 0;
-    /* height:50px; */
     padding: 9px 33px;
     pointer-events: auto;
     border-radius: 25px;
@@ -880,20 +859,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  /* background: #FFFFFF;
-box-shadow: 0 2px 19px 3px rgba(0,0,0,0.32);
-border-radius: 100px;
-text-align: center;
-font-family: "Barlow";
-font-size: 1rem;
-margin: auto;
-color: #010346;
-display: flex;
-align-items: center;
-margin-top: 8vh;
-pointer-events: auto;
-padding: 5px 15px;
- */
 
   .legaltext {
     color: white;
@@ -906,9 +871,11 @@ padding: 5px 15px;
     pointer-events: auto;
     text-decoration: underline;
   }
+
   .framelink:hover {
     color: gray;
   }
+
   .framelink:visited {
     color: white;
   }
