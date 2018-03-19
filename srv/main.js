@@ -1,5 +1,4 @@
 'use strict';
-require('newrelic');
 //naming conventions subpar
 var server = require('http').createServer();
 //dont need db atm
