@@ -31,9 +31,21 @@
   #ofntext {
     font-size: 3rem;
   }
+  #ofntextDark {
+    color: #030560;
+    font-size: 30px;
+    font-weight: 600;
+  }
   .boldedText {
     font-family: "Barlow-Bold", sans-serif;
     float: left;
+  }
+  .boldedTextDark {
+    color: #030560;
+    font-family: "Barlow-Bold", sans-serif;
+    float: left;
+    font-size: 25px;
+    font-weight: 200;
   }
 
   .boldedText::after {
@@ -231,10 +243,15 @@
     max-width: 35%;
     max-height: 45%;
   }
+  
 
   #useCasePic {
     max-height: 550px;
     max-width: 100%;
+  }
+  #platformPic {
+    max-width: 550px;
+    max-height: 550px
   }
 
   #timer {
@@ -391,11 +408,30 @@
     align-items: center;
     flex-direction: column;
   }
+  #platform {
+    height: 600px;
+    max-height: 600px;
+    width: 85%;
+    padding: 0 7.5%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
 
   #useCaseList {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    pointer-events: auto;
+  }
+
+  #platformList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
     pointer-events: auto;
   }
 
@@ -406,6 +442,15 @@
   }
 
   #useCaseButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    height: 50%;
+    padding: 1rem;
+  }
+
+  #platformButtons {
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -432,8 +477,32 @@
     justify-content: left;
     margin: 3.5% 0;
   }
+  .platformButton {
+    background: #ffffff;
+    box-shadow: 0 2px 17px 3px rgba(0, 0, 0, 0.19);
+    border-radius: 100px;
+    color: #010346 100%;
+    font-family: "Barlow";
+    padding: 0.5rem 1.3rem;
+    text-align: left;
+    font-size: 1rem;
+    justify-content: left;
+    margin: 3.5% 0;
+  }
 
   .useButton-active {
+    background: #050991;
+    box-shadow: 0 2px 17px 3px rgba(0, 0, 0, 0.19);
+    border-radius: 100px;
+    color: #ffffff;
+    font-family: "Barlow";
+    padding: 0.5rem 1.3rem;
+    text-align: left;
+    font-size: 1rem;
+    justify-content: left;
+    margin: 3.5% 0;
+  }
+  .platformButton-active {
     background: #050991;
     box-shadow: 0 2px 17px 3px rgba(0, 0, 0, 0.19);
     border-radius: 100px;
