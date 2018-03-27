@@ -709,6 +709,50 @@
       document.getElementById("useCaseText").innerHTML = newCase;
       document.getElementById("useCaseText").classList.add("fadeIn");
     }
+
+    changePlatform = (useCase) => {
+      let newPic = '';
+      switch (useCase) {
+        case 'portfolio':
+          newPic = 'public/portfolio.png'
+          break;
+
+        case 'trading':
+          newPic = 'public/trading.png';
+          break;
+
+        case 'research':
+          newPic = 'public/research.png'          
+          break;
+
+        default:
+
+      }
+      document.getElementById("portfolioButton").className = "platformButton";
+      document.getElementById("tradingButton").className = "platformButton";
+      document.getElementById("researchButton").className = "platformButton";
+      document.getElementById("tokenizationButton").className = "platformButton";
+      if (useCase === 'portfolio'){
+        document.getElementById("portfolioButton").className = "platformButton-active";
+      } else if (useCase === 'trading'){
+        document.getElementById("tradingButton").className = "platformButton-active";
+      } else if (useCase === 'research'){
+        document.getElementById("researchButton").className = "platformButton-active";
+
+      } else {
+
+      }
+
+      document.getElementById("platformPic").classList.remove("fadeIn");
+      void document.getElementById("platformPic").offsetWidth;
+      document.getElementById("platformPic").src = newPic;
+      document.getElementById("platformPic").classList.add("fadeIn");
+
+      document.getElementById("useCaseText").classList.remove("fadeIn");
+      void document.getElementById("useCaseText").offsetWidth;
+      document.getElementById("useCaseText").innerHTML = newCase;
+      document.getElementById("useCaseText").classList.add("fadeIn");
+    }
     openFile = (type) => {
       if (type = 'wp') {
 
