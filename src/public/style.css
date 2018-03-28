@@ -179,7 +179,7 @@
     color: #010346;
   }
   #emailContainer {
-    width: 90%;
+    width: 300px;
     height: 15%;
     margin-bottom: 7.5%;
   }
@@ -651,7 +651,7 @@
   }
 
   #ourAdvisors {
-    padding-top: 20vh;
+    padding-top: 5vh;
   }
 
   a {
