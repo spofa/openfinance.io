@@ -17,8 +17,26 @@
     margin-top: 10vh;
     margin-bottom: 3vh;
   }
+  #headertext2 {
+    font-family: "Barlow", sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    letter-spacing: 0.59px;
+    margin: 10px 0;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+  }
 
   #maintext {
+    font-family: "Barlow", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.33px;
+    width: 90vw;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  #maintext2 {
     font-family: "Barlow", sans-serif;
     color: #ffffff;
     letter-spacing: 0.33px;
@@ -31,8 +49,14 @@
   #maintext div:nth-of-type(2) {
     font-size: 1.5rem;
   }
+  #maintext2 div:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
 
   #ofntext {
+    font-size: 1.4rem;
+  }
+  #ofntext2 {
     font-size: 1.4rem;
   }
   .boldedText {
