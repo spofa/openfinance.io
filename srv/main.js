@@ -1,7 +1,6 @@
 'use strict';
 //naming conventions subpar
-var server = require('http2').createSecureServer();
-
+var server = require('http').createServer();
 //dont need db atm
 //var startDb = require('./db');
 
