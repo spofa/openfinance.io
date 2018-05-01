@@ -1,828 +1,596 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <!-- Twitter Boostrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <title>OpenFinance Network</title>
-  <meta name="description" content="End to end platform for Issuance, Trading, Clearing & settlement of Security tokens and Alternative assets">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#030560"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="OpenFinance" />
-  <meta property="og:description" content="End to end platform for Issuance, Trading, Clearing & settlement of Security tokens and Alternative assets " />
-  <meta property="og:image" content="/public/ofnlogo.png" />
-  <link href="https://fonts.googleapis.com/css?family=Barlow:200,400" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
-  <link rel="stylesheet" media="screen" href="public/style.css">
-  <link rel="stylesheet" media="screen" href="public/mobileStyle.css">
-  <script src="scroll-entrance.js"></script>
-  <style>
-    /* Ensure elements are hidden while ScrollEntrance is loading */
-
-    [data-entrance] {
-      visibility: hidden;
-    }
-  </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110466584-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110466584-1');
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Company",
-    "url": "http://www.openfinance.io",
-    "name": "OpenFinance Network",
-  }
-  </script>
-  <meta name="google-site-verification" content="Yw67zSsSsFCTUmP9v_O-pl0vVZ4639NM9OzmoNbqi4I" />
-</head>
-
-<body>
-  <div id='particles-js'>
-
-    <div id='menu'>
-      <div id='leftmenu'>
-        <img id='ofnLogo' src='public/ofnLogo.png'>OpenFinance Network</div>
-      <div id='rightmenu'>
-        <p class='sliding-middle-out' onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</p>
-        <p class='sliding-middle-out' onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Differentiator</p>
-        <p class='sliding-middle-out' onClick="document.getElementById('differentiator').scrollIntoView();">Tokenized Trading</p>
-        <p class='sliding-middle-out' onClick="document.getElementById('useCases').scrollIntoView();">Use Cases</p>
-        <p class='sliding-middle-out' onClick="document.getElementById('timeline').scrollIntoView();">Roadmap</p>
-        <p class='sliding-middle-out' onClick="document.getElementById('teampage').scrollIntoView();">Team</p>
-      </div>
-    </div>
-    <div id='main'>
-      <img src="public/gradienttop.png" id='triangleGradient' alt='gradient'>
-      <div id=wrapper>
-        <div id='landing'>
-          <div id='maintext' data-entrance="from-left">
-            <div id='headertext'>
-              <div id='ofntext'>&nbsp;</div>
-              Tokenizing the Financial World
-            </div>
-            <div>
-              <div class='boldedText'>Trading redefined.</div> We have created the world's leading security token trading platform, built for a tokenized future.
-              <button class='slackButton' onclick='openSlack()' target='_blank' rel="noopener">Join us on Telegram &nbsp
-                  <img src='public/telegramLogo.png' >
-              </button>
-                <br >
-              </div>
-            </div>
-            <div id='maintext2' data-entrance="from-right">
-              <div id='headertext2'>
-                <div id='ofntext2'>&nbsp;</div>
-                List your Security Token
-
-              </div>
-              <div>
-                <div class='boldedText'>Now accepting applications. </div><br> Review our <a class='framelink'href="public/framework.pdf" target='_blank' rel="noopener">Security Listing Framework</a> to determine eligibility
-                <br />
-                <br />
-                <a class="typeform-share button listButton" href="https://thomasmcinerney.typeform.com/to/u4H9qg" data-mode="drawer_left" target="_blank" rel="noopener">Apply to List</a>
-
-              </div>
-
-            </div>
-          </div>
-          <br>
-          <br>
-          <br>
-          <p ></p>
-                    <div id='socialbuttons'>
-                      <a href='https://medium.com/@openfinance' target='_blank' rel="noopener">
-                        <img src='public/medium.png' class='socialicon' alt='medium'>
-                        <a href='https://github.com/openfinanceio' target='_blank' rel="noopener">
-                          <img src='public/github.png' class='socialicon' alt='github'>
-                        <a href='https://www.reddit.com/r/openfinance' target='_blank' rel="noopener">
-                          <img src='public/reddit.png' class='socialicon' alt='reddit'>
-                          <a href='https://twitter.com/openfinanceio' target="_blank" rel="noopener">
-                            <img src='public/twitter.png' class='socialicon' alt='twitter'>
-                          </a>
-                          <a href="mailto:info@openfinance.io" target="_blank" rel="noopener">
-                            <img src='public/email.png' class='socialicon' alt='email'>
-                          </a>
+        <!-- TABS -->
+        
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700" rel="stylesheet">
+        
+        <!-- My CSS Link -->
+        <link rel = "stylesheet" type = "text/css" href = "./style.css" />
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-4">
+                        <img class="logo" src="./images/ofn-logo.png" />
                     </div>
-        <ul id='timer'>
-          <li id='days'></li>
-          <li id='hours'></li>
-          <li id='minutes'></li>
-          <li id='seconds'></li>
-        </ul>
-        <div id='docs'>
-          <span>
-            <p id='Documentation' class='sectionLabel'>Documentation</p>
-          </span>
-          <div id='documentation'>
-            <a href="public/whitepaper.pdf" target='_blank' rel="noopener">
-              <div class='docIconContainer'>
-                <img src='public/file1.png' alt='white paper '>
-                <p class="docText">White Paper</p>
-              </div>
-            </a>
-            <a href="public/litepaper.pdf" target='_blank' rel="noopener">
-              <div class='docIconContainer'>
-                <img src='public/file2.png' alt='lite paper'>
-                <p class="docText">Lite Paper</p>
-              </div>
-            </a>
-            <a href='public/proof.pdf' target='_blank' rel="noopener">
-              <div class='docIconContainer'>
-                <img src='public/file.png' alt='Industrial proving method'>
-                <p class="docText">Industrial Proving Method</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div id='zeroKnowledge'>
-          <div>
-            <p class='sectionLabel'>Differentiator</p>
-          </div>
-          <div id='industry'>
-            <img id='industryLogo' data-entrance="from-left" src='public/partners.png' alt='industry logo'>
-            <div id='industryText' data-entrance="from-right">
-              <p class='boldedText'>U.S. based. Venture backed. Founded by industry veterans.
-              </p>
-              <p>We work with the leading brokerage houses, custodians, transfer agents and banks. Since 2014, our team of exchange
-                technologists, securities lawyers, and trading veterans has been innovating in alternative assets and pioneering
-                new technology in the industry. Our goal is to bring efficiency, transparency, and interoperability to a
-                fragmented marketplace.</p>
-            </div>
-          </div>
+                    <div class="col-8 hidden-lg-up" align="right">
+                         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
 
-        </div>
-
-        <div id='differentiator'>
-          <span>
-            <p class='sectionLabel'>Tokenized Trading</p>
-          </span>
-          <div id='zeroKwrapper'>
-            <p id='zeroKText' data-entrance="from-left">
-              <strong>Common protocol. Data Standardization. Asset Interoperability.</strong> With the emergence of "crypto" alt
-              assets and the industry shift towards a ledger based book-entry process, the need for standardization and interoperability
-              with alternative assets is greater than ever. Our system is designed for traditional alternative assets and
-              token-based securities, and allows for a streamlined compliant process from issuance to secondary market trading.
-              Direct integrations with financial institutions such as broker-dealers, custodians and transfer agents provide
-              a bridge to the on-chain crypto capital markets.
-            </p>
-            <img src='public/tokenized_trading.png' id='proofPic' data-entrance="from-right" alt='tokenized trading'>
-          </div>
-        </div>
-        <div id='platform'>
-            <p class="sectionLabelDark">Platform</p>
-            <div id='platformList'>
-                <div class='boldedTextDark'>Our End-to-End Trading Platform.
-                  <br />
-                  <br />
-                  <div id='ofntextDark'>Get access to the Private Beta.</div>
-                  <br />
-                  <div id="emailContainer">
-                      <form action="https://openfinance.us17.list-manage.com/subscribe/post?u=ffcad2eadac9243090ab1afa7&amp;id=9c87e51b40" method="post"
-                        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                          <label for="beta signup"></label>
-                          <input type="email" value="" name="EMAIL" class="email" id="emailform" placeholder="  Your email address." required>
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_ffcad2eadac9243090ab1afa7_9c87e51b40" tabindex="-1" value="">
-                          </div>
-                          <div class="clear">
-                            <input type="submit" value="Sign up" name="subscribe" id="subscribebutton" class="button">
-                          </div>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item">
+                                    <a href="#whatWeDo">What We Do</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="#tokenized">Tokenized Trading</a>
+                                  </li>
+                                 <li class="nav-item">
+                                    <a href="#betaForm">Sign Up for Beta</a>
+                                  </li>
+                                 <li class="nav-item">
+                                    <a href="#cases">Use Cases</a>
+                                  </li>
+                                    <li class="nav-item">
+                                    <a href="#map">Roadmap</a>
+                                  </li>
+                                     <li class="nav-item">
+                                    <a href="#meet">Meet the Team</a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </nav>
+                    </div>
+                    <div class=" col-lg-10 col-sm-9 col-8 hidden-md-down" align="right">
+                         <nav class="navbar">
+                              <div id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item">
+                                    <a href="#whatWeDo">What We Do</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a href="#tokenized">Tokenized Trading</a>
+                                  </li>
+                                 <li class="nav-item">
+                                    <a href="#betaForm">Sign Up for Beta</a>
+                                  </li>
+                                 <li class="nav-item">
+                                    <a href="#cases">Use Cases</a>
+                                  </li>
+                                    <li class="nav-item">
+                                    <a href="#map">Roadmap</a>
+                                  </li>
+                                     <li class="nav-item">
+                                    <a href="#meet">Meet the Team</a>
+                                  </li>
+                                </ul>
+                              </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Tokenizing the Financial World</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Trading Redefined</h2>
+                        <p>We have created the world’s leading security token trading platform, built for a tokenized future.</p>
+                        <a href="https://t.me/joinchat/EuSBh0tKLOaUrZ0NgT7Jaw" target="_blank"><p class="btnSecondary">Join Us On Telegram</p></a>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="apply">
+                             <h2>List Your Security Token</h2>
+                            <p>We are now accepting applications.</p> 
+                            <p>Review our <a href="https://www.openfinance.io/public/framework.pdf" target="_blank">Security Listing Framework</a> to determine elibility. </p>
+                            <a class="typeform-share button listButton" href="https://thomasmcinerney.typeform.com/to/u4H9qg" data-mode="drawer_left" target="_blank" rel="noopener"><p class="btnPrimary">Apply to List</p></a>
                         </div>
-                      </form>
                     </div>
                 </div>
-
-              <div id='platformButtons'>
-                <button id='portfolioButton' onclick='changePlatform("portfolio")' class='platformButton-active'>Portfolio</button>
-                <button id='tradingButton' onclick='changePlatform("trading")' class='platformButton'>Trading</button>
-                <button id='researchButton' onclick='changePlatform("research")' class='platformButton'>Research</button>
-              </div>
-              <div id='platformLogo' data-entrance="from-left">
-                <img id='platformPic' data-enterance="from-left" src='public/portfolio.png' alt='platform'>
-              </div>
             </div>
-          </div>
-        <div id='buildingon'>
-          <span>
-            <p class='sectionLabelDark'>Built on</p>
-          </span>
-          <div id='zeroKwrapper2'>
-              <div class="builtOnCard">
-                <div>
-                  <img class='investorLogo' src='public/ethereum.png' alt='ethereum'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/0x.png' alt='0x'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/quorum.png' alt='quorum'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/civic.png' alt='civic'>
-                </div>
-              </div>
-          </div>
         </div>
-        <div id='useCases'>
-          <p class="sectionLabelDark">Use Cases</p>
-          <div id='useCaseList'>
-            <div id='useCaseLogo' data-entrance="from-left">
-              <img id='useCasePic' data-enterance="from-left" src='public/investorPassport.png' alt='use case '>
+        <div id="whatWeDo" class="diff"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>What We Do</h2>
+                                <p><strong>U.S. Based. Venture Backed. <br />Founded by Industry Veterans.</strong> <br/>We work with the leading brokerage houses, custodians, transfer agents and banks. Since 2014, our team of exchange technologists, securities lawyers, and trading veterans has been innovating in alternative assets and pioneering new technology in the industry. Our goal is to bring efficiency, transparency, and interoperability to a fragmented marketplace.</p>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                            <h3>Read our documentation</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="https://www.openfinance.io/public/whitepaper.pdf" target="_blank" ><img class="paper"  src="./images/wp.png" /></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.openfinance.io/public/litepaper.pdf" target="_blank"><img class="paper" src="./images/lp.png" /></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://www.openfinance.io/public/proof.pdf" target="_blank"><img class="paper" src="./images/ipm.png" /></a>
+                    </div>
+                </div>
             </div>
-            <div id='useCaseText' data-entrance="fade">The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with
-              a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates
-              an enhanced, secure, and global compliance process that improves investor protections and security, along with
-              increased privacy of sensitive investor data.</div>
-            <div id='useCaseButtons'>
-              <button id='passportButton' onclick='changeUseCase("passport")' class='useButton-active'>Investor Passport</button>
-              <button id='registryButton' onclick='changeUseCase("registry")' class='useButton'>Global Asset Registry</button>
-              <button id='depositoryButton' onclick='changeUseCase("dsd")' class='useButton'>Decentralized Securities Depository</button>
-              <button id='tokenizationButton' onclick='changeUseCase("tokenization")' class='useButton'>Asset Tokenization</button>
-            </div>
-          </div>
         </div>
-        <div id='timeline'>
-          <p class="sectionLabel" id='ourRoadmap'>Roadmap</p>
-          <img class='ofnTimeline' src='public/ofn-timeline.png' data-entrance="from-top" alt='timeline'>
-        </div>
-        <div id='teampage'>
-          <p id='ourTeam' class="sectionLabelDark">Team</p>
-          <div class='team'>
-            <div class='teamWrapper'>
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/jmh.png' alt='Juan hernandez'>
-                <p class='teamName'>Juan M. Hernandez &nbsp;</p>
-                <p class="teamText">
-                  <span>Chief Executive Officer</span>
-                  <br />
-                  <span> Kellogg MBA, Northwestern CS</span>
-                </p>
-                <a href="https://www.linkedin.com/in/jhernan7/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/ks.png' alt='kael shipman'>
-                <p class='teamName'>Kael Shipman &nbsp;</p>
-                <p class="teamText">
-                  <span>Head of Technology</span>
-                  <br />Berklee, 13+ years Experience</p>
-                  <a href="https://www.linkedin.com/in/kael-shipman-1756b488/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
+        <hr />
+        <div class="liveTokens">
+            <div class="container">
+                <h2 class="logoTitle">Token Listings</h2>
+                <div class="row">
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                        <img src="./images/bc.png" />
+                    </div>
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                         <img src="./images/sci.png" />
+                    </div>
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                         <img src="./images/spice.png" />
+                    </div>
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                        <img src="./images/pro.png" />
+                    </div>
                 </div>
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/tam.png' alt='Thomas A McInerney IV'>
-                <p class='teamName'>Thomas McInerney &nbsp;</p>
-                <p class="teamText">
-                  <span>Head of Blockchain Development</span>
-                  <br /> Northwestern CS</p>
-                <a href="https://www.linkedin.com/in/thomasmcinerney4/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/is.png' alt='ian shipman'>
-                <p class='teamName'>Ian Shipman &nbsp;</p>
-                <p class="teamText">
-                  <span>Head of R&D </span>
-                  <br />PhD Mathematics, University of Chicago</p>
-                <a href="https://www.linkedin.com/in/ian-shipman-2756476/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/toby.png' alt='toby mccomas'>
-                <p class='teamName'>Toby McComas &nbsp;</p>
-                <p class="teamText">
-                  <span>Head of Sales</span>
-                  <br /> Kellogg MBA</p>
-                <a href="https://www.linkedin.com/in/tobin-toby-mccomas-00b3831/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-            </div>
-            <div class="teamWrapper">
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/jf.png' alt='jordand fishfeld'>
-                <p class='teamName'>Jordan Fishfeld &nbsp;</p>
-                <p class="teamText">
-                  <span>General Counsel</span>
-                  <br /> U Miami JD/MBA</p>
-                <a href="https://www.linkedin.com/in/jordanfishfeld/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/le.png' alt='lindsay edelson'>
-                <p class='teamName'>Lindsay Edelson &nbsp;</p>
-                <p class="teamText">
-                  <span>Head of Marketing</span>
-                  <br /> 10+ years Experience</p>
-                <a href="https://www.linkedin.com/in/lindsaygarlin/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/rc.png' alt='ray coti'>
-                <p class='teamName'> Ray Coti &nbsp;</p>
-                <p class="teamText">
-                  <span>Lead Frontend Engineer</span>
-                  <br/>Connecticut College CS </p>
-                <a href="https://www.linkedin.com/in/raycoti/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-right">
-                  <img class='teamImg' src='public/ln.png' alt='liz newman'>
-                  <p class='teamName'>Liz Newman &nbsp;</p>
-                  <p class="teamText">
-                    <span>Lead UX/UI Designer</span>
-                    <br />MS Depaul </p>
-                  <a href="https://www.linkedin.com/in/elizabeth-newman4/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
-                </div>
-              <div class='teamCard' data-entrance="from-right">
-                  <img class='teamImg' src='public/tz.png' alt='tomasz zacharczuk'>
-                  <p class='teamName'>Tomasz Zacharczuk &nbsp;</p>
-                  <p class="teamText">
-                    <span>Blockchain Advisor</span>
-                    <br/>VP Engineering, Surf Live</p>
-                  <a href="https://www.linkedin.com/in/tomaszzacharczuk/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
+                <div class="row hidden-md-up">
+                    <div class="col-sm-12">
+                        <img src="./images/tokens.gif" />
+                    </div>
                 </div>
             </div>
-            <div class="teamWrapper">
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/kp.png' alt='kunal patel'>
-                <p class='teamName'> Kunal Patel &nbsp;</p>
-                <p class="teamText">
-                  <span>Software Engineer</span>
-                  <br/>DePaul University</p>
-                <a href="https://www.linkedin.com/in/kunal0507/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                  <img class='teamImg' src='public/jr.png' alt='jake regan'>
-                  <p class='teamName'>Jake Regan &nbsp;</p>
-                  <p class="teamText">
-                    <span>Software Engineer</span>
-                    <br/>Judson University</p>
-                  <a href="https://www.linkedin.com/in/jacob-regan-b2b76013a/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
-                </div>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/tr.png' alt='taylar ramsay'>
-                <p class='teamName'>Taylar Ramsey &nbsp;</p>
-                <p class="teamText">
-                  <span>Communications Manager</span>
-                  <br/>North Dakota State</p>
-                <a href="https://www.linkedin.com/in/taylarramsey/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-                </div>
-                <div class='teamCard' data-entrance="from-right">
-                  <img class='teamImg' src='public/asoren.png' alt='alyssa soren'>
-                  <p class='teamName'>Alyssa Soren &nbsp;</p>
-                  <p class="teamText">
-                    <span>Support Specialist</span>
-                    <br/>Knox College</p>
-                  <a href="https://www.linkedin.com/in/asoren/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
-                  </div>
-                <div class='teamCard' data-entrance="from-right">
-                  <img class='teamImg' src='public/as.png' alt='stein'>
-                  <p class='teamName'> Andrew Steinwold &nbsp;</p>
-                  <p class="teamText">
-                    <span>Community Advisor</span>
-                    <br/>Polynexus Capital</p>
-                  <a href="https://www.linkedin.com/in/andrew-steinwold/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
+        </div>
+        <div class="lines">
+            <div id="tokenized"  class="token">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://www.openfinance.io/public/tokenized_trading.png" />
+                        </div>
+                        <div class="col-md-6">
+                          <h2>Tokenized Trading</h2>
+                            <p><strong>Common Protocol. Data Standardization. Asset Interoperability</strong> <br/>With the emergence of "crypto" alt assets and the industry shift towards a ledger based book-entry process, the need for standardization and interoperability with alternative assets is greater than ever. Our system is designed for traditional alternative assets and token-based securities, and allows for a streamlined compliant process from issuance to secondary market trading. Direct integrations with financial institutions such as broker-dealers, custodians and transfer agents provide a bridge to the on-chain crypto capital markets.</p>
+                            <h3>Our Partners</h3>
+                            <div class="row">
+                                <div class="col-sm-6 hidden-sm-down">
+                                    <img src="./images/kore.png" />
+                                </div>
+                                <div class="col-sm-6 hidden-sm-down">
+                                    <img src="./images/s.png" />
+                                </div>
+                                <div class="col-sm-10 hidden-md-up">
+                                    <img src="./images/partners.gif" />
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-          </div>
-            <p id='ourAdvisors' class="sectionLabelDark">Advisors</p>
-          <div class='team'>
-            <div class="teamWrapper">
-              <div class='teamCard' data-entrance="from-left">
-                <img class='teamImg' src='public/wm_.png' alt='william mougayar'>
-                <p class='teamName'> William Mougayar &nbsp;</p>
-                <p class="teamText">
-                  Ethereum Foundation Board Member
-                  & Author of the Business Blockchain </p>
-                <a href="https://www.linkedin.com/in/williammougayar/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
-              <div class='teamCard' data-entrance="from-left">
-                  <img class='teamImg' src='public/tb.png' alt='tor bair '>
-                  <p class='teamName'> Tor Bair &nbsp;</p>
-                  <p class="teamText">
-                    <span>Enigma MPC</span>
-                     </p>
-                  <a href="https://www.linkedin.com/in/torbair/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
+            <div id="betaForm" class="beta">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>OpenFinance Network is an End-to-End Trading Platform</h2>
+                            <h3>Sign up for our Private Beta</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-5">
+                            <form action="https://openfinance.us17.list-manage.com/subscribe/post?u=ffcad2eadac9243090ab1afa7&amp;id=9c87e51b40" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate="">
+                           <div id="mc_embed_signup_scroll">
+                                <input class="signForm" type="email" value="" name="EMAIL" class="email" id="emailform" placeholder="  Your email address." required="">
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_ffcad2eadac9243090ab1afa7_9c87e51b40" tabindex="-1" value="">
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-3">
+                            <input class="btnSignUp" type="submit" value="Sign up Today" name="subscribe" id="subscribebutton" class="button"/>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <div class="row socialIcons">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-10" align="center">
+                                 <a href="https://medium.com/@openfinance" target="_blank" rel="noopener">
+                                    <img src="https://www.openfinance.io/public/medium.png" class="socialicon" alt="medium">
+                                </a>
+                                  <a href="https://github.com/openfinanceio" target="_blank" rel="noopener">
+                                    <img src="https://www.openfinance.io/public/github.png" class="socialicon" alt="github">
+                                </a>
+                                 <a href="https://www.reddit.com/r/openfinance" target="_blank" rel="noopener">
+                                    <img src="https://www.openfinance.io/public/reddit.png" class="socialicon" alt="reddit">
+                                </a>
+                                <a href="https://twitter.com/openfinanceio" target="_blank" rel="noopener">
+                                    <img src="https://www.openfinance.io/public/twitter.png" class="socialicon" alt="twitter">
+                                </a>
+                                <a href="mailto:info@openfinance.io" target="_blank" rel="noopener">
+                                    <img src="https://www.openfinance.io/public/email.png" class="socialicon" alt="email">
+                                </a>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
                 </div>
-              <div class='teamCard' data-entrance="from-right">
-                  <img class='teamImg' src='public/jc_.png' alt='jeff carter'>
-                  <p class='teamName'>Jeff Carter &nbsp;</p>
-                  <p class="teamText">
-                    <span>West Loop Ventures</p>
-                  <a href="https://www.linkedin.com/in/jeffreyrcarter/" target="_blank" rel="noopener">
-                    <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                  </a>
-                </div>
-              <div class='teamCard' data-entrance="from-right">
-                <img class='teamImg' src='public/jk_.png' alt='john kelly'>
-                <p class='teamName'> John Kelly &nbsp;</p>
-                <p class="teamText">
-                  <span>Former COO - Liquid Net</span>
-                  <br/> </p>
-                <a href="https://www.linkedin.com/in/johnlawsonkelly/" target="_blank" rel="noopener">
-                  <img src='public/linkedin.png' class='linkedin' alt='linkedin'>
-                </a>
-              </div>
             </div>
-          </div>
-          <p id='ourInvestors' class="sectionLabelDark">Supported By</p>
-          <div id='support'>
-              <div class="investorCard">
-                <div>
-                  <img class='investorLogo' src='public/BKCM.png' alt='BKCM'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/polynexus.png' alt='polynexus'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/westloop.png' alt='westloop'>
-                </div>
-              </div>
-              <div class="investorCard">
-                <div>
-                  <img class='investorLogo' src='public/sixthirty.png' alt='sixthirty'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/hbsangels.png' alt='hbs angels'>
-                </div>
-                <div>
-                  <img class='investorLogo' src='public/m25.png' alt='m25'>
-                </div>
-              </div>
-          </div>
         </div>
-      </div>
-      <div id='futureOfFinance'>
-
-        <div id="footerContainer">
-          <div class="footerColumn">
-            <h4>OpenFinance</h4>
-            <ul>
-              <li onClick="document.getElementById('Documentation').scrollIntoView();">Documentation</li>
-              <li onClick="document.getElementById('zeroKnowledge').scrollIntoView();">Differeniator</li>
-              <li onClick="document.getElementById('differentiator').scrollIntoView();">Tokenized Trading</li>
-              <li onClick="document.getElementById('useCases').scrollIntoView();">Use Cases</li>
-              <li onClick="document.getElementById('timeline').scrollIntoView();">Roadmap</li>
-            </ul>
-          </div>
-          <div class="footerColumn">
-            <h4>Company</h4>
-            <ul>
-              <li onClick="document.getElementById('ourTeam').scrollIntoView();">Team</li>
-              <li onClick="document.getElementById('ourAdvisors').scrollIntoView();">Advisors</li>
-              <li onClick="document.getElementById('ourInvestors').scrollIntoView();">Backers</li>
-              <li><a href="public/OFNtos.pdf" target='_blank' rel="noopener">Terms of Service</a></li>
-              <li><a href="public/OFNprivacypolicy.pdf" target='_blank' rel="noopener">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="footerColumn">
-            <h4>Resources</h4>
-            <ul>
-                <li><a href="https://github.com/cfxmarkets">Github</a></li>
-              <li><a href="https://t.me/joinchat/EuSBh0tKLOaUrZ0NgT7Jaw">Telegram</a></li>
-              <li><a href="https://twitter.com/openfinanceio">Twitter</a></li>
-              <li><a href="https://medium.com/@openfinance">Medium</a></li>
-              <li><a href="https://www.reddit.com/r/openfinance/">Reddit</a></li>
-              <li><a href="mailto:info@openfinance.io">Contact Us</a></li>
-            </ul>
-          </div>
-        <div class='legaltext'>
-
-
+        <div class="screens">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h2>Buy, Sell, Manage and Research Security Tokens all in One Place with OpenFinance Network</h2>
+                    <img src="./images/screens.png" />
+                </div>
+            </div>
         </div>
+        <div class="builtOn">
+            <div class="container">
+                <h2 class="logoTitle">OpenFinance Network is built on</h2>
+                <div class="row">
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                        <img src="./images/ether.png" />
+                    </div>
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                         <img src="./images/0x.png" />
+                    </div>
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                         <img src="./images/q.png" />
+                    </div>
+                    <div class="col-sm-3 hidden-sm-down" align="center">
+                        <img src="./images/civic.png" />
+                    </div>
+                    <div class="col-sm-10 hidden-md-up">
+                        <img src="./images/built.gif" />
+                    </div>
+                </div>
+            </div>
         </div>
+        <hr />
+        <div id="cases" class="useCases">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>OpenFinance Network Use Cases</h2>
+                        <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'passport')" id="defaultOpen">Investor Passport</button>
+                          <button class="tablinks" onclick="openCity(event, 'registry')">Global Asset Registry</button>
+                          <button class="tablinks" onclick="openCity(event, 'decentralized')">Decentralized Securities Depository</button>
+                          <button class="tablinks" onclick="openCity(event, 'tokenization')">Asset Tokenization</button>
+                        </div>
 
-      </div>
+                        <div id="passport" class="tabcontent">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="https://www.openfinance.io/public/investorPassport.png" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h3>Investor Passport</h3>
+                                    <p>The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.</p>
+                                </div>
+                            </div>
+                        </div>
 
-    </div>
+                        <div id="registry" class="tabcontent">
+                          <div class="row">
+                                <div class="col-md-5">
+                                    <img src="https://www.openfinance.io/public/OFNlifecycle.png" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h3>Global Asset Registry</h3>
+                                    <p>The OFN system contains a public registry of qualified entities and assets on the distributed ledger. Qualified entities include broker-dealers, transfer agents, custodians, escrow agents, fund administrators and registered funding portals. Asset may also be registered with the SEC/EDGAR and that data can be referenced from the OFN as a subset of the Asset data object.</p> 
+                                </div>
+                            </div>
+                        </div>
 
+                        <div id="decentralized" class="tabcontent">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="https://www.openfinance.io/public/flowOfData.png" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h3>Decentralized Securities Depository</h3>
+                                    <p>The global registry of qualified entities and securities creates a mechanism for a decentralized securities depository that provides a public governance model to ensure maximum transparency and protection for investors. The distributed ledger acts as the golden source to synchronize (and protect) data across multiple stakeholders in standard securities transactions. This provides a trustless clearing & settlement process that is instantly available to all market participants and removes the single points of failure/fraud.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tokenization" class="tabcontent">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img src="https://www.openfinance.io/public/blocks.png" />
+                                </div>
+                                <div class="col-md-7">
+                                    <h3>Asset Tokenization</h3>
+                                    <p>The OFN system is designed for traditional alternative assets and token-based securities, and allows for a streamlined compliant process from issuance to secondary market trading. As the industry shifts towards ledger based book-entry process, issuers can leverage OFN to bridge the gap to on-chain crypto capital markets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="roadmap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>OUR ROADMAP</h2>
+                        <img src="./images/ofn-timeline2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="meet" class="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Meet Our Team</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 hidden-sm-down">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2" align="center">
+                                 <a href="https://www.linkedin.com/in/jhernan7/" target="_blank"><img class="face" src="./images/team/juan.png" />
+                                <p class="name">Juan M. Hernandez</p>
+                                     <p class="title">CEO</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/kael-shipman-1756b488/" target="_blank"><img class="face" src="./images/team/kael.png" />
+                                 <p class="name">Kael Shipman</p>
+                                <p class="title">CTO</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/thomasmcinerney4/" target="_blank"><img class="face" src="./images/team/thomas.png" />
+                                 <p class="name">Thomas McInerney</p>
+                                <p class="title">CPO</p></a>
+                            </div>
+                            <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/ian-shipman-2756476/" target="_blank"><img class="face" src="./images/team/ian.png" />
+                                 <p class="name">Ian Shipman</p>
+                                <p class="title">Head of R &amp; D</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/tobin-toby-mccomas-00b3831/" target="_blank"><img class="face" src="./images/team/toby.png" />
+                                 <p class="name">Toby McComas</p>
+                                <p class="title">Head of Sales</p></a>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2" align="center">
+                                 <a href="https://www.linkedin.com/in/jordanfishfeld/" target="_blank"><img class="face" src="./images/team/jordan.png" />
+                                <p class="name">Jordan Fishfeld</p>
+                                     <p class="title">General Counsel</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/lindsaygarlin/" target="_blank"><img class="face" src="./images/team/lindsay.png" />
+                                 <p class="name">Lindsay Edelson</p>
+                                <p class="title">Head of Marketing</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/raycoti/" target="_blank"><img class="face" src="./images/team/ray.png" />
+                                 <p class="name">Ray Coti</p>
+                                <p class="title">Lead Frontend Engineer</p></a>
+                            </div>
+                            <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/elizabeth-newman4/" target="_blank"><img class="face" src="./images/team/liz.png" />
+                                 <p class="name">Liz Newman</p>
+                                <p class="title">Lead UX/UI Designer</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/taylarramsey/" target="_blank"><img class="face" src="./images/team/taylar.png" />
+                                 <p class="name">Taylar Ramsey</p>
+                                <p class="title">Communications Manager</p></a>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2" align="center">
+                                 <a href="https://www.linkedin.com/in/kunal0507/" target="_blank"><img class="face" src="./images/team/kunal.png" />
+                                <p class="name">Kunal Patel</p>
+                                     <p class="title">Software Engineer</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/jacob-regan-b2b76013a/" target="_blank"><img class="face" src="./images/team/jake.png" />
+                                 <p class="name">Jake Regan</p>
+                                <p class="title">Software Engineer</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/asoren/" target="_blank"><img class="face" src="./images/team/alyssa.png" />
+                                 <p class="name">Alyssa Soren</p>
+                                <p class="title">Support Specialist</p></a>
+                            </div>
+                            <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/andrew-steinwold/" target="_blank"><img class="face" src="./images/team/andrew.png" />
+                                 <p class="name">Andrew Steinwold</p>
+                                <p class="title">Community Advisor</p></a>
+                            </div>
+                             <div class="col-sm-2" align="center">
+                                <a href="https://www.linkedin.com/in/tomaszzacharczuk/" target="_blank"><img class="face" src="./images/team/Tomasz.png" />
+                                 <p class="name">Tomasz Zacharczuk</p>
+                                <p class="title">Blockchain Advisor</p></a>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 hidden-md-up">
+                        <div class="row">
+                            <div class="col-sm-2 col-4" align="center">
+                                 <a href="https://www.linkedin.com/in/jhernan7/" target="_blank"><img class="face" src="./images/team/juan.png" />
+                                <p class="name">Juan M. Hernandez</p>
+                                     <p class="title">Chief Exectuive Officer</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/kael-shipman-1756b488/" target="_blank"><img class="face" src="./images/team/kael.png" />
+                                 <p class="name">Kael Shipman</p>
+                                <p class="title">Head of Technology</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/thomasmcinerney4/" target="_blank"><img class="face" src="./images/team/thomas.png" />
+                                 <p class="name">Thomas McInerney</p>
+                                <p class="title">Head of Blockchain Development</p></a>
+                            </div>
+                            <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/ian-shipman-2756476/" target="_blank"><img class="face" src="./images/team/ian.png" />
+                                 <p class="name">Ian Shipman</p>
+                                <p class="title">Head of R &amp; D</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/tobin-toby-mccomas-00b3831/" target="_blank"><img class="face" src="./images/team/toby.png" />
+                                 <p class="name">Toby McComas</p>
+                                <p class="title">Head of Sales</p></a>
+                            </div>
+                            <div class="col-sm-2 col-4" align="center">
+                                 <a href="https://www.linkedin.com/in/jordanfishfeld/" target="_blank"><img class="face" src="./images/team/jordan.png" />
+                                <p class="name">Jordan Fishfeld</p>
+                                     <p class="title">General Counsel</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/lindsaygarlin/" target="_blank"><img class="face" src="./images/team/lindsay.png" />
+                                 <p class="name">Lindsay Edelson</p>
+                                <p class="title">Head of Marketing</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/raycoti/" target="_blank"><img class="face" src="./images/team/ray.png" />
+                                 <p class="name">Ray Coti</p>
+                                <p class="title">Lead Frontend Engineer</p></a>
+                            </div>
+                            <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/elizabeth-newman4/" target="_blank"><img class="face" src="./images/team/liz.png" />
+                                 <p class="name">Liz Newman</p>
+                                <p class="title">Lead UX/UI Designer</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/taylarramsey/" target="_blank"><img class="face" src="./images/team/taylar.png" />
+                                 <p class="name">Taylar Ramsey</p>
+                                <p class="title">Communications Manager</p></a>
+                            </div>
+                            <div class="col-sm-2 col-4" align="center">
+                                 <a href="https://www.linkedin.com/in/kunal0507/" target="_blank"><img class="face" src="./images/team/kunal.png" />
+                                <p class="name">Kunal Patel</p>
+                                     <p class="title">Software Engineer</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/jacob-regan-b2b76013a/" target="_blank"><img class="face" src="./images/team/jake.png" />
+                                 <p class="name">Jake Regan</p>
+                                <p class="title">Software Engineer</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/asoren/" target="_blank"><img class="face" src="./images/team/alyssa.png" />
+                                 <p class="name">Alyssa Soren</p>
+                                <p class="title">Support Specialist</p></a>
+                            </div>
+                            <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/andrew-steinwold/" target="_blank"><img class="face" src="./images/team/andrew.png" />
+                                 <p class="name">Andrew Steinwold</p>
+                                <p class="title">Community Advisor</p></a>
+                            </div>
+                             <div class="col-sm-2 col-4" align="center">
+                                <a href="https://www.linkedin.com/in/tomaszzacharczuk/" target="_blank"><img class="face" src="./images/team/Tomasz.png" />
+                                 <p class="name">Tomasz Zacharczuk</p>
+                                <p class="title">Blockchain Advisor</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Our Advisors</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/williammougayar/" target="_blank">
+                            <img class="face" src="./images/advisors/william.png" />
+                            <p class="name">William Mougayer</p>
+                            <p class="title">Etherum Foundation Board Member &amp; Author of Business Blockcahin</p>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/torbair/" target="_blank">
+                            <img class="face" src="./images/advisors/tor.png" />
+                            <p class="name">Tor Bair</p>
+                            <p class="title">Engima MPC</p>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/jeffreyrcarter/" target="_blank">
+                            <img class="face" src="./images/advisors/jeff.png" />
+                            <p class="name">Jeff Carter</p>
+                            <p class="title">West Loop Ventures</p>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.linkedin.com/in/johnlawsonkelly/" target="_blank">
+                            <img class="face" src="./images/advisors/john.png" />
+                            <p class="name">John Kelly</p>
+                            <p class="title">Former COO - Liquid Net</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>OpenFinance Network | &#169; Copyright 2018</p>
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
 
-  </div>
+                // Get the element with id="defaultOpen" and click on it
+                document.getElementById("defaultOpen").click();
+            </script>
+            <script> 
+            
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-  <script>
-  // browser detect
-    var BrowserDetect = {
-      init: function() {
-        this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
-        this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version";
-        this.OS = this.searchString(this.dataOS) || "an unknown OS";
-      },
-      searchString: function(data) {
-        for (var i = 0; i < data.length; i++) {
-          var dataString = data[i].string;
-          var dataProp = data[i].prop;
-          this.versionSearchString = data[i].versionSearch || data[i].identity;
-          if (dataString) {
-            if (dataString.indexOf(data[i].subString) != -1) return data[i].identity;
-          } else if (dataProp) return data[i].identity;
-        }
-      },
-      searchVersion: function(dataString) {
-        var index = dataString.indexOf(this.versionSearchString);
-        if (index == -1) return;
-        return parseFloat(dataString.substring(index + this.versionSearchString.length + 1));
-      },
-      dataBrowser: [{
-        string: navigator.userAgent,
-        subString: "Chrome",
-        identity: "Chrome"
-      }, {
-        string: navigator.userAgent,
-        subString: "OmniWeb",
-        versionSearch: "OmniWeb/",
-        identity: "OmniWeb"
-      }, {
-        string: navigator.vendor,
-        subString: "Apple",
-        identity: "Safari",
-        versionSearch: "Version"
-      }, {
-        prop: window.opera,
-        identity: "Opera",
-        versionSearch: "Version"
-      }, {
-        string: navigator.vendor,
-        subString: "iCab",
-        identity: "iCab"
-      }, {
-        string: navigator.vendor,
-        subString: "KDE",
-        identity: "Konqueror"
-      }, {
-        string: navigator.userAgent,
-        subString: "Firefox",
-        identity: "Firefox"
-      }, {
-        string: navigator.vendor,
-        subString: "Camino",
-        identity: "Camino"
-      }, { // for newer Netscapes (6+)
-        string: navigator.userAgent,
-        subString: "Netscape",
-        identity: "Netscape"
-      }, {
-        string: navigator.userAgent,
-        subString: "MSIE",
-        identity: "Explorer",
-        versionSearch: "MSIE"
-      }, {
-        string: navigator.userAgent,
-        subString: "Gecko",
-        identity: "Mozilla",
-        versionSearch: "rv"
-      }, { // for older Netscapes (4-)
-        string: navigator.userAgent,
-        subString: "Mozilla",
-        identity: "Netscape",
-        versionSearch: "Mozilla"
-      }],
-      dataOS: [{
-        string: navigator.platform,
-        subString: "Win",
-        identity: "Windows"
-      }, {
-        string: navigator.platform,
-        subString: "Mac",
-        identity: "Mac"
-      }, {
-        string: navigator.userAgent,
-        subString: "iPhone",
-        identity: "iPhone/iPod"
-      }, {
-        string: navigator.platform,
-        subString: "Linux",
-        identity: "Linux"
-      }]
-
-    };
-    BrowserDetect.init();
-
-    ///// mobile
-    var isMobile = {
-        Android: function() {
-            return navigator.userAgent.match(/Android/i);
-        },
-        BlackBerry: function() {
-            return navigator.userAgent.match(/BlackBerry/i);
-        },
-        iOS: function() {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        },
-        iPad: function() {
-          return navigator.userAgent.match(/iPad/i);
-        },
-        Chrome: function() {
-          return navigator.userAgent.match(/Chrome|CriOS/i);
-        },
-        Opera: function() {
-            return navigator.userAgent.match(/Opera Mini/i);
-        },
-        Windows: function() {
-            return navigator.userAgent.match(/IEMobile/i);
-        },
-        any: function() {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-        }
-    };
-
-    if (isMobile.any() && BrowserDetect.browser === 'Safari' && BrowserDetect.version <= 9) {
-
-    } else if (isMobile.any() && BrowserDetect.browser === 'Chrome' && BrowserDetect.version <= 48) {
-
-    } else if (isMobile.any() && BrowserDetect.browser === 'Firefox') {
-
-    } else if (isMobile.any() && BrowserDetect.browser === 'Explorer') {
-
-    } else {
-      // document.write("<script type='text/javascript' src='particles.js'><\/script>")
-      // document.write("<script type='text/javascript' src='app.js'><\/script>")
-    }
-  </script>
-
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
-  <script>
-    openSlack = () => {
-      let win = window.open('https://t.me/joinchat/EuSBh0tKLOaUrZ0NgT7Jaw', '_blank');
-      win.focus();
-    };
-    changeUseCase = (useCase) => {
-      let newCase = '';
-      let newPic = '';
-      switch (useCase) {
-        case 'passport':
-          newPic = 'public/investorPassport.png'
-          newCase = 'The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.'
-          break;
-
-        case 'tokenization':
-          newPic = 'public/blocks.png';
-          newCase = 'The OFN system is designed for traditional alternative assets and token-based securities, and allows for a streamlined compliant process from issuance to secondary market trading. As the industry shifts towards ledger based book-entry process, issuers can leverage OFN to bridge the gap to on-chain crypto capital markets.';
-
-          break;
-
-        case 'dsd':
-          newPic = 'public/flowOfData.png'
-          newCase = 'The global registry of qualified entities and securities creates a mechanism for a decentralized securities depository that provides a public governance model to ensure maximum transparency and protection for investors. The distributed ledger acts as the golden source to synchronize (and protect) data across multiple stakeholders in standard securities transactions. This provides a trustless clearing & settlement process that is instantly available to all market participants and removes the single points of failure/fraud.'
-          break;
-
-        case 'registry':
-          newPic = 'public/OFNlifecycle.png'
-          newCase = 'The OFN system contains a public registry of qualified entities and assets on the distributed ledger. Qualified entities include broker-dealers, transfer agents, custodians, escrow agents, fund administrators and registered funding portals. Asset may also be registered with the SEC/EDGAR and that data can be referenced from the OFN as a subset of the Asset data object.'
-          break;
-
-        case 'opensource':
-          newPic = 'public/cfx.png'
-          newCase = 'CFX Markets, already a trusted player in the alternative asset industry since 2014, is leveraging the advancements in distributed ledger technology to build on its success to date to introduce an "open source" version of its own internal clearing & settlement process. The key innovation enabled by this blockchain-based approach is the creation of a decentralized securities depository mechanism by which data interoperability can be leveraged across the various intermediaries in the industry in a transparent, secure and efficient method.'
-          break;
-
-        default:
-          newCase = 'The Investor Passport allows users to perform AML, KYC, suitability and accreditation verification once with a system Validator, and then utilize that passport with other service providers in the ecosystem. This creates an enhanced, secure, and global compliance process that improves investor protections and security, along with increased privacy of sensitive investor data.';
-      }
-      document.getElementById("passportButton").className = "useButton";
-      document.getElementById("registryButton").className = "useButton";
-      document.getElementById("depositoryButton").className = "useButton";
-      document.getElementById("tokenizationButton").className = "useButton";
-      if (useCase === 'passport'){
-        document.getElementById("passportButton").className = "useButton-active";
-      } else if (useCase === 'registry'){
-        document.getElementById("registryButton").className = "useButton-active";
-      } else if (useCase === 'dsd'){
-        document.getElementById("depositoryButton").className = "useButton-active";
-      } else if (useCase === 'tokenization'){
-        document.getElementById("tokenizationButton").className = "useButton-active";
-      } else {
-
-      }
-
-      document.getElementById("useCasePic").classList.remove("fadeIn");
-      void document.getElementById("useCasePic").offsetWidth;
-      document.getElementById("useCasePic").src = newPic;
-      document.getElementById("useCasePic").classList.add("fadeIn");
-
-      document.getElementById("useCaseText").classList.remove("fadeIn");
-      void document.getElementById("useCaseText").offsetWidth;
-      document.getElementById("useCaseText").innerHTML = newCase;
-      document.getElementById("useCaseText").classList.add("fadeIn");
-    }
-
-    changePlatform = (useCase) => {
-      let newPic = '';
-      switch (useCase) {
-        case 'portfolio':
-          newPic = 'public/portfolio.png'
-          break;
-
-        case 'trading':
-          newPic = 'public/trading.png';
-          break;
-
-        case 'research':
-          newPic = 'public/research.png'          
-          break;
-
-        default:
-
-      }
-      document.getElementById("portfolioButton").className = "platformButton";
-      document.getElementById("tradingButton").className = "platformButton";
-      document.getElementById("researchButton").className = "platformButton";
-      document.getElementById("tokenizationButton").className = "platformButton";
-      if (useCase === 'portfolio'){
-        document.getElementById("portfolioButton").className = "platformButton-active";
-      } else if (useCase === 'trading'){
-        document.getElementById("tradingButton").className = "platformButton-active";
-      } else if (useCase === 'research'){
-        document.getElementById("researchButton").className = "platformButton-active";
-
-      } else {
-
-      }
-
-      document.getElementById("platformPic").classList.remove("fadeIn");
-      void document.getElementById("platformPic").offsetWidth;
-      document.getElementById("platformPic").src = newPic;
-      document.getElementById("platformPic").classList.add("fadeIn");
-
-      document.getElementById("useCaseText").classList.remove("fadeIn");
-      void document.getElementById("useCaseText").offsetWidth;
-      document.getElementById("useCaseText").innerHTML = newCase;
-      document.getElementById("useCaseText").classList.add("fadeIn");
-    }
-    openFile = (type) => {
-      if (type = 'wp') {
-
-      }
-      if (type = 'znp') {
-
-      }
-      if (type = 'tkn') {
-
-      }
-
-    }
-
-    var countDownDate = new Date("April 30, 2018 00:00:00").getTime();
-
-    var x = setInterval(function(){
-      var now = new Date().getTime();
-
-      var distance = countDownDate - now;
-
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById('days').innerHTML = days + 'd';
-      document.getElementById('hours').innerHTML = hours + 'h';
-      document.getElementById('minutes').innerHTML = minutes + 'm';
-      document.getElementById('seconds').innerHTML = seconds + 's';
-
-      if (distance < 0){
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "LAUNCHED";
-      }
-    }, 1000);
-  </script>
-
-  <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-</body>
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+            
+            </script>
+        </footer>
+    </body>
 </html>
-
-
-

@@ -1,0 +1,507 @@
+body {
+    font-family: 'Barlow', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #4d4d4d;
+    font-weight: 300;
+}
+
+
+strong {
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*-- NAV --*/
+.logo {
+    padding-top: 30px;
+}
+
+.navbar {
+    padding-top: 30px;
+}
+
+ul .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    padding-top: 36px;
+}
+
+.nav-item {
+    float: left;
+    padding: 10px;
+    font-size: .9em;
+}
+
+.nav-item a {
+    color: #fff;
+    display:inline-block;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+
+/*-- HEADER --*/
+.header {
+    background-image: url("./images/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3.1em;
+    color: #fff;
+    line-height: 1.1em;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #fff;
+    text-transform:uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #fff;
+}
+
+.apply {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.apply a {
+    color: #005bbb;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.apply a {
+    color: #005bbb;
+    text-decoration: underline;
+}
+
+.apply h2 {
+    color: #005bbb;
+}
+
+.apply p {
+    color: #005bbb;
+}
+
+
+a.listButton {
+    text-decoration: none;
+}
+/*-- BUTTONS --*/ 
+.btnPrimary {
+    background: linear-gradient(to right, #005bbb, #00A5D7);
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.btnPrimary:hover {
+    background: linear-gradient(to right, #005bbb, #005bbb);
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.btnSecondary {
+    background: transparent;
+    border:4px solid #fff;
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.btnSecondary:hover {
+    background: #fff;
+    border:4px solid #fff;
+    padding: 10px;
+    border-radius: 100px;
+    color: #00a5d7 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+
+/*-- CONTENT -- */
+.content h2 {
+    color: #00A5D7;
+}
+
+.diff {
+    background-image: url("./images/computer.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size:    contain;
+    padding-bottom: 40px;
+}
+
+.diff h2 {
+    color: #00a5d7;
+}
+
+
+h3 {
+    color: #005bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.paper {
+    width: 100%;
+}
+
+.paper:hover {
+    opacity: .5;
+}
+
+.paper p {
+    text-align: center;
+}
+
+/*-- LIVE TOKENS SECTION --*/
+
+.liveTokens {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logoTitle {
+    color: #4d4d4d;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-top:20px;
+    line-height: 1.8em
+}
+
+
+/*-- TOKEN SECTION --*/
+.lines {
+    background-image: url(./images/lite-lines.png);
+    border-top: 1px solid #c7c7c7;
+    padding-top: 40px;
+}
+
+.token {
+    margin-bottom: 40px;
+}
+
+.token h2 {
+    color: #00a5d7;
+}
+
+/*-- BETA SECTION --*/
+
+.beta {
+    background-color: rgba(0, 91, 187, .8);
+    padding:40px 0;
+}
+
+.beta h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.6em;
+    margin: 20px 0 40px;
+}
+
+.beta h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.btnSignUp {
+    background: linear-gradient(to right, #0FD58B, #28B2B8);
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 0px;
+    width: 100%;
+    border: none;
+}
+
+.btnSignUp:hover {
+    background: linear-gradient(to right, #0FD58B, #0FD58B);
+    padding: 10px;
+    border-radius: 100px;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 0px;
+    width: 100%;
+    border: none;
+}
+
+
+ .signForm {
+    width: 100%;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.socialIcons {
+    margin-top: 40px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+.socialIcons a {
+    display: inline-block;
+}
+
+img.socialicon {
+    display: inline-block;
+    width: 60px;
+    margin: 0 20px;
+}
+
+img.socialicon:hover {
+    opacity: .8;
+}
+
+
+/*-- SCREENS SECTION --*/
+
+.screens {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.screens h2 {
+    color: #005bbb;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin: 40px;
+    text-transform: none;
+}
+
+/*-- PARTNERS SECTION --*/
+
+.partners {
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 40px;
+}
+
+
+/*-- USE CASE -- */
+.useCases {
+    margin-bottom: 20px;
+}
+
+.useCases h2 {
+    color: #005bbb;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin: 40px;
+}
+
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    background-color: #fff;
+    width: 25%;
+    height: auto;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: #fff;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: .8em;
+    border-bottom:1px solid #c7c7c7;
+    margin-right: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #fff;
+    color: #005bbb;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #fff;
+    color: #00a5d7;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    width: 75%;
+    border-left: none;
+    height: auto;
+    border-left: 1px solid #c7c7c7;
+}
+
+
+.roadmap {
+    background-color: #eef0f1;
+}
+
+.roadmap h2 {
+    color: #005bbb;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-top:60px;
+}
+
+
+.team h2 {
+    color: #005bbb;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3em;
+    margin-top:60px;
+}
+
+.face {
+    width: 90%;
+}
+
+.name {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    font-size: .7em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.title {
+    font-weight: 300;
+    letter-spacing: .5px;
+    font-size: .7em;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #005bbb;
+    color: #fff;
+    font-size: .8em;
+    padding: 20px 20px 10px;
+}
+
+
+/*-- MEDIA QUERIES --*/
+
+@media only screen and (min-width: 992px) {
+    ul.navbar-nav {
+        display: inline-block;
+    }
+    
+    .nav-item {
+        font-size: .8en;
+        padding:10px 8px
+    }
+
+        
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .diff {
+        background-image: none;
+    }
+    
+    h1 {
+        font-size:2.2em;
+    }
+    
+    .screens h2 {
+        font-size: 1em;
+    }
+    
+    .tab {
+        width:40%;
+    }
+    
+    .tabcontent {
+        width: 60%;
+    }
+    
+    .name {
+        font-size: .5em;
+    }
+    
+    .title {
+        font-size: .5em;
+    }
+}
