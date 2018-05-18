@@ -187,6 +187,7 @@ a.listButton {
 
 .diff h2 {
     color: #00a5d7;
+    margin-top: 40px;
 }
 
 
@@ -240,6 +241,10 @@ h3 {
 
 .token h2 {
     color: #00a5d7;
+}
+
+.token h3 {
+    margin-top: 30px;
 }
 
 /*-- BETA SECTION --*/
