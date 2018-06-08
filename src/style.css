@@ -36,7 +36,7 @@ ul .navbar-nav {
 .nav-item {
     float: left;
     padding: 10px;
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .nav-item a {
@@ -462,6 +462,54 @@ footer {
     color: #fff;
     font-size: .8em;
     padding: 20px 20px 10px;
+}
+
+
+/*--- FAQS ---*/
+#faqs h2 {
+    color:#00a5d7; 
+    margin-top: 20px;
+    font-family: 'Barlow', 'Arial', sans-serif;
+}
+
+
+.btn-link, .btn-link:active, .btn-link:focus {
+    border-color: transparent;
+    font-size: 18px;
+    color: #005bbb;
+    font-family: 'Barlow', 'Arial', sans-serif;
+}
+
+
+.card-header {
+    padding: 0.3rem .5rem;
+    margin-bottom: 0;
+    background-color: #f7f7f9;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    font-family: 'Barlow', 'Arial', sans-serif;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 10px;
+    font-family: 'Barlow', 'Arial', sans-serif;
 }
 
 
