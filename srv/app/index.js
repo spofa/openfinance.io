@@ -14,7 +14,6 @@ app.use('/', httpsRedirect());
 //       res.redirect(301, "https://www." + host);
 //     }
 //   });
-//   app.use(express.static(__dirname + "/public"));
 
 module.exports = app;
 
@@ -28,11 +27,12 @@ app.use('/api', require('./routes'));
 
 
 /*
- This middleware will catch any URLs resembling a file extension
- for example: .js, .html, .css
- This allows for proper 404s instead of the wildcard '/*' catching
- URLs that bypass express.static because the given file does not exist.
- */
+This middleware will catch any URLs resembling a file extension
+for example: .js, .html, .css
+This allows for proper 404s instead of the wildcard '/*' catching
+URLs that bypass express.static because the given file does not exist.
+*/
+app.use(express.static(__dirname));
 app.use(function (req, res, next) {
 
     if (path.extname(req.path).length > 0) {

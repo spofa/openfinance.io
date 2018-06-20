@@ -4,7 +4,7 @@ var path = require('path');
 var logMiddleware = require('volleyball');
 
 var rootPath = path.join(__dirname, '../../../');
-var indexPath = path.join(rootPath, './public/index.html');
+var indexPath = path.join(rootPath, );
 
 var env = require(path.join(rootPath, './srv/env'));
 
