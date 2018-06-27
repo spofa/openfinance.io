@@ -46,12 +46,13 @@ ul .navbar-nav {
 
 .navbar-light .navbar-toggler {
     border-color: #fff;
+    background-color: #fff;
 }
 
 
 /*-- HEADER --*/
 .header {
-    background-image: url("./images/hero.png");
+    background-image: url("./images/hero2.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,8 +143,8 @@ a.listButton {
 
 .btnSecondary {
     background: transparent;
-    border:4px solid #fff;
-    padding: 10px 40px;
+    border:3px solid #fff;
+    padding: 10px 30px;
     border-radius: 100px;
     color: #fff !important;
     text-transform: uppercase;
@@ -160,8 +161,8 @@ a.listButton {
 
 .btnSecondary:hover {
     background: #fff;
-    border:4px solid #fff;
-    padding: 10px 40px;
+    border:3px solid #fff;
+    padding: 10px 30px;
     border-radius: 100px;
     color: #00a5d7 !important;
     text-transform: uppercase;
@@ -178,7 +179,7 @@ a.listButton {
 
 .btnGreen {
     background: linear-gradient(to right, #0DD788, #28B1B8 );
-    padding: 10px 40px;
+    padding: 12px 30px;
     border-radius: 100px;
     color: #fff !important;
     text-transform: uppercase;
@@ -195,7 +196,7 @@ a.listButton {
 
 .btnGreen:hover {
     background: #28B1B8;
-    padding: 10px 40px;
+    padding: 12px 30px;
     border-radius: 100px;
     color: #fff !important;
     text-transform: uppercase;
