@@ -1,8 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>OpenFinance Network and CFX Markets</title>
-        
+<html lang="en" coupert-item="mfidniedemcgceagapgdekdbmanojomk"><head>
+                      <title>OpenFinance Network</title>
+                      <meta name="description" content="End to end platform for Trading, Management, Clearing &amp; settlement of Security tokens and Alternative assets">
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                      <meta charset="utf-8">
+                      <meta name="theme-color" content="#030560">
+                      <meta property="og:type" content="website">
+                      <meta property="og:title" content="OpenFinance">
+                      <meta property="og:description" content="End to end platform for Issuance, Trading, Clearing &amp; settlement of Security tokens and Alternative assets ">
+                      <meta property="og:image" content="/images/ofnlogo.png">
+                      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    
+                      
+                      <meta name="google-site-verification" content="Yw67zSsSsFCTUmP9v_O-pl0vVZ4639NM9OzmoNbqi4I">
+
+
         <!-- Twitter Boostrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -10,216 +22,610 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>        
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- TABS -->
+        
         
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700" rel="stylesheet">
         
+        <!-- My CSS Link -->
         <style>
-            
+           /*--- GENERAL ---*/
             body {
+                font-family: 'Barlow', 'Arial', sans-serif;
                 font-size: 16px;
                 color: #4d4d4d;
-                line-height: 24px;
-                font-family: 'Barlow', 'Arial', sans-serif;
+                font-weight: 300;
             }
             
-            .background {
-                background-image: url(./images/background.png);
-                background-position: center;
+            strong {
+                font-weight: 700;
+            }
+            
+            .hero-background {
+                background-image: url(./images/bridge-background.jpg);
                 background-repeat: no-repeat;
+                background-position: center;
                 background-size: cover;
             }
             
-            .intro {
-                background-color: #fff;
-                border-radius: 6px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                margin: 50px auto;
-                padding: 30px;
-            }
-            
             .logo {
-                margin: 20px auto;
-                width: 90%;
+                width: 300px;
+                margin-top: 50px;
+                margin-bottom: 50px;
             }
             
             h1 {
-                color: #005bbb;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 26px;
-                margin-top: 30px;
-            }
-        
-            
-            .swap {
-                width: 90%;
-                padding: 20px 20px 20px 10px;
-            }
-            
-            
-            .content {
-                margin-bottom: 50px;
-            }
-            
-            .border {
-                height: 4px;
-                border-radius: 20px;
-                background-image: linear-gradient(to right, #005bbb, #00a5d7);
-                width: 60px;
-                margin: 20px 0;
-            }
-            
-            .btnGreen {
-                background-image: linear-gradient(to right, #0DD788, #28B1B8);
                 color: #fff;
+                font-size:32px;
                 text-transform: uppercase;
-                border-radius: 50px;
-                display: inline-block;
-                text-align: center;
-                padding: 10px 30px;
+                letter-spacing: 4px;
+                line-height: 42px;
+                font-weight: bold;
+                padding-bottom: 20px;
             }
             
-            
-            h2 {
-                font-size: 28px;
-                text-align: center;
-                color: #005bbb;
-                font-weight: 700;
-                margin: 40px auto;
-            }
-            
-            .moreProducts {
-                margin-bottom: 50px;
-            }
-            
-            .productBox {
+            .divider {
+                width: 100px;
+                height: 2px;
+                background-color: #fff;
+                border-radius: 100px;
                 margin-bottom: 40px;
             }
             
-            .product {
-                background-color: #fff;
-                border-radius: 6px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            .subheader {
+                font-size: 24px;
+                color: #fff;
+                line-height: 28px;
+                font-weight: 200;
+                letter-spacing: 2px;
+            }
+            
+            .primaryBtn {
                 padding: 10px;
-                height: 100%;
-            }
-            
-            .icon {
-                width: 120px;
-                margin: 0 auto;
-            }
-            
-            h3 {
-                font-size: 18px;
-                color: #0E30A6;
-                text-align: center;
-                font-weight: bold;
-                margin: 20px 0;
-            }
-            
-            .blurb {
-                font-size; 14px;
-                color: #4d4d4d;
-                line-height: 24px;
-                padding: 0 10px;
-            }
-            
-            .coming {
-                color: #00a5d7;
+                border-radius: 100px;
+                background-image: linear-gradient(to right, #0FD48B, #27B2B7);
+                border: none;
+                color: #fff;
+                font-family: 'Barlow', 'Arial', sans-serif;
                 text-transform: uppercase;
-                font-size: 18px;
-                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 250px;
+                margin-bottom: 40px;
+                margin-top: 30px;
+                font-size: 20px;
             }
             
-            .btnSecondary {
-                border: 1px solid #00a5d7;
-                color: #00a5d7;
+            .primaryBtn:hover {
+                padding: 10px;
+                border-radius: 100px;
+                background-image: linear-gradient(to right, #27B2B7, #27B2B7);
+                border: none;
+                color: #fff;
+                font-family: 'Barlow', 'Arial', sans-serif;
                 text-transform: uppercase;
-                text-align: center;
-                border-radius: 50px;
-                margin: 10px;
-                padding: 10px 0;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+                width: 250px;
+                margin-bottom: 40px;
+                margin-top: 30px;
+                font-size: 20px;
+            }
+            
+            .computer {
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            .techContent {
+                margin-top: 50px;
+                margin-bottom: 40px;
+            }
+            
+            .zigzag {
+                background-image: url(./images/zigzag.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            
+            h2 {
+                font-size: 24px;
+                color: #005bbb;
+                font-weight:700;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            
+            .card {
+                border-radius: 8px;
+                background-color: #fff;
+                box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 9px 0 rgba(0, 0, 0, 0.19);
+                padding: 20px;
+            }
+            
+            .card p {
                 font-size: 14px;
             }
             
-            footer {
-                font-size: 12px;
-                color: #4d4d4d;
-                line-height: 18px;
-                background-color: #eef0f1;
-                padding: 20px 40px; 
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-top: 20px;
+                color: #005bbb;
             }
             
-        </style>
-
+            .linkBtn {
+                color: #00a5d7;
+            }
+            
+            .customerSupport {
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+            
+            .cs{
+                color: #00a5d7;
+            }
+            
+            .liveChat {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            
+            .articles {
+                background-color: rgba(240, 243, 247, .8);
+                padding: 50px 0;
+            }
+            
+            .articles .card {
+                margin-bottom: 20px;
+                height: 100%;
+            }
+            
+            p.title {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+            
+            .date {
+                margin-bottom: 5px;
+                font-size: 10px !important;
+                letter-spacing: 1.5px;
+                color: #c7c7c7;
+                text-transform: uppercase;
+            }
+            
+            .articleImage {
+                width: 100% ;
+            }
+            
+            .articleLink {
+                text-align: center;
+                color: #00a5d7;
+                font-weight: 700;
+                letter-spacing: 2px;
+                padding-top: 20px;
+                margin-bottom: 0px;
+                margin-top: 20px;
+            }
+            
+            
+            /*--- MEDIA QUERIES -----*/
+            
+           @media (max-width: 1199px) { 
+                h1 {
+                    color: #fff;
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    line-height: 38px;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
+            }
+            
+            @media (min-width: 768px) and (max-width: 991px) {
+                .computer {
+                    display: none;
+                }
+            }
+            
+          
+            @media (max-width: 400px) { 
+                h1 {
+                    color: #fff;
+                    font-size: 21px;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    line-height: 33px;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
+            }
+            
+        </style>                     
+        
     </head>
     <body>
-        <div class="background">
+        <div class="fluid-container hero-background">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="intro">
+                <div class="hero">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8">
+                            <img class="logo" src="./images/ofn.png" />
+                            <h1>The trading platform for Tokenized securities</h1>
+                            <div class="divider"></div>
+                            <!-- <p class="subheader">Now Trading SPiCE VC</p> -->
+                            <a href="https://open.cfxtrading.com/app" target="_blank"> <button class="primaryBtn"><span style="padding-left: 20px; padding-right: 20px; vertical-align: center;">Register Now »</span></button></a>
+                        </div>
+                        <div class="col-lg-6 col-md-4">
+                            <img class="computer" src="./images/comp2.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fluid-containter zigzag hidden-md-down">
+            <div class="container">
+                <div class="techContent">
+                    <div class="row">
+                        <div class="col-sm-7">
                             <div class="row">
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
-                                    <img class="logo" src="images/ORN-TB-CFX_RGB_FC.png" />
+                                <div class="col-sm-11">
+                                    <h2>Alternative Trading in the Digital Age</h2>
+                                    <p>Our team at OpenFinance Network saw that the mechanism for trading alternative securities was way out of date, and so we went to work to change that.</p>
+
+                                    <p>When you work in technology, no matter what your particular industry, the landscape changes quickly. Thankfully, we have been able to take advantage of some very exciting innovations in technology that have us enthusiastic about the future and how it will change the alternative trading space forever.</p>
+
+                                    <p><strong>OpenFinance Network leverages the latest technology to bring efficiency, transparency, and interoperability to alternative trading.</strong></p>
+                        
                                 </div>
-                                <div class="col-sm-4"></div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6" align="center">
-                                    <img class="swap" src="./images/logo-change.png" />
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-9">
+                                        <div class="card" style="margin-top: 40px;">
+                                            <div style="display:inline-block;">
+                                                <svg style="margin-right: 20px;" width="115px" height="106px" viewBox="0 0 115 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs></defs>
+                                                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g id="Desktop-1440-+-Copy" transform="translate(-344.000000, -1270.000000)" stroke="#00A5D7">
+                                                            <g id="Group-44" transform="translate(345.000000, 1271.000000)">
+                                                                <g id="Group-5">
+                                                                    <polygon id="Stroke-1" points="42.3850538 13.1010921 42.3850538 13.1010921 48.9705923 31.7823056 33.0134769 44.9098562 9.96474615 52.2308899 3.63224615 46.424373 5.65851538 44.1519461 3.63224615 41.6279685 5.65851538 39.3561933 1.60597692 36.831564 4.13897692 35.3170472 0.339476923 16.888036 6.67132308 0.478597753"></polygon>
+                                                                    <polyline id="Stroke-3" points="6.67158462 0.478858427 48.9702 31.7825663 50.9971231 57.7848135 25.4147385 56.5224989"></polyline>
+                                                                </g>
+                                                                <polygon id="Stroke-6" points="2 73.5132692 35 75 24.6567069 54.9265756 30.5702479 44 9.63445645 50.7139585"></polygon>
+                                                                <g id="Group-43" transform="translate(2.000000, 0.000000)">
+                                                                    <path d="M31.5819667,90.7453926 C30.827686,89.5018864 21.0129491,75.2558123 21.0129491,75.2558123 L0.150142105,74.3320099 L7.44238772,97.4598123 L31.5819667,90.7453926 Z" id="Stroke-7"></path>
+                                                                    <polygon id="Stroke-9" points="33.8450035 75.8238963 46.6690737 85.8958469 31.5821614 90.7453284"></polygon>
+                                                                    <path d="M33.8450035,75.8238963 L33.8450035,65.6280444 C33.0907228,64.8820691 23.2837754,55.6799951 23.2837754,55.6799951" id="Stroke-11"></path>
+                                                                    <polyline id="Stroke-13" points="46.6692684 85.8961037 48.6809 84.7771407 45.160707 68.6122025 33.8451982 65.6283012 41.2627246 61.4002519 45.160707 68.6122025 48.6809 56.923758"></polyline>
+                                                                    <path d="M48.6810298,56.9238222 L48.6810298,84.7772049" id="Stroke-15"></path>
+                                                                    <polygon id="Stroke-17" points="68.7974754 12.9058864 68.7974754 12.9058864 62.2595105 31.3087506 78.1013526 44.2407012 100.98423 51.4526519 107.270984 45.7326519 105.258704 43.494084 107.270984 41.0077136 105.258704 38.7697877 109.281967 36.2827753 106.767265 34.7908247 110.539318 16.6364049 104.252563 0.471466667"></polygon>
+                                                                    <polyline id="Stroke-19" points="104.252628 0.471723457 62.2595754 31.3090074 60.2479439 56.9238222 85.6448737 55.680316"></polyline>
+                                                                    <polygon id="Stroke-21" points="108.779351 74.3317531 75.0840351 75.8237037 85.644614 55.6798025 79.6064737 44.7148642 100.984035 51.4523951"></polygon>
+                                                                    <path d="M77.347007,90.7453926 C78.1012877,89.5018864 87.9160246,75.2558123 87.9160246,75.2558123 L108.779481,74.3320099 L101.486586,97.4598123 L77.347007,90.7453926 Z" id="Stroke-23"></path>
+                                                                    <polygon id="Stroke-25" points="75.0839702 75.8238963 62.2599 85.8958469 77.3468123 90.7453284"></polygon>
+                                                                    <path d="M75.0839702,75.8238963 L75.0839702,65.6280444 C75.8382509,64.8820691 85.6451982,55.6799951 85.6451982,55.6799951" id="Stroke-27"></path>
+                                                                    <polyline id="Stroke-29" points="62.2596404 85.8961037 60.2480088 84.7771407 63.7682018 68.6122025 75.0837105 65.6283012 67.6661842 61.4002519 63.7682018 68.6122025 60.2480088 56.923758"></polyline>
+                                                                    <path d="M60.2479439,56.9238222 L60.2479439,84.7772049" id="Stroke-31"></path>
+                                                                    <path d="M68.7974754,12.9058864 L40.1315632,12.9058864" id="Stroke-33"></path>
+                                                                    <path d="M48.6810298,84.7770123 L60.2477491,84.7770123" id="Stroke-35"></path>
+                                                                    <path d="M46.6692684,95.4705877 L48.6809,84.7772049" id="Stroke-37"></path>
+                                                                    <path d="M60.2479439,84.7770123 L63.7681368,95.4703951" id="Stroke-39"></path>
+                                                                    <polyline id="Stroke-41" points="46.6692684 103.428193 62.2599 103.677279 77.3468123 90.7453284 64.5227421 98.9516988 63.7684614 95.4702667 46.6692684 95.4702667 45.4119175 98.7032543 31.581707 90.7453284 46.6692684 103.428193"></polyline>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <h3>Self Custody &amp; <br /> Identity Management</h3>
+                                            </div>
+                                            
+                                            <p style="margin-top: 20px;">We live in a technological age where identity, security, and privacy are always high concerns.  While on the blockchain, you manage your own identity and wallet, which holds your tokens. While this used to involve a level of “know-how” that was beyond the average user, we are pleased to offer our users an easy integration with this powerful technology.</p> 
+
+                                            <p>Metamask is a tool that has been developed by the community to make transacting on the blockchain simple and easy to operate within your browser. We are excited to bring this technology into our platform and to put the power of blockchain into the hands of our users.</p>
+                                            
+                                            <p><strong>Metamask now integrates with <a href="https://medium.com/metamask/trezor-integration-in-metamask-a8eaeae7f499" target="_blank">Trezor</a> for an even more secure and intutive experience with your wallet.</strong></p>
+
+                                            <p><a class="linkBtn" href="https://metamask.io/" target="_blank"><strong>CREATE YOUR METAMASK ACCOUNT TODAY »</strong></a></p>
+                                    
+                                    </div>
                                 </div>
-                                <div class="col-md-6 content">
-                                    <h1>OpenFinance Network is building the first US based regulated security token trading platform, built for a tokenized future. </h1>
-                                    <div class="border"></div>
-                                    <p>CFX Markets will serve as OFN's US regulated trading platform, and retail channel for the trading of alternative assets, including security tokens.  </p>
-                                    <a href="https://open.cfxtrading.com/app"><p class="btnGreen">Register Now &#187;</p></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="card" style="margin-top: 40px;">
+                                <div style="display:inline-block;">
+                                <svg style="margin-right: 20px;" width="70px" height="111px" viewBox="0 0 70 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                                    <desc>Created with Sketch.</desc>
+                                    <defs></defs>
+                                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Desktop-1440-+-Copy" transform="translate(-874.000000, -903.000000)" stroke="#00A5D7">
+                                            <g id="Group-13" transform="translate(875.000000, 903.000000)">
+                                                <polygon id="Stroke-1" points="34.300885 0 0 57.372549 34.300885 77 68 57.372549"></polygon>
+                                                <polygon id="Stroke-3" points="0 63 34.6071429 82.8726115 68 63 34.6071429 111"></polygon>
+                                                <path d="M35,0 L35,77" id="Stroke-5"></path>
+                                                <path d="M35,83 L35,111" id="Stroke-7"></path>
+                                                <path d="M34,41 L0,57" id="Stroke-9"></path>
+                                                <path d="M34,41 L68,57" id="Stroke-11"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <h3>The Power of <br /> Blockchain Technology</h3>
                                 </div>
+                                <p style="margin-top: 20px;">From ledger maintenance and smart contracts to the 'tokenization of securities', we at OpenFinance Network knew that blockchain technology could streamline the alternative trading process in a truly revolutionary way.</p>
+
+                                <p>The Ethereum blockchain makes keeping track of ownership easy. Its shared source of truth means that it cannot be hacked by outsiders or manipulated by insiders.</p>
+
+                                <p>To securely and successfully verify transactions on the Ethereum chain, the chain requires users to cover the cost of 'Gas' - the fee for conducting trasnaction on the chain.</p>
+                                
+                                <p><strong>Openfinance Network utilizes a hybrid DEX modal that has off-chain matching and on-chain peer-to-peer settlement. </strong></p>
+
+                            </div>
+                            <div class="card" style="margin-top: 30px;">
+                                <div style="display:inline-block;">
+                                <svg style="margin-right: 20px;" width="105px" height="94px" viewBox="0 0 105 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                                    <desc>Created with Sketch.</desc>
+                                    <defs>
+                                        <polygon id="path-1" points="0 93 104 93 104 0 0 0"></polygon>
+                                    </defs>
+                                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Desktop-1440-+-Copy" transform="translate(-868.000000, -1606.000000)">
+                                            <g id="Group-19" transform="translate(869.000000, 1607.000000)">
+                                                <path d="M0,14 L0,7.55566901 C0,6.53645024 0.766140954,5.68068611 1.77904995,5.56784969 L53.8898169,0.0125010293 C55.0746198,-0.119317228 56,0.808156033 56,2.00032036 L56,6.00021357" id="Stroke-1" stroke="#00A5D7"></path>
+                                                <path d="M55.9996045,90 L1.99996705,90 C0.895318756,90 0,88.8700461 0,87.7659287 L0,10 L62.2204353,10 C63.3256109,10 64,10.661205 64,11.7658496 L64,56.000145" id="Stroke-3" stroke="#00A5D7"></path>
+                                                <path d="M18,68 L46,68" id="Stroke-5" stroke="#00A5D7"></path>
+                                                <path d="M48,40 C48,48.8368046 40.8363954,56 31.9997364,56 C23.1630773,56 16,48.8368046 16,40 C16,31.1631954 23.1630773,24 31.9997364,24 C40.8363954,24 48,31.1631954 48,40 Z" id="Stroke-7" stroke="#00A5D7"></path>
+                                                <path d="M38,40 C38,48.8368046 35.3135902,56 31.9997364,56 C28.6864098,56 26,48.8368046 26,40 C26,31.1631954 28.6864098,24 31.9997364,24 C35.3135902,24 38,31.1631954 38,40 Z" id="Stroke-9" stroke="#00A5D7"></path>
+                                                <path d="M17,41 L49,41" id="Stroke-11" stroke="#00A5D7"></path>
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <g id="Clip-14"></g>
+                                                <polygon id="Stroke-13" stroke="#00A5D7" mask="url(#mask-2)" points="71 92 80 92 80 53 71 53"></polygon>
+                                                <polygon id="Stroke-15" stroke="#00A5D7" mask="url(#mask-2)" points="59 92 68 92 68 58 59 58"></polygon>
+                                                <polygon id="Stroke-16" stroke="#00A5D7" mask="url(#mask-2)" points="83 92 92 92 92 47 83 47"></polygon>
+                                                <polygon id="Stroke-17" stroke="#00A5D7" mask="url(#mask-2)" points="94 93 103 93 103 42 94 42"></polygon>
+                                                <path d="M81.1113573,40.4203984 C81.0065811,40.4203984 80.9330814,40.4568482 80.9330814,40.6000437 L80.9685281,42.4631471 C80.9685281,42.7854671 80.7548055,43 80.4305728,43 L79.1743012,43 C78.8531961,43 78.6373884,42.7854671 78.6373884,42.4631471 L78.6717925,40.5635939 C78.6717925,40.4203984 78.602463,40.3839487 78.4940379,40.3839487 C74.4041181,39.9184332 72,37.5169147 72,34.0411698 L72,32.6071321 C72,32.2842913 72.2163289,32.0697585 72.537434,32.0697585 L74.8336483,32.0697585 C75.157881,32.0697585 75.3710823,32.2842913 75.3710823,32.6071321 L75.3710823,33.2882219 C75.3710823,35.6538113 77.0600117,37.4815064 80.1798397,37.4815064 C83.1213918,37.4815064 84.555418,35.8329358 84.555418,33.7188497 C84.555418,30.9944905 80.9330814,30.1353176 76.9135336,27.8415863 C73.9365348,26.2643531 72.1428292,24.7235697 72.1428292,21.4607955 C72.1428292,17.7345886 74.3665863,15.3695199 78.3856128,14.9024423 C78.4940379,14.8675547 78.5638887,14.8305842 78.5638887,14.6879094 L78.5289633,12.5373736 C78.5289633,12.2150536 78.7452922,12 79.0663973,12 L80.2877435,12 C80.6088486,12 80.8251776,12.2150536 80.8251776,12.5373736 L80.7902522,14.6514597 C80.7902522,14.7962173 80.8606242,14.8305842 80.9685281,14.8305842 C85.3821594,15.1898747 87.8217241,17.6981389 87.8217241,21.4259079 L87.8217241,22.464726 C87.8217241,22.7875668 87.6053952,23.0031411 87.2842901,23.0031411 L84.9880758,23.0031411 C84.6638431,23.0031411 84.4475142,22.8240165 84.4475142,22.5365841 L84.4475142,22.1075184 C84.4475142,19.6690295 82.9050629,17.7694763 79.7503095,17.7694763 C77.0944158,17.7694763 75.5519646,19.0608392 75.5519646,21.3181207 C75.5519646,24.0055095 78.3856128,24.6152619 82.0465238,26.2643531 C86.1364436,28.0910068 88,30.2420634 88,33.5392045 C88,37.3737192 85.5984883,40.026741 81.1113573,40.4203984 Z" id="Stroke-18" stroke="#00A5D7" mask="url(#mask-2)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>      
+                                <h3>Fully Compliant <br />Investor Passports</h3>
+                                </div>
+                                <p style="margin-top: 20px;">We also knew that a massive upfront cost in the alternative trading lifecycle was simply the time it took to review documentation and paperwork for our users to be legally compliant. While this seemed like an obvious function that machines could perform better than humans, other players in the industry were lagging behind, and investors suffered as a result. </p>
+
+                                <p>We solved this by streamlining the process with a tool called the Investor Passport, which collects and analyzes user information and documentation to ensure that users are authorized to trade. This not only speeds up the process of obtaining legal compliance, but it greatly reduces the friction and overhead of hiring rooms full of people to review documentation for our users. </p>
+
+                                <p><a class="linkBtn" href="https://open.cfxtrading.com/app/#/onboarding" target="_blank"><strong>REGISTER WITH YOUR INVESTOR PASSPORT »</strong></a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container moreProducts">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>More from OpenFinance Network</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 productBox">
-                    <div align="center" class="product">
-                            <img class="icon" src="./images/s3.png" />
-                            <h3>S3 | Smart Securities Standard</h3>
-                            <p class="blurb" style="text-align: left;">A protocol and smart contract library for trading securities and integrating with OFN. S3 contracts automatically detect and apply proper regulation, giving users the experience of owning a single token.</p>
-                            <a href="https://github.com/OpenFinanceIO/smart-securities-standard" target="_blank"><p class="btnSecondary">Learn more about S3 &#187; </p></a>
-                    </div>
-                </div>
-                <div class="col-md-4 productBox">
-                    <div align="center" class="product">
-                            <img class="icon" src="./images/research.png" />
-                            <h3>Research Center</h3>
-                            <p class="blurb" style="text-align: left;">Plan your portfolio and future purchases by comparing securities through historical data analysis, asset descriptions, and team information. Receive ratings from agencies, social media buzz, and discover new opportunities for investment.</p>
-                            <p class="coming">Coming Soon</p>
-                    </div>
-                </div>
-                <div class="col-md-4 productBox">
-                    <div align="center" class="product">
-                            <img class="icon" src="./images/ip.png" />
-                            <h3>Investor Passport</h3>
-                            <p class="blurb" style="text-align: left;">Your single Sign-on AML KYC accreditation and residency. Sign up one time, and "Login with OFN" at any of our partner sites. Whitelist Wallets to allow for compliant trading of permissioned security tokens.</p>
-                            <a href="https://www.openfinance.io/" target="_blank"><p class="btnSecondary">Investor Passport &#187;</p></a>
+        <div class="fluid-containter zigzag hidden-lg-up">
+            <div class="container">
+                <div class="techContent">
+                    <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Alternative Trading in the Digital Age</h2>
+                                <p>Our team at OpenFinance Network saw that the mechanism for trading alternative securities was way out of date, and so we went to work to change that.</p>
+
+                                <p>When you work in technology, no matter what your particular industry, the landscape changes quickly. Thankfully, we have been able to take advantage of some very exciting innovations in technology that have us enthusiastic about the future and how it will change the alternative trading space forever.</p>
+
+                                <p><strong>OpenFinance Network leverages the latest technology to bring efficiency, transparency, and interoperability to alternative trading.</strong></p>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                    <div class="card" style="margin-top: 40px;">
+                                        <div style="display:inline-block;">
+                                        <svg style="margin-right: 20px;" width="70px" height="111px" viewBox="0 0 70 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                                            <desc>Created with Sketch.</desc>
+                                            <defs></defs>
+                                            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Desktop-1440-+-Copy" transform="translate(-874.000000, -903.000000)" stroke="#00A5D7">
+                                                    <g id="Group-13" transform="translate(875.000000, 903.000000)">
+                                                        <polygon id="Stroke-1" points="34.300885 0 0 57.372549 34.300885 77 68 57.372549"></polygon>
+                                                        <polygon id="Stroke-3" points="0 63 34.6071429 82.8726115 68 63 34.6071429 111"></polygon>
+                                                        <path d="M35,0 L35,77" id="Stroke-5"></path>
+                                                        <path d="M35,83 L35,111" id="Stroke-7"></path>
+                                                        <path d="M34,41 L0,57" id="Stroke-9"></path>
+                                                        <path d="M34,41 L68,57" id="Stroke-11"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <h3>The Power of <br /> Blockchain Technology</h3>
+                                        </div>
+                                        <p style="margin-top: 20px;">From ledger maintenance and smart contracts to the 'tokenization of securities', we at OpenFinance Network knew that blockchain technology could streamline the alternative trading process in a truly revolutionary way.</p>
+
+                                        <p>The Ethereum blockchain makes keeping track of ownership easy. Its shared source of truth means that it cannot be hacked by outsiders or manipulated by insiders.</p>
+
+                                        <p>To securely and successfully verify transactions on the Ethereum chain, the chain requires users to cover the cost of 'Gas' - the fee for conducting trasnaction on the chain.</p>
+
+                                        <p><strong>Openfinance Network utilizes a hybrid DEX modal that has off-chain matching and on-chain peer-to-peer settlement. </strong></p>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="card" style="margin-top: 40px;">
+                                            <div style="display:inline-block;">
+                                                <svg style="margin-right: 20px;" width="115px" height="106px" viewBox="0 0 115 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                                                    <desc>Created with Sketch.</desc>
+                                                    <defs></defs>
+                                                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g id="Desktop-1440-+-Copy" transform="translate(-344.000000, -1270.000000)" stroke="#00A5D7">
+                                                            <g id="Group-44" transform="translate(345.000000, 1271.000000)">
+                                                                <g id="Group-5">
+                                                                    <polygon id="Stroke-1" points="42.3850538 13.1010921 42.3850538 13.1010921 48.9705923 31.7823056 33.0134769 44.9098562 9.96474615 52.2308899 3.63224615 46.424373 5.65851538 44.1519461 3.63224615 41.6279685 5.65851538 39.3561933 1.60597692 36.831564 4.13897692 35.3170472 0.339476923 16.888036 6.67132308 0.478597753"></polygon>
+                                                                    <polyline id="Stroke-3" points="6.67158462 0.478858427 48.9702 31.7825663 50.9971231 57.7848135 25.4147385 56.5224989"></polyline>
+                                                                </g>
+                                                                <polygon id="Stroke-6" points="2 73.5132692 35 75 24.6567069 54.9265756 30.5702479 44 9.63445645 50.7139585"></polygon>
+                                                                <g id="Group-43" transform="translate(2.000000, 0.000000)">
+                                                                    <path d="M31.5819667,90.7453926 C30.827686,89.5018864 21.0129491,75.2558123 21.0129491,75.2558123 L0.150142105,74.3320099 L7.44238772,97.4598123 L31.5819667,90.7453926 Z" id="Stroke-7"></path>
+                                                                    <polygon id="Stroke-9" points="33.8450035 75.8238963 46.6690737 85.8958469 31.5821614 90.7453284"></polygon>
+                                                                    <path d="M33.8450035,75.8238963 L33.8450035,65.6280444 C33.0907228,64.8820691 23.2837754,55.6799951 23.2837754,55.6799951" id="Stroke-11"></path>
+                                                                    <polyline id="Stroke-13" points="46.6692684 85.8961037 48.6809 84.7771407 45.160707 68.6122025 33.8451982 65.6283012 41.2627246 61.4002519 45.160707 68.6122025 48.6809 56.923758"></polyline>
+                                                                    <path d="M48.6810298,56.9238222 L48.6810298,84.7772049" id="Stroke-15"></path>
+                                                                    <polygon id="Stroke-17" points="68.7974754 12.9058864 68.7974754 12.9058864 62.2595105 31.3087506 78.1013526 44.2407012 100.98423 51.4526519 107.270984 45.7326519 105.258704 43.494084 107.270984 41.0077136 105.258704 38.7697877 109.281967 36.2827753 106.767265 34.7908247 110.539318 16.6364049 104.252563 0.471466667"></polygon>
+                                                                    <polyline id="Stroke-19" points="104.252628 0.471723457 62.2595754 31.3090074 60.2479439 56.9238222 85.6448737 55.680316"></polyline>
+                                                                    <polygon id="Stroke-21" points="108.779351 74.3317531 75.0840351 75.8237037 85.644614 55.6798025 79.6064737 44.7148642 100.984035 51.4523951"></polygon>
+                                                                    <path d="M77.347007,90.7453926 C78.1012877,89.5018864 87.9160246,75.2558123 87.9160246,75.2558123 L108.779481,74.3320099 L101.486586,97.4598123 L77.347007,90.7453926 Z" id="Stroke-23"></path>
+                                                                    <polygon id="Stroke-25" points="75.0839702 75.8238963 62.2599 85.8958469 77.3468123 90.7453284"></polygon>
+                                                                    <path d="M75.0839702,75.8238963 L75.0839702,65.6280444 C75.8382509,64.8820691 85.6451982,55.6799951 85.6451982,55.6799951" id="Stroke-27"></path>
+                                                                    <polyline id="Stroke-29" points="62.2596404 85.8961037 60.2480088 84.7771407 63.7682018 68.6122025 75.0837105 65.6283012 67.6661842 61.4002519 63.7682018 68.6122025 60.2480088 56.923758"></polyline>
+                                                                    <path d="M60.2479439,56.9238222 L60.2479439,84.7772049" id="Stroke-31"></path>
+                                                                    <path d="M68.7974754,12.9058864 L40.1315632,12.9058864" id="Stroke-33"></path>
+                                                                    <path d="M48.6810298,84.7770123 L60.2477491,84.7770123" id="Stroke-35"></path>
+                                                                    <path d="M46.6692684,95.4705877 L48.6809,84.7772049" id="Stroke-37"></path>
+                                                                    <path d="M60.2479439,84.7770123 L63.7681368,95.4703951" id="Stroke-39"></path>
+                                                                    <polyline id="Stroke-41" points="46.6692684 103.428193 62.2599 103.677279 77.3468123 90.7453284 64.5227421 98.9516988 63.7684614 95.4702667 46.6692684 95.4702667 45.4119175 98.7032543 31.581707 90.7453284 46.6692684 103.428193"></polyline>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <h3>Self Custody &amp; <br /> Identity Management</h3>
+                                            </div>
+                                                                                      
+                                            <p style="margin-top: 20px;">We live in a technological age where identity, security, and privacy are always high concerns.  While on the blockchain, you manage your own identity and wallet, which holds your tokens. While this used to involve a level of “know-how” that was beyond the average user, we are pleased to offer our users an easy integration with this powerful technology.</p> 
+
+                                            <p>Metamask is a tool that has been developed by the community to make transacting on the blockchain simple and easy to operate within your browser. We are excited to bring this technology into our platform and to put the power of blockchain into the hands of our users.</p>
+                                            
+                                            <p><strong>Metamask now integrates with <a href="https://medium.com/metamask/trezor-integration-in-metamask-a8eaeae7f499" target="_blank">Trezor</a> for an even more secure and intutive experience with your wallet.</strong></p>
+                                            
+                                            <p><a class="linkBtn" href="https://metamask.io/" target="_blank"><strong>CREATE YOUR METAMASK ACCOUNT TODAY »</strong></a></p>
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card" style="margin-top: 30px;">
+                                <div style="display:inline-block;">
+                                <svg style="margin-right: 20px;" width="105px" height="94px" viewBox="0 0 105 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+                                    <desc>Created with Sketch.</desc>
+                                    <defs>
+                                        <polygon id="path-1" points="0 93 104 93 104 0 0 0"></polygon>
+                                    </defs>
+                                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Desktop-1440-+-Copy" transform="translate(-868.000000, -1606.000000)">
+                                            <g id="Group-19" transform="translate(869.000000, 1607.000000)">
+                                                <path d="M0,14 L0,7.55566901 C0,6.53645024 0.766140954,5.68068611 1.77904995,5.56784969 L53.8898169,0.0125010293 C55.0746198,-0.119317228 56,0.808156033 56,2.00032036 L56,6.00021357" id="Stroke-1" stroke="#00A5D7"></path>
+                                                <path d="M55.9996045,90 L1.99996705,90 C0.895318756,90 0,88.8700461 0,87.7659287 L0,10 L62.2204353,10 C63.3256109,10 64,10.661205 64,11.7658496 L64,56.000145" id="Stroke-3" stroke="#00A5D7"></path>
+                                                <path d="M18,68 L46,68" id="Stroke-5" stroke="#00A5D7"></path>
+                                                <path d="M48,40 C48,48.8368046 40.8363954,56 31.9997364,56 C23.1630773,56 16,48.8368046 16,40 C16,31.1631954 23.1630773,24 31.9997364,24 C40.8363954,24 48,31.1631954 48,40 Z" id="Stroke-7" stroke="#00A5D7"></path>
+                                                <path d="M38,40 C38,48.8368046 35.3135902,56 31.9997364,56 C28.6864098,56 26,48.8368046 26,40 C26,31.1631954 28.6864098,24 31.9997364,24 C35.3135902,24 38,31.1631954 38,40 Z" id="Stroke-9" stroke="#00A5D7"></path>
+                                                <path d="M17,41 L49,41" id="Stroke-11" stroke="#00A5D7"></path>
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <g id="Clip-14"></g>
+                                                <polygon id="Stroke-13" stroke="#00A5D7" mask="url(#mask-2)" points="71 92 80 92 80 53 71 53"></polygon>
+                                                <polygon id="Stroke-15" stroke="#00A5D7" mask="url(#mask-2)" points="59 92 68 92 68 58 59 58"></polygon>
+                                                <polygon id="Stroke-16" stroke="#00A5D7" mask="url(#mask-2)" points="83 92 92 92 92 47 83 47"></polygon>
+                                                <polygon id="Stroke-17" stroke="#00A5D7" mask="url(#mask-2)" points="94 93 103 93 103 42 94 42"></polygon>
+                                                <path d="M81.1113573,40.4203984 C81.0065811,40.4203984 80.9330814,40.4568482 80.9330814,40.6000437 L80.9685281,42.4631471 C80.9685281,42.7854671 80.7548055,43 80.4305728,43 L79.1743012,43 C78.8531961,43 78.6373884,42.7854671 78.6373884,42.4631471 L78.6717925,40.5635939 C78.6717925,40.4203984 78.602463,40.3839487 78.4940379,40.3839487 C74.4041181,39.9184332 72,37.5169147 72,34.0411698 L72,32.6071321 C72,32.2842913 72.2163289,32.0697585 72.537434,32.0697585 L74.8336483,32.0697585 C75.157881,32.0697585 75.3710823,32.2842913 75.3710823,32.6071321 L75.3710823,33.2882219 C75.3710823,35.6538113 77.0600117,37.4815064 80.1798397,37.4815064 C83.1213918,37.4815064 84.555418,35.8329358 84.555418,33.7188497 C84.555418,30.9944905 80.9330814,30.1353176 76.9135336,27.8415863 C73.9365348,26.2643531 72.1428292,24.7235697 72.1428292,21.4607955 C72.1428292,17.7345886 74.3665863,15.3695199 78.3856128,14.9024423 C78.4940379,14.8675547 78.5638887,14.8305842 78.5638887,14.6879094 L78.5289633,12.5373736 C78.5289633,12.2150536 78.7452922,12 79.0663973,12 L80.2877435,12 C80.6088486,12 80.8251776,12.2150536 80.8251776,12.5373736 L80.7902522,14.6514597 C80.7902522,14.7962173 80.8606242,14.8305842 80.9685281,14.8305842 C85.3821594,15.1898747 87.8217241,17.6981389 87.8217241,21.4259079 L87.8217241,22.464726 C87.8217241,22.7875668 87.6053952,23.0031411 87.2842901,23.0031411 L84.9880758,23.0031411 C84.6638431,23.0031411 84.4475142,22.8240165 84.4475142,22.5365841 L84.4475142,22.1075184 C84.4475142,19.6690295 82.9050629,17.7694763 79.7503095,17.7694763 C77.0944158,17.7694763 75.5519646,19.0608392 75.5519646,21.3181207 C75.5519646,24.0055095 78.3856128,24.6152619 82.0465238,26.2643531 C86.1364436,28.0910068 88,30.2420634 88,33.5392045 C88,37.3737192 85.5984883,40.026741 81.1113573,40.4203984 Z" id="Stroke-18" stroke="#00A5D7" mask="url(#mask-2)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>      
+                                <h3>Fully Compliant <br />Investor Passports</h3>
+                                </div>
+                                <p style="margin-top: 20px;">We also knew that a massive upfront cost in the alternative trading lifecycle was simply the time it took to review documentation and paperwork for our users to be legally compliant. While this seemed like an obvious function that machines could perform better than humans, other players in the industry were lagging behind, and investors suffered as a result. </p>
+
+                                <p>We solved this by streamlining the process with a tool called the Investor Passport, which collects and analyzes user information and documentation to ensure that users are authorized to trade. This not only speeds up the process of obtaining legal compliance, but it greatly reduces the friction and overhead of hiring rooms full of people to review documentation for our users. </p>
+
+                                <p><a class="linkBtn" href="https://open.cfxtrading.com/app/#/onboarding" target="_blank"><strong>REGISTER WITH YOUR INVESTOR PASSPORT »</strong></a></p>
+                            </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <footer>
-            <p>CFX Markets is a website operated by CFX Direct, LLC and Open Finance Network, Inc,  both wholly owner subsidiaries of CF Innovations Group, Inc.. Securities are offered through Sageworks Capital, LLC., an affiliated entity, and a registered broker-dealer and member of FINRA/SIPC. Neither CFX Direct, LLC., Open Finance Network, Inc. nor Sageworks Capital, LLC provide any investment advice or make any investment recommendations to any persons, ever, and no communication through this website or in any other medium should be construed as such. By accessing this site and any pages thereof, you agree to be bound by our Terms of Service and Privacy Policy. CFX Markets is intended only for asset shareholders or for accredited investor buyers (for persons residing in the U.S.), and for persons residing abroad in jurisdictions where securities registration exemptions apply.</p>
-            <p>Assets listed on this website are securities that are generally not publicly traded, maybe subject to holding period requirements, and are intended for investors who do not need a liquid investment. These investments are NOT bank deposits (and thus NOT insured by the FDIC or by any other federal governmental agency), are NOT guaranteed by CFX Direct, Open Finance Network, Inc., Inc. or Sageworks Capital, LLC and MAY lose value. Neither the Securities and Exchange Commission nor any federal or state securities commission or regulatory authority has recommended or approved any investment or the accuracy or completeness of any of the information or materials provided by or through the website. Investors must be able to afford the loss of their entire investment.</p>
-            <p>Any financial projections or returns shown on the website are illustrative examples only, and there can be no assurance that any valuations provided are accurate or in agreement with market or industry valuations. Any investment information contained herein has been secured from sources CFX Direct, LLC, Open Finance Network, Inc and Sageworks Capital, LLC believe are reliable, but we make no representations or warranties as to the accuracy of such information and accept no liability therefor. Offers to sell, or the solicitations of offers to buy, any security are generally made through official offering documents that contain important information about risks, fees and expenses. Investors should conduct their own due diligence to make a determination if the investment is suitable for them., Investors are encouraged to consult with a financial advisor, attorney, accountant, and any other professional that can help you to understand and assess the risks associated with any investment opportunity.Past performance is not indicative of future performance.</p>
-        </footer> -->
+        <hr />
+        <div class="container customerSupport">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="liveChat" src="./images/live-chat.png" />
+                </div>
+                <div class="col-md-6">
+                    <h2>Customer Support</h2>
+                    <p>Our team is here to help ensure you have a successful trading experience. </p>
+                    <h3 class="cs">Live Chat</h3>
+                    <p>Connect with our team in real-time with live chat. The live chat window is available on all of the OpenFinance Network platform pages. </p>
+                    <br />
+                    <hr />
+                    <h3 class="cs">Email</h3>
+                    <p>Send us an email anytime at: <a href="mailto:help@openfinance.io">help@openfinance.io</a></p>
+                    <br />
+                    <hr />
+                    <h3 class="cs">Feedback</h3>
+                    <p>Please take the time to fill out our customer feedback survey, as we work to continuously enhance your trading experience.</p>
+
+                    <p><a href="https://goo.gl/forms/4C2wdNYUg4vfLOJk1" target="_blank">Feedback Survey »</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="fuild-container articles">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>OpenFinance Network News</h2>
+                        <p>Stay up-to-date with the exciting news surrounding OpenFinance Network. <a href="https://medium.com/@openfinance" target="_blank"><strong>READ MORE MEDIUM ARTICLES »</strong></a> </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="https://medium.com/@openfinance/democratization-of-finance-blockchain-for-everyone-7437b75734bd" target="_blank"><div class="card">
+                            <p class="date">Sep 19</p>
+                            <p class="title">Democratization of Finance: Blockchain for Everyone</p>
+                            <p>Putting an end to top-heavy wealth generation by providing investment tools to the everyman/woman. Blockchain technology has a number of use cases spanning hundreds of industries. </p>
+                            <img class="articleImage" src="https://cdn-images-1.medium.com/max/800/0*Eo5-_LfRVaTrqRX5" />
+                        </div></a>
+                    </div>
+                    <div class="col-lg-3">
+                         <a href="https://medium.com/@openfinance/announcement-issuance-joins-the-openfinance-network-as-newest-partner-6abc9dbd50d" target="_blank"><div class="card">
+                            <p class="date">Sep 18</p>
+                            <p class="title">Issuance Joins the OpenFinance Network as Newest Partner</p>
+                            <p>Issuance, a modern marketing platform for digital securities, has executed a Listing Agreement with OpenFinance Network.</p>
+                            <img  class="articleImage" src="https://cdn-images-1.medium.com/max/800/1*YbRDrlr3PEZq2ek0ic68og.jpeg" />
+                             </div></a>
+                    </div>
+                    <div class="col-lg-3">
+                         <a href="https://medium.com/@openfinance/openfinance-network-refines-investor-passport-for-live-trading-beginning-soon-536e37bb497f" target="_blank"><div class="card">
+                            <p class="date">Aug 31 </p>
+                            <p class="title">OpenFinance Network Refines Investor Passport in Preparation for Live Trading</p>
+                            <p>OFN users will soon have the ability to buy and trade security tokens on its fully-compliant platform, starting with the SPiCE VC (SPX) token. This new technology marks the start of a new era for the financial markets.</p>
+                             <img  class="articleImage" src="" />
+                             </div></a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="https://medium.com/@openfinance/press-release-huobi-one-of-worlds-largest-crypto-exchanges-invests-in-openfinance-network-44649b62de2" target="_blank"><div class="card">
+                            <p class="date">Aug 15</p>
+                            <p class="title">Huobi, One of World’s Largest Crypto Exchanges, Invests in OpenFinance Network</p>
+                            <p>OpenFinance Network announces strategic investment by global crypto exchange, Huobi, into its US-compliant security token trading platform.</p>
+                             <img  class="articleImage" src="https://cdn-images-1.medium.com/max/800/1*kKSkqIVj7bSSMknclsLVnA.jpeg" />
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
